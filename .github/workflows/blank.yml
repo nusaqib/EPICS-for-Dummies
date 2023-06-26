@@ -36,3 +36,4 @@ jobs:
           echo test, and deploy your project.
           ls
           bash ./scripts/base/install_requirements.sh
+          bash ./scripts/base/install_base.sh
