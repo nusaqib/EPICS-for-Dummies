@@ -1,0 +1,22 @@
+name: EPICS Base Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Docker
+        uses: actions/setup-docker@v2
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Build EPICS Base
+        run: |
+          docker pull ubuntu:latest
+          docker run --rm -v $PWD:/workspace -w /workspace ubuntu:latest bash -c '../../scripts/base/install_requirements.sh'
