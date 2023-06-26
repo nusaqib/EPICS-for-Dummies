@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
+      - name: checkout
+        uses: actions/checkout@3
+    
       - name: Build EPICS Base
         run: |
           ls
