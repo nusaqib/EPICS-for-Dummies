@@ -14,3 +14,5 @@ jobs:
       - name: Build EPICS Base
         run: |
           pwd
+          ls
+          python ./scripts/base/install_requirements.sh
