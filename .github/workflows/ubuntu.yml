@@ -18,4 +18,4 @@ jobs:
 
       - name: Build EPICS Base
         run: |
-          pwf
+          pwd
