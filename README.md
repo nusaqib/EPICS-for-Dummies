@@ -21,9 +21,16 @@
     - [procServ](#procserv)
     - [Fault Tree](#fault-tree)
   - [Tutorials](#tutorials)
-  - [Trainings](#trainings)
+  - [Trainings/Resources](#trainingsresources)
+    - [References](#references)
+    - [EPICS (General)](#epics-general)
+    - [IOC/Database](#iocdatabase)
+    - [User Interface](#user-interface)
+    - [Network Protocols - Channel Access/PV Access](#network-protocols---channel-accesspv-access)
+    - [Central Services](#central-services)
+    - [Clients/Servers](#clientsservers)
   - [Explanations](#explanations)
-  - [References](#references)
+  - [References](#references-1)
 
 # EPICS for Dummies
 
@@ -99,7 +106,9 @@ EPICS Host tools and client software are known in the community as Extensions. E
 - [Fault Tree](https://controlssoftware.sns.ornl.gov/ftree): The idea is to use a Mind-Mapping tool like "FreeMind", which is basically a tree editor, to document dependencies between various inputs and subsystems and the overall "System OK" status.
 
 ## Off-the-shelf EPICS control system
-Do you wanna try building the control system yourself? [Sure thing](#how-to---build--install) : [Skip the next section](#tutorials)
+Follow guidelines in [2022 USPAS EPICS](https://controlssoftware.sns.ornl.gov/training/2022_USPAS) or [EPICS Collaboration Meeting 2022 PV Access Workshop](https://controlssoftware.sns.ornl.gov/training/2022_EPICS) to setup a VirtualBox VM containing a complete EPICS Control System. PDFs/PPTs at these two links contain major portion of [Tutorials section](#tutorials).
+
+Do you wanna try building the control system yourself? [Sure thing](#how-to---build--install) : [What are you talking about](#tutorials)
 
 ## How To - Build & Install
 
@@ -120,17 +129,46 @@ Do you wanna try building the control system yourself? [Sure thing](#how-to---bu
 ### Fault Tree
 
 ## Tutorials
-Reference: https://controlssoftware.sns.ornl.gov/training
 
-After having installed kind of complete EPICS control system, we are ready to play and explore what it really is, how much power does it contain...
-
-- 
-
-## Trainings
+## Trainings/Resources
+### References
 - [EPICS Official Website](https://epics-controls.org/resources-and-support/documents/training)
 - [SNS Controls EPICS Training Resources](https://controlssoftware.sns.ornl.gov/training)
 - [EPICS Collaboration Meetings](https://epics-controls.org/news-and-events/meetings)
 - [EPICS Codeathons/Documentathons](https://epics-controls.org/news-and-events/codeathons)
+
+After having installed kind of complete EPICS control system, we are ready to play and explore what it really is, how much power does it contain...[Use the VM mentioned here](#off-the-shelf-epics-control-system)
+
+### EPICS (General)
+- [Overview](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/01%20Overview.pdf)
+
+### IOC/Database
+- [Database](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/02%20EPICS%20Database.pdf)
+- [Database Exercise](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/02e%20EPICS%20Database%20Exercises.pdf)
+- [Database Updates](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/12%20EPICS%20Database%20Updates.pdf)
+- [makeBaseApp](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/07%20makeBaseApp.pdf)
+- [Access Security](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/11%20CA%20Security.pdf)
+- [Access Security Lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/11l%20CA%20Security%20Lab.pdf)
+- [DB Interlocks](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/20b%20DB%20Interlocks.pdf)
+
+### User Interface
+
+### Network Protocols - Channel Access/PV Access
+- [Channel Access](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/10%20Channel%20Access.pdf)
+- [CA vs PVA vs Records](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/10a%20CA%20vs%20Records%20vs%20CAS.pdf)
+- [PV Access](https://controlssoftware.sns.ornl.gov/training/2022_EPICS/Presentations/1%20PV%20Access%20EPICS.pdf)
+- [PV Access Java API](https://controlssoftware.sns.ornl.gov/training/2022_EPICS/Presentations/2%20PV%20Access%20Java.pdf)
+
+### Central Services
+- [Archiver Systems](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/19%20Archive.pdf)
+- [Alarm System](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/20%20Alarm%20System.pdf)
+- [Alarm Guidelines](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/20a%20Alarm%20Guidelines.pdf)
+- [Channel Finder](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/26%20Channel%20Finder.pdf)
+- [PVA Gateway](https://controlssoftware.sns.ornl.gov/training/2022_EPICS/Presentations/3%20PVA%20Gateway.pdf)
+- []()
+- []()
+
+### Clients/Servers
 
 ## Explanations
 - [EPICS Overview](https://docs.epics-controls.org/en/latest/guides/EPICS_Process_Database_Concepts.html)
