@@ -115,6 +115,8 @@ Do you wanna try building the control system yourself? [Sure thing](#how-to---bu
 
 ## How To - Build & Install
 
+For now, the operating system is assumed to be Linux. I am using Debian 12 VM.
+
 ### EPICS Base
 ### Phoebus
 ### Archiver System
