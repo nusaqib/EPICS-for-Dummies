@@ -23,12 +23,15 @@
   - [Tutorials](#tutorials)
   - [Trainings/Resources](#trainingsresources)
     - [References](#references)
-    - [EPICS (General)](#epics-general)
-    - [IOC/Database](#iocdatabase)
-    - [User Interface](#user-interface)
-    - [Network Protocols - Channel Access/PV Access](#network-protocols---channel-accesspv-access)
-    - [Central Services](#central-services)
-    - [Clients/Servers](#clientsservers)
+    - [2022 USPAS + 2022 EPICS Collaboration Meeting](#2022-uspas--2022-epics-collaboration-meeting)
+      - [EPICS (General)](#epics-general)
+      - [IOC/Database](#iocdatabase)
+      - [User Interface](#user-interface)
+      - [Network Protocols - Channel Access/PV Access](#network-protocols---channel-accesspv-access)
+      - [Central Services](#central-services)
+      - [Modules](#modules)
+      - [Clients/Servers](#clientsservers)
+      - [Device Support](#device-support)
   - [Explanations](#explanations)
   - [References](#references-1)
 
@@ -137,12 +140,14 @@ Do you wanna try building the control system yourself? [Sure thing](#how-to---bu
 - [EPICS Collaboration Meetings](https://epics-controls.org/news-and-events/meetings)
 - [EPICS Codeathons/Documentathons](https://epics-controls.org/news-and-events/codeathons)
 
-After having installed kind of complete EPICS control system, we are ready to play and explore what it really is, how much power does it contain...[Use the VM mentioned here](#off-the-shelf-epics-control-system)
+After having installed kind of complete EPICS control system, we are ready to play and explore what it really is, how much power does it contain...
 
-### EPICS (General)
+### [2022 USPAS + 2022 EPICS Collaboration Meeting](https://controlssoftware.sns.ornl.gov/training/2022_USPAS)
+[Use the ready made VM](#off-the-shelf-epics-control-system)
+#### EPICS (General)
 - [Overview](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/01%20Overview.pdf)
 
-### IOC/Database
+#### IOC/Database
 - [Database](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/02%20EPICS%20Database.pdf)
 - [Database Exercise](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/02e%20EPICS%20Database%20Exercises.pdf)
 - [Database Updates](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/12%20EPICS%20Database%20Updates.pdf)
@@ -150,25 +155,51 @@ After having installed kind of complete EPICS control system, we are ready to pl
 - [Access Security](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/11%20CA%20Security.pdf)
 - [Access Security Lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/11l%20CA%20Security%20Lab.pdf)
 - [DB Interlocks](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/20b%20DB%20Interlocks.pdf)
+- [Automation](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/13%20EPICS%20Automation.pdf)
 
-### User Interface
+#### User Interface
+- [User Interfaces](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/03%20User%20Interfaces.pdf)
+- [CS Studio](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/04%20CS-Studio.pdf)
+- [Database UI First Steps](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/04a%20DataBase%20UI%20First%20Steps.pdf)
+- [Display Builder](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/05%20Display%20Builder.pdf)
 
-### Network Protocols - Channel Access/PV Access
+#### Network Protocols - Channel Access/PV Access
 - [Channel Access](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/10%20Channel%20Access.pdf)
 - [CA vs PVA vs Records](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/10a%20CA%20vs%20Records%20vs%20CAS.pdf)
 - [PV Access](https://controlssoftware.sns.ornl.gov/training/2022_EPICS/Presentations/1%20PV%20Access%20EPICS.pdf)
 - [PV Access Java API](https://controlssoftware.sns.ornl.gov/training/2022_EPICS/Presentations/2%20PV%20Access%20Java.pdf)
 
-### Central Services
+#### Central Services
 - [Archiver Systems](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/19%20Archive.pdf)
 - [Alarm System](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/20%20Alarm%20System.pdf)
 - [Alarm Guidelines](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/20a%20Alarm%20Guidelines.pdf)
 - [Channel Finder](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/26%20Channel%20Finder.pdf)
 - [PVA Gateway](https://controlssoftware.sns.ornl.gov/training/2022_EPICS/Presentations/3%20PVA%20Gateway.pdf)
-- []()
-- []()
+- [Display Builder Web Runtime](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/06%20Display%20Web%20Runtime.pdf)
 
-### Clients/Servers
+#### Modules
+- [Asyn](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/18_Asyn.pdf)
+- [Stream Device](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/08%20Stream%20Device.pdf)
+- [Stream Device Lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/08l%20Stream%20Device%20Lab.pdf)
+- [Autosave](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/09%20Autosave.pdf)
+- [Autosave Lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/09l%20Autosave%20Lab.pdf)
+- [Sequencer](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/14%20Sequencer.pdf)
+- [Sequencer Lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/14l%20SequencerLab.pdf)
+- [Allen Bradley PLCs](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/15%20Allen%20Bradley%20PLCs.pdf)
+- [Area Detector](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/16%20AreaDetector.pdf)
+- [Busy Record](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/21%20Busy%20Record.pdf)
+- [Busy Record Lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/21l%20Busy%20Record%20Lab.pdf)
+- [Python IOC pyDevice](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/23%20Python%20IOC_pydevice.pdf)
+
+#### Clients/Servers
+- [Python Channel Access Client](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/22%20Python%20CA%20Client.pdf)
+- [Python IOC pcaspy](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/23%20Python%20IOC_pcaspy.pdf)
+
+#### Device Support
+- [Device Support Intro](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/17_DeviceSupportIntro.pdf)
+- [Basic Device Support](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/17b_BasicDeviceSupport.pdf)
+- [Device Support Problematic](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/17c%20Device%20Support_Problematic.pdf)
+- [Custom Device Support VME](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/17d%20Custom%20Device%20Support%20VME.txt)
 
 ## Explanations
 - [EPICS Overview](https://docs.epics-controls.org/en/latest/guides/EPICS_Process_Database_Concepts.html)
