@@ -7,19 +7,16 @@
   - [How To - Build \& Install](#how-to---build--install)
     - [EPICS Base](#epics-base)
     - [Phoebus](#phoebus)
-    - [Archiver System](#archiver-system)
-    - [Alarm System](#alarm-system)
     - [Channel Finder](#channel-finder)
     - [Phoebus Olog](#phoebus-olog)
     - [PV Web Socket](#pv-web-socket)
     - [Display Builder Web Runtime](#display-builder-web-runtime)
-    - [Save-and-restore](#save-and-restore)
     - [Gateway](#gateway)
+    - [PV Info](#pv-info)
     - [Soft Modules](#soft-modules)
     - [Hard Modules](#hard-modules)
     - [VDCT](#vdct)
     - [procServ](#procserv)
-    - [Fault Tree](#fault-tree)
   - [Tutorials](#tutorials)
   - [Trainings/Resources](#trainingsresources)
     - [References](#references)
@@ -117,21 +114,21 @@ Do you wanna try building the control system yourself? [Sure thing](#how-to---bu
 
 For now, the operating system is assumed to be Linux. I am using Debian 12 VM.
 
-### EPICS Base
-### Phoebus
-### Archiver System
-### Alarm System
-### Channel Finder
-### Phoebus Olog
-### PV Web Socket
-### Display Builder Web Runtime
-### Save-and-restore
-### Gateway
-### Soft Modules
-### Hard Modules
-### VDCT
-### procServ
-### Fault Tree
+### [EPICS Base](./docs/build_install/Base.md)
+### [Phoebus](./docs/build_install/Phoebus.md)
+- RDB Archiver System
+- Alarm System
+- Save-and-restore
+### [Channel Finder]()
+### [Phoebus Olog]()
+### [PV Web Socket]()
+### [Display Builder Web Runtime]()
+### [Gateway]()
+### [PV Info]()
+### [Soft Modules]()
+### [Hard Modules]()
+### [VDCT]()
+### [procServ]()
 
 ## Tutorials
 
