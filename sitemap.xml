@@ -33,6 +33,10 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/dbwr/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
@@ -85,7 +89,35 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/alarms/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/archiving/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/base-and-iocs/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/client-libraries/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/deployment-and-operations/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/detectors-and-imaging/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/directory-services/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/gateways/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
@@ -93,7 +125,23 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/logbooks/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/motion/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/observability/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/operator-interfaces/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/physics-and-optimization/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
@@ -101,7 +149,31 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/save-and-restore/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/scanning-and-automation/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/scientific-data/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/simulation-and-testing/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/soft-support-modules/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/timing-systems/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/toolbox/web-interfaces/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
 </urlset>

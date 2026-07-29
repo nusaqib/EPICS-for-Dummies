@@ -1195,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detectors-and-imaging.md" class="md-nav__link">
+      <a href="../detectors-and-imaging/" class="md-nav__link">
         
   
   
@@ -1223,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../timing-systems.md" class="md-nav__link">
+      <a href="../timing-systems/" class="md-nav__link">
         
   
   
@@ -1251,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../client-libraries.md" class="md-nav__link">
+      <a href="../client-libraries/" class="md-nav__link">
         
   
   
@@ -1279,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operator-interfaces.md" class="md-nav__link">
+      <a href="../operator-interfaces/" class="md-nav__link">
         
   
   
@@ -1307,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../web-interfaces.md" class="md-nav__link">
+      <a href="../web-interfaces/" class="md-nav__link">
         
   
   
@@ -1335,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archiving.md" class="md-nav__link">
+      <a href="../archiving/" class="md-nav__link">
         
   
   
@@ -1363,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../alarms.md" class="md-nav__link">
+      <a href="../alarms/" class="md-nav__link">
         
   
   
@@ -1391,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../directory-services.md" class="md-nav__link">
+      <a href="../directory-services/" class="md-nav__link">
         
   
   
@@ -1419,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../save-and-restore.md" class="md-nav__link">
+      <a href="../save-and-restore/" class="md-nav__link">
         
   
   
@@ -1447,7 +1447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logbooks.md" class="md-nav__link">
+      <a href="../logbooks/" class="md-nav__link">
         
   
   
@@ -1475,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gateways.md" class="md-nav__link">
+      <a href="../gateways/" class="md-nav__link">
         
   
   
@@ -1503,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scanning-and-automation.md" class="md-nav__link">
+      <a href="../scanning-and-automation/" class="md-nav__link">
         
   
   
@@ -1531,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../simulation-and-testing.md" class="md-nav__link">
+      <a href="../simulation-and-testing/" class="md-nav__link">
         
   
   
@@ -1559,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scientific-data.md" class="md-nav__link">
+      <a href="../scientific-data/" class="md-nav__link">
         
   
   
@@ -1587,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../physics-and-optimization.md" class="md-nav__link">
+      <a href="../physics-and-optimization/" class="md-nav__link">
         
   
   
@@ -1615,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deployment-and-operations.md" class="md-nav__link">
+      <a href="../deployment-and-operations/" class="md-nav__link">
         
   
   
@@ -1643,7 +1643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../observability.md" class="md-nav__link">
+      <a href="../observability/" class="md-nav__link">
         
   
   
@@ -1680,6 +1680,8 @@
     
     
       
+        
+          
         
       
         
@@ -1723,8 +1725,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../build-install/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1738,8 +1741,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
@@ -1752,32 +1761,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -3250,7 +3233,7 @@
 <li><strong>Pass 0 vs pass 1.</strong> Pass 0 restores before record initialisation (needed for fields that affect init, like <code>SCAN</code> or <code>PREC</code>); pass 1 restores after. Setpoints usually want pass 1. Getting this wrong produces values that appear restored and then get overwritten.</li>
 <li><strong>The save directory must be writable by the IOC's user.</strong> If it isn't, autosave logs a complaint and silently does nothing for the rest of the run. Check after every deployment.</li>
 <li><strong><code>.sav</code> files are the actual state of your machine.</strong> Back them up. Several sequenced backups (<code>NumSeqFiles</code>) protect you against saving a corrupt state during a crash.</li>
-<li>Autosave is <em>not</em> <a href="save-and-restore.md">save &amp; restore</a>. Autosave is invisible reboot survival; save &amp; restore is deliberate, named, comparable machine configurations. Run both.</li>
+<li>Autosave is <em>not</em> <a href="../save-and-restore/">save &amp; restore</a>. Autosave is invisible reboot survival; save &amp; restore is deliberate, named, comparable machine configurations. Run both.</li>
 </ul>
 <h2 id="calc">calc<a class="headerlink" href="#calc" title="Permanent link">&para;</a></h2>
 <p>Adds computation record types beyond Base's <code>calc</code>/<code>calcout</code>.</p>
@@ -3312,13 +3295,13 @@
 </tbody>
 </table>
 <p>What you get: CPU load, memory usage and free memory, file descriptors in use, uptime, boot time, EPICS Base version, IOC application version, CA client and connection counts, per-scan-task period and actual rate, and a heartbeat.</p>
-<p>Load it on <strong>every IOC</strong>, alarm on the heartbeat and on uptime resets, and put the results in <a href="observability.md">Grafana</a>. The single most valuable operational consequence: an IOC that restarted at 03:12 is <em>visible</em>, instead of being discovered three weeks later. See <a href="observability.md">Observability</a>.</p>
+<p>Load it on <strong>every IOC</strong>, alarm on the heartbeat and on uptime resets, and put the results in <a href="../observability/">Grafana</a>. The single most valuable operational consequence: an IOC that restarted at 03:12 is <em>visible</em>, instead of being discovered three weeks later. See <a href="../observability/">Observability</a>.</p>
 <h2 id="caputlog">caPutLog<a class="headerlink" href="#caputlog" title="Permanent link">&para;</a></h2>
-<p>Logs every Channel Access write. Covered under <a href="logbooks.md#caputlog">Logbooks → caPutLog</a>.</p>
+<p>Logs every Channel Access write. Covered under <a href="../logbooks/#caputlog">Logbooks → caPutLog</a>.</p>
 <h2 id="sequencer-snl">Sequencer (SNL)<a class="headerlink" href="#sequencer-snl" title="Permanent link">&para;</a></h2>
-<p>State machines in the IOC. Covered under <a href="scanning-and-automation.md#sequencer-snl">Scanning &amp; Automation → Sequencer</a>.</p>
+<p>State machines in the IOC. Covered under <a href="../scanning-and-automation/#sequencer-snl">Scanning &amp; Automation → Sequencer</a>.</p>
 <h2 id="sscan">sscan<a class="headerlink" href="#sscan" title="Permanent link">&para;</a></h2>
-<p>Multi-dimensional scanning inside the IOC. Covered under <a href="scanning-and-automation.md#sscan">Scanning &amp; Automation → sscan</a>.</p>
+<p>Multi-dimensional scanning inside the IOC. Covered under <a href="../scanning-and-automation/#sscan">Scanning &amp; Automation → sscan</a>.</p>
 <h2 id="busy">busy<a class="headerlink" href="#busy" title="Permanent link">&para;</a></h2>
 <p><strong>Tells clients "I'm still working".</strong></p>
 <table>
@@ -3336,7 +3319,7 @@
 </tbody>
 </table>
 <p>The <code>busy</code> record is a <code>bo</code> variant designed for asynchronous completion: a client writes 1 to start an operation, and the record stays 1 until whatever it triggered actually finishes. Clients that use <code>ca_put_callback</code> block until then.</p>
-<p>This sounds trivial and is architecturally important. Without it, "start the scan" returns immediately and the client has no way to know when the scan ended — so people invent polling loops that are always subtly wrong. <code>busy</code> makes completion a first-class, network-visible fact. <a href="scanning-and-automation.md#sscan">sscan</a> and <a href="detectors-and-imaging.md">areaDetector</a> both use it heavily.</p>
+<p>This sounds trivial and is architecturally important. Without it, "start the scan" returns immediately and the client has no way to know when the scan ended — so people invent polling loops that are always subtly wrong. <code>busy</code> makes completion a first-class, network-visible fact. <a href="../scanning-and-automation/#sscan">sscan</a> and <a href="../detectors-and-imaging/">areaDetector</a> both use it heavily.</p>
 <h2 id="std">std<a class="headerlink" href="#std" title="Permanent link">&para;</a></h2>
 <p>The odds-and-ends module: <code>timestamp</code> records, <code>scalcout</code> support pieces, <code>epid</code> (a PID controller record), <code>femto</code> amplifier support, and various small device supports that never justified their own module.</p>
 <ul>
@@ -3431,7 +3414,7 @@
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>caPutLog      ← if operators can write to it
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>recsync       ← if your facility runs ChannelFinder
 </code></pre></div>
-<p>That's seven modules and it covers a very large fraction of real IOCs. Getting a tested, mutually compatible set of them is exactly what <a href="deployment-and-operations.md#synapps">synApps</a> is for.</p>
+<p>That's seven modules and it covers a very large fraction of real IOCs. Getting a tested, mutually compatible set of them is exactly what <a href="../deployment-and-operations/#synapps">synApps</a> is for.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>→ <a href="../hardware-support-modules/">Hardware Support Modules</a></p>
 
