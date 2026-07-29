@@ -295,6 +295,8 @@
       
         
       
+        
+      
     
     
     
@@ -387,6 +389,27 @@
   
   <span class="md-ellipsis">
     Linux Prerequisites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first-week-at-a-facility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your First Week at a Facility
   </span>
   
 
@@ -1552,6 +1575,8 @@
       
         
       
+        
+      
     
     
     
@@ -1623,6 +1648,27 @@
   
   <span class="md-ellipsis">
     Your First IOC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build-install/talk-to-a-device/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talk to a Real Device
   </span>
   
 
@@ -2294,6 +2340,8 @@
       
         
       
+        
+      
     
     
     
@@ -2397,6 +2445,27 @@
   
   <span class="md-ellipsis">
     Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/error-messages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Message Index
   </span>
   
 
@@ -2848,7 +2917,7 @@
 <li>The IOC is running but <code>iocInit</code> failed, so it serves nothing. Read its startup log.</li>
 <li>Docker/VPN networking. Try <code>EPICS_CA_ADDR_LIST=&lt;ioc-ip&gt;</code> with <code>EPICS_CA_AUTO_ADDR_LIST=NO</code>.</li>
 </ol>
-<p>Fuller list: <a href="../../reference/troubleshooting/">Troubleshooting</a>.</p>
+<p>Fuller list: <a href="../../reference/troubleshooting/">Troubleshooting</a>, or the <a href="../../reference/error-messages/">Error Message Index</a> if you have an error string to paste.</p>
 <h3 id="two-iocs-are-serving-the-same-pv-name-what-happens">Two IOCs are serving the same PV name. What happens?<a class="headerlink" href="#two-iocs-are-serving-the-same-pv-name-what-happens" title="Permanent link">&para;</a></h3>
 <p>Whichever answers a client's search first wins, per client. Different clients get different IOCs; readings become mysteriously inconsistent and irreproducible. Base logs a warning about duplicate names when it notices, but you must be watching. This is a bug with no upside — prevented by a <a href="../../architecture/naming-conventions/">naming convention</a> plus a <a href="../../toolbox/directory-services/">directory service</a> that makes collisions visible.</p>
 <h3 id="my-record-wont-update">My record won't update<a class="headerlink" href="#my-record-wont-update" title="Permanent link">&para;</a></h3>

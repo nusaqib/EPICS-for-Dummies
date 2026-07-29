@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://nusaqib.github.io/EPICS-for-Dummies/build-install/pvinfo/">
+        <link rel="canonical" href="https://nusaqib.github.io/EPICS-for-Dummies/build-install/talk-to-a-device/">
       
       
-        <link rel="prev" href="../dbwr/">
+        <link rel="prev" href="../first-ioc/">
       
       
-        <link rel="next" href="../gateways/">
+        <link rel="next" href="../jdk/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>PV Info - EPICS for Dummies</title>
+        <title>Talk to a Real Device - EPICS for Dummies</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-pv-info" class="md-skip">
+        <a href="#talk-to-a-real-device" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PV Info
+              Talk to a Real Device
             
           </span>
         </div>
@@ -1357,10 +1357,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../talk-to-a-device/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Talk to a Real Device
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1369,6 +1389,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      The device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-talk-to-it-before-writing-any-epics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1 — talk to it before writing any EPICS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-the-protocol-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2 — the protocol file
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-the-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3 — the database
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-wire-it-up-in-stcmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4 — wire it up in st.cmd
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-test-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5 — test it
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-it-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      When it doesn't work
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When it doesn't work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turn-on-tracing-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turn on tracing first
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-symptoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      The symptoms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reducing-traffic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reducing traffic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-hardware-simulate-the-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      No hardware? Simulate the device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-streamdevice-isnt-the-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      When StreamDevice isn't the answer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#then" class="md-nav__link">
+    <span class="md-ellipsis">
+      Then
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1588,30 +1760,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PV Info
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pvinfo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1620,89 +1772,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the links
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#search-patterns-worth-knowing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Search patterns worth knowing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploy-it-safely" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deploy it safely
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verify" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verify
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2392,54 +2461,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#the-device" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      The device
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
+  <a href="#step-1-talk-to-it-before-writing-any-epics" class="md-nav__link">
     <span class="md-ellipsis">
-      Install
+      Step 1 — talk to it before writing any EPICS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-the-links" class="md-nav__link">
+  <a href="#step-2-the-protocol-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure the links
+      Step 2 — the protocol file
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#search-patterns-worth-knowing" class="md-nav__link">
+  <a href="#step-3-the-database" class="md-nav__link">
     <span class="md-ellipsis">
-      Search patterns worth knowing
+      Step 3 — the database
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploy-it-safely" class="md-nav__link">
+  <a href="#step-4-wire-it-up-in-stcmd" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploy it safely
+      Step 4 — wire it up in st.cmd
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verify" class="md-nav__link">
+  <a href="#step-5-test-it" class="md-nav__link">
     <span class="md-ellipsis">
-      Verify
+      Step 5 — test it
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-it-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      When it doesn't work
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When it doesn't work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turn-on-tracing-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turn on tracing first
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-symptoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      The symptoms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reducing-traffic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reducing traffic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-hardware-simulate-the-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      No hardware? Simulate the device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-streamdevice-isnt-the-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      When StreamDevice isn't the answer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#then" class="md-nav__link">
+    <span class="md-ellipsis">
+      Then
     </span>
   </a>
   
@@ -2469,7 +2607,7 @@
                   
 
   
-    <a href="https://github.com/nusaqib/EPICS-for-Dummies/edit/main/docs/build-install/pvinfo.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/nusaqib/EPICS-for-Dummies/edit/main/docs/build-install/talk-to-a-device.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2477,92 +2615,337 @@
   
 
 
-<h1 id="install-pv-info">Install PV Info<a class="headerlink" href="#install-pv-info" title="Permanent link">&para;</a></h1>
-<p>A web front end to <a href="../channelfinder-recsync/">ChannelFinder</a>: search PVs by name or by metadata, and cross-link to every other service that knows about them.</p>
-<p>Overview: <a href="../../toolbox/web-interfaces/#pv-info">Toolbox → PV Info</a>.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Source</td>
-<td><a href="https://github.com/ChannelFinder/pvinfo">github.com/ChannelFinder/pvinfo</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong><a href="../channelfinder-recsync/">ChannelFinder running and populated</a></strong> — PV Info is a view over it, so with an empty ChannelFinder there is nothing to see</li>
-<li>The other services you want to link to: <a href="../archiver-appliance/">archiver</a>, <a href="../alarm-system/">alarm system</a>, <a href="../save-and-restore/">save &amp; restore</a>, <a href="../olog/">Olog</a></li>
-</ul>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
-<p>Follow the repository's README — it's a web application, and the deployment method (container image, Node/npm build, or servlet container) depends on the current version. Check there rather than trusting a snapshot in this guide.</p>
-<h2 id="configure-the-links">Configure the links<a class="headerlink" href="#configure-the-links" title="Permanent link">&para;</a></h2>
-<p>The configuration that matters is the set of <strong>service URLs</strong>: ChannelFinder, the archiver's retrieval endpoint, the alarm logger, save &amp; restore, and Olog.</p>
-<p>Those links are the whole point. Given a PV name, PV Info can then show:</p>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Answered from</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What is this PV, and what type?</td>
-<td>ChannelFinder</td>
-</tr>
-<tr>
-<td>Which IOC serves it, on which host?</td>
-<td>ChannelFinder (via <a href="../channelfinder-recsync/">recsync</a>)</td>
-</tr>
-<tr>
-<td>What subsystem, area, criticality?</td>
-<td>ChannelFinder properties</td>
-</tr>
-<tr>
-<td>What does its history look like?</td>
-<td>Archiver</td>
-</tr>
-<tr>
-<td>Is it alarmed, and how often does it trip?</td>
-<td>Alarm logger</td>
-</tr>
-<tr>
-<td>Which save sets include it?</td>
-<td>Save &amp; restore</td>
-</tr>
-<tr>
-<td>Has anyone written about it?</td>
-<td>Olog</td>
-</tr>
-</tbody>
-</table>
-<p>"What is this PV and what's going on with it?" is asked dozens of times a day at a facility. Answering it in one page instead of five tools is a real productivity gain, and it's the reason to deploy this rather than just using ChannelFinder's REST API.</p>
-<h2 id="search-patterns-worth-knowing">Search patterns worth knowing<a class="headerlink" href="#search-patterns-worth-knowing" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SR-C05-*                  everything in cell 5
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>*-DI-BPM-*:X-Mon          every horizontal BPM reading
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>subsystem=vacuum          every vacuum PV, however named
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>iocName=SR-C05-VA-IOC-01  everything on one IOC
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>recordType=motor          every motor axis in the facility
+<h1 id="talk-to-a-real-device">Talk to a Real Device<a class="headerlink" href="#talk-to-a-real-device" title="Permanent link">&para;</a></h1>
+<p>The step between "I made a PV" and "I control something". This walks one instrument end to end with <a href="../../toolbox/plc-and-fieldbus/#streamdevice">StreamDevice</a> — from the manual page to a working, alarmed, screen-ready record — and then through the failures you will actually hit.</p>
+<p><strong>Prerequisites:</strong> <a href="../epics-base/">EPICS Base</a>, <a href="../first-ioc/">Your First IOC</a>, and the <a href="../../toolbox/soft-support-modules/#asyn">asyn</a> and <a href="https://paulscherrerinstitute.github.io/StreamDevice/">StreamDevice</a> modules built and added to your IOC's <code>configure/RELEASE</code>.</p>
+<p><strong>No hardware?</strong> Do the whole thing against a simulator — see <a href="#no-hardware-simulate-the-device">the last section</a>. This is how a lot of real facility software gets written, months before the equipment arrives.</p>
+<h2 id="the-device">The device<a class="headerlink" href="#the-device" title="Permanent link">&para;</a></h2>
+<p>A bench power supply on the network that speaks <strong>SCPI</strong> — the Standard Commands for Programmable Instruments, an actual standard (IEEE 488.2 / SCPI-99) that a large fraction of laboratory instruments implement. Raw SCPI over TCP conventionally listens on <strong>port 5025</strong>.</p>
+<p>The manual gives you something like:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>*IDN?                 → manufacturer,model,serial,firmware
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>MEAS:VOLT?            → measured output voltage, volts, ASCII float
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>MEAS:CURR?            → measured output current, amps
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>VOLT?                 → voltage setpoint
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>VOLT &lt;value&gt;          → set output voltage
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>CURR?  / CURR &lt;value&gt; → current setpoint / limit
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>OUTP?                 → 0 or 1
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>OUTP &lt;0|1&gt;            → output off / on
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>SYST:ERR?             → &lt;code&gt;,&quot;&lt;message&gt;&quot;  ; 0,&quot;No error&quot; when clean
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>All commands terminated with a line feed. Replies terminated with a line feed.
 </code></pre></div>
-<p>The last three only work if you <a href="../channelfinder-recsync/#attaching-your-own-metadata">populated properties deliberately</a> with <code>info()</code> tags in your databases. This is where that investment shows up.</p>
-<h2 id="deploy-it-safely">Deploy it safely<a class="headerlink" href="#deploy-it-safely" title="Permanent link">&para;</a></h2>
-<p>Same posture as the other <a href="../../toolbox/web-interfaces/">web interfaces</a>: TLS and authentication at a reverse proxy, and read-only. PV Info is inherently a read-only tool, which makes it the safest thing in this section to expose to a wider audience — and a good candidate for the facility's general-purpose "what is this?" page.</p>
-<h2 id="verify">Verify<a class="headerlink" href="#verify" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Read your own manual</p>
+<p>SCPI is a standard that vendors implement with enthusiasm and variation. Terminators, whether a set command echoes anything, and whether errors are reported at all differ between instruments. Everything below is the <em>shape</em> of the job; the details come from the manual in front of you.</p>
+</div>
+<h2 id="step-1-talk-to-it-before-writing-any-epics">Step 1 — talk to it before writing any EPICS<a class="headerlink" href="#step-1-talk-to-it-before-writing-any-epics" title="Permanent link">&para;</a></h2>
+<p>Do not skip this. Ten minutes here saves an afternoon of debugging the wrong layer.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>nc<span class="w"> </span><span class="m">192</span>.168.1.100<span class="w"> </span><span class="m">5025</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>*IDN?
+</code></pre></div>
+<p>You want to see the identification string come back. What you learn:</p>
+<ul>
+<li><strong>It's reachable</strong> — so a later failure is yours, not the network's.</li>
+<li><strong>The exact reply format</strong>, including whether there's a leading space, a trailing <code>\r</code>, or units appended.</li>
+<li><strong>What a set command does.</strong> Send <code>VOLT 5.0</code> and see whether it replies with nothing, <code>OK</code>, or an echo. This single fact determines whether your protocol needs an <code>in</code> line, and getting it wrong produces a timeout on every write.</li>
+<li><strong>What an error looks like.</strong> Send <code>VOLT NONSENSE</code>, then <code>SYST:ERR?</code>.</li>
+</ul>
+<p>Write down exactly what you see, byte for byte. That transcript is the specification for the next step — and it's also what you'll feed a <a href="#no-hardware-simulate-the-device">simulator</a> later.</p>
+<h2 id="step-2-the-protocol-file">Step 2 — the protocol file<a class="headerlink" href="#step-2-the-protocol-file" title="Permanent link">&para;</a></h2>
+<p><code>protocols/scpi_psu.proto</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># SCPI bench power supply, raw TCP on port 5025.
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a># Transcript captured from firmware 2.14 -- recheck after a firmware update.
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Terminator   = LF;      # both directions; use &quot;CR LF&quot; if your manual says so
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>ReplyTimeout = 1000;    # ms to wait for a reply
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>ReadTimeout  = 100;     # ms of silence that ends a reply
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>LockTimeout  = 5000;    # ms to wait for the port if another record holds it
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a># --- Readbacks -------------------------------------------------------------
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>getVoltage {
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    out &quot;MEAS:VOLT?&quot;;
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    in  &quot;%f&quot;;
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>}
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>getCurrent {
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    out &quot;MEAS:CURR?&quot;;
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    in  &quot;%f&quot;;
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>}
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>getOutputState {
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    out &quot;OUTP?&quot;;
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    in  &quot;%d&quot;;
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>}
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a># --- Setpoints -------------------------------------------------------------
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a># This instrument returns nothing on a set. So there is no &quot;in&quot; line, and we
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a># ask SYST:ERR? afterwards rather than assuming the write landed.
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>setVoltage {
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>    out &quot;VOLT %.4f&quot;;
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>    @init { out &quot;VOLT?&quot;; in &quot;%f&quot;; }   # read the real setpoint at IOC startup
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>}
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>setOutput {
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>    out &quot;OUTP %d&quot;;
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    @init { out &quot;OUTP?&quot;; in &quot;%d&quot;; }
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>}
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a># --- Error checking --------------------------------------------------------
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a># 0,&quot;No error&quot; is the clean case. Anything else and we let the record go
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a># INVALID via @mismatch, so the alarm system sees it.
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>checkError {
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>    out &quot;SYST:ERR?&quot;;
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>    in  &quot;0,%*39c&quot;;
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>    @mismatch { in &quot;%d,%39c&quot;; }
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>}
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a># --- Identification, read once at startup ---------------------------------
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>getIdent {
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>    out &quot;*IDN?&quot;;
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>    in  &quot;%39c&quot;;
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>}
+</code></pre></div>
+<p>Three things in there are the whole point of StreamDevice:</p>
+<p><strong><code>@init</code></strong> runs at <code>iocInit</code> and reads the device's <em>actual</em> current setpoint into the record. Without it, your setpoint record starts at whatever the <code>.db</code> file said and the IOC's idea of the world disagrees with the hardware until somebody writes. With it, an IOC restart is invisible. This is the single most-forgotten feature in StreamDevice.</p>
+<p><strong><code>@mismatch</code></strong> handles the reply you didn't want. Without a mismatch handler, an unexpected reply is a protocol error and the record goes <code>INVALID</code> with a log line — which is often the correct behaviour, and sometimes you want to parse the error instead.</p>
+<p><strong><code>%*39c</code></strong> reads and <em>discards</em> 39 characters (<code>*</code> means "match but don't assign"). Useful for reply fields you must consume but don't want.</p>
+<h2 id="step-3-the-database">Step 3 — the database<a class="headerlink" href="#step-3-the-database" title="Permanent link">&para;</a></h2>
+<p><code>db/scpi_psu.template</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>#--- Identification, read once ------------------------------------------
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>record(stringin, &quot;$(P):Ident-Mon&quot;) {
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    field(DESC, &quot;Device identification&quot;)
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    field(INP,  &quot;@scpi_psu.proto getIdent $(PORT)&quot;)
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    field(PINI, &quot;YES&quot;)
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>}
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>#--- Readbacks ----------------------------------------------------------
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>record(ai, &quot;$(P):Volt-Mon&quot;) {
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    field(DESC, &quot;$(DESC=PSU) output voltage&quot;)
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    field(INP,  &quot;@scpi_psu.proto getVoltage $(PORT)&quot;)
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    field(SCAN, &quot;1 second&quot;)
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    field(EGU,  &quot;V&quot;)
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    field(PREC, &quot;4&quot;)
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    field(HOPR, &quot;$(VMAX=30)&quot;)  field(LOPR, &quot;0&quot;)
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    field(HIHI, &quot;$(VTRIP=28)&quot;) field(HHSV, &quot;MAJOR&quot;)
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    field(MDEL, &quot;0.001&quot;)       # network load
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    field(ADEL, &quot;0.01&quot;)        # storage cost
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>}
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>record(ai, &quot;$(P):Curr-Mon&quot;) {
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    field(DESC, &quot;$(DESC=PSU) output current&quot;)
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    field(INP,  &quot;@scpi_psu.proto getCurrent $(PORT)&quot;)
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    field(SCAN, &quot;1 second&quot;)
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    field(EGU,  &quot;A&quot;)
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    field(PREC, &quot;4&quot;)
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>    field(MDEL, &quot;0.001&quot;)
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    field(ADEL, &quot;0.01&quot;)
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>}
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>#--- Setpoints ----------------------------------------------------------
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>record(ao, &quot;$(P):Volt-SP&quot;) {
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>    field(DESC, &quot;$(DESC=PSU) voltage setpoint&quot;)
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>    field(OUT,  &quot;@scpi_psu.proto setVoltage $(PORT)&quot;)
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>    field(EGU,  &quot;V&quot;)
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>    field(PREC, &quot;4&quot;)
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>    field(DRVL, &quot;0&quot;)             # writes are CLAMPED in the IOC --
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    field(DRVH, &quot;$(VMAX=30)&quot;)    # no client can exceed this
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    field(FLNK, &quot;$(P):Err-Mon&quot;)  # after every write, ask the device for errors
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>}
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>record(bo, &quot;$(P):Output-Cmd&quot;) {
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>    field(DESC, &quot;$(DESC=PSU) output enable&quot;)
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>    field(OUT,  &quot;@scpi_psu.proto setOutput $(PORT)&quot;)
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>    field(ZNAM, &quot;OFF&quot;)  field(ONAM, &quot;ON&quot;)
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>    field(FLNK, &quot;$(P):Err-Mon&quot;)
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>}
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>#--- Status -------------------------------------------------------------
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>record(bi, &quot;$(P):Output-Sts&quot;) {
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>    field(DESC, &quot;$(DESC=PSU) output state&quot;)
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>    field(INP,  &quot;@scpi_psu.proto getOutputState $(PORT)&quot;)
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>    field(SCAN, &quot;1 second&quot;)
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>    field(ZNAM, &quot;OFF&quot;)  field(ONAM, &quot;ON&quot;)
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>}
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>
+<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>record(stringin, &quot;$(P):Err-Mon&quot;) {
+<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>    field(DESC, &quot;Last device error&quot;)
+<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>    field(DTYP, &quot;stream&quot;)
+<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>    field(INP,  &quot;@scpi_psu.proto checkError $(PORT)&quot;)
+<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>    field(SCAN, &quot;10 second&quot;)
+<a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>}
+<a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>
+<a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a>#--- Did it do what we asked? -------------------------------------------
+<a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>record(calc, &quot;$(P):AtVolt-Sts&quot;) {
+<a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>    field(DESC, &quot;Output voltage within tolerance of setpoint&quot;)
+<a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>    field(INPA, &quot;$(P):Volt-SP CP&quot;)
+<a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>    field(INPB, &quot;$(P):Volt-Mon CP&quot;)
+<a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>    field(INPC, &quot;$(P):Output-Sts CP&quot;)
+<a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a>    field(CALC, &quot;C &amp;&amp; (ABS(A-B) &lt; $(VTOL=0.05))&quot;)
+<a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a>    field(ZSV,  &quot;MINOR&quot;)
+<a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>}
+</code></pre></div>
+<p>Decisions worth noticing, because they're the difference between a record set that works and one that's trusted:</p>
+<p><strong><code>-Mon</code> comes from the device, <code>-SP</code> goes to it.</strong> <code>Volt-Mon</code> reads <code>MEAS:VOLT?</code>, not the setpoint. A readback implemented as a copy of the setpoint always agrees and is always a lie — see <a href="../../architecture/naming-conventions/#setpoint-versus-readback">naming conventions</a>.</p>
+<p><strong><code>DRVL</code>/<code>DRVH</code> on the setpoint.</strong> Clamped inside the IOC, unbypassable by any client. One line, real protection, routinely left unset.</p>
+<p><strong><code>FLNK</code> to the error record after each write.</strong> SCPI errors are queued in the device, not returned by the failing command. Without asking, a rejected write looks exactly like a successful one.</p>
+<p><strong><code>AtVolt-Sts</code> closes the loop.</strong> "I asked for 12 V, the output is on, and the measurement agrees" is a different claim from "I wrote 12 V", and it's the one an operator actually needs.</p>
+<p><strong><code>MDEL</code>/<code>ADEL</code> set at creation.</strong> <a href="../../example-facility/archiving-plan/#the-decision-that-dominates-everything">Retrofitting deadbands across a facility is much harder than typing them now.</a></p>
+<h2 id="step-4-wire-it-up-in-stcmd">Step 4 — wire it up in <code>st.cmd</code><a class="headerlink" href="#step-4-wire-it-up-in-stcmd" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>#--- before iocInit ---
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a># Where StreamDevice looks for .proto files
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>epicsEnvSet(&quot;STREAM_PROTOCOL_PATH&quot;, &quot;$(TOP)/protocols&quot;)
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a># The TCP connection. &quot;PSU1&quot; is the asyn port name the records refer to.
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>#                      name    host:port           prio noAutoConnect noProcessEos
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>drvAsynIPPortConfigure(&quot;PSU1&quot;, &quot;192.168.1.100:5025&quot;, 0,   0,            0)
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a># Optional but recommended: an asynRecord for interactive debugging
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>dbLoadRecords(&quot;$(ASYN)/db/asynRecord.db&quot;, &quot;P=LAB:PSU1,R=:asyn,PORT=PSU1,ADDR=0,IMAX=100,OMAX=100&quot;)
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>dbLoadRecords(&quot;db/scpi_psu.template&quot;, &quot;P=LAB:PSU1,PORT=PSU1,VMAX=30,VTRIP=28&quot;)
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>iocInit()
+</code></pre></div>
+<p>Serial instead of Ethernet? Swap the port configuration and keep everything else:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>drvAsynSerialPortConfigure(&quot;PSU1&quot;, &quot;/dev/ttyUSB0&quot;, 0, 0, 0)
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>asynSetOption(&quot;PSU1&quot;, 0, &quot;baud&quot;,   &quot;9600&quot;)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>asynSetOption(&quot;PSU1&quot;, 0, &quot;bits&quot;,   &quot;8&quot;)
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>asynSetOption(&quot;PSU1&quot;, 0, &quot;parity&quot;, &quot;none&quot;)
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>asynSetOption(&quot;PSU1&quot;, 0, &quot;stop&quot;,   &quot;1&quot;)
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>asynSetOption(&quot;PSU1&quot;, 0, &quot;clocal&quot;, &quot;Y&quot;)
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>asynSetOption(&quot;PSU1&quot;, 0, &quot;crtscts&quot;,&quot;N&quot;)
+</code></pre></div>
+<p>That the protocol file and the database don't change is the point of <a href="../../toolbox/soft-support-modules/#asyn">asyn</a>. A serial-to-Ethernet converter later changes one line.</p>
+<h2 id="step-5-test-it">Step 5 — test it<a class="headerlink" href="#step-5-test-it" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>caget<span class="w"> </span>LAB:PSU1:Ident-Mon<span class="w">          </span><span class="c1"># proves the protocol works at all</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>caget<span class="w"> </span>-a<span class="w"> </span>LAB:PSU1:Volt-Mon<span class="w">        </span><span class="c1"># note the severity field</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>camonitor<span class="w"> </span>LAB:PSU1:Volt-Mon<span class="w"> </span>LAB:PSU1:AtVolt-Sts<span class="w"> </span><span class="p">&amp;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>caput<span class="w"> </span>LAB:PSU1:Output-Cmd<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>caput<span class="w"> </span>LAB:PSU1:Volt-SP<span class="w"> </span><span class="m">12</span>.0<span class="w">       </span><span class="c1"># watch Volt-Mon follow, AtVolt-Sts go true</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>caput<span class="w"> </span>LAB:PSU1:Volt-SP<span class="w"> </span><span class="m">999</span><span class="w">        </span><span class="c1"># clamped to VMAX by DRVH</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>caget<span class="w"> </span>LAB:PSU1:Err-Mon<span class="w">            </span><span class="c1"># did the device complain about anything?</span>
+</code></pre></div>
+<p>Then the tests that matter more:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 1. Pull the network cable, or kill the simulator.</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>caget<span class="w"> </span>-a<span class="w"> </span>LAB:PSU1:Volt-Mon<span class="w">        </span><span class="c1"># should go INVALID, not &quot;0.0, fine&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># 2. Plug it back in. Does it recover on its own, without an IOC restart?</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># 3. Restart the IOC while the output is on at 12 V.</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>caget<span class="w"> </span>LAB:PSU1:Volt-SP<span class="w">            </span><span class="c1"># @init should have read back 12, not 0</span>
+</code></pre></div>
+<p>Test 3 is the one people skip and then get wrong in production. Test 1 is the one that determines whether anybody can trust a screen.</p>
+<h2 id="when-it-doesnt-work">When it doesn't work<a class="headerlink" href="#when-it-doesnt-work" title="Permanent link">&para;</a></h2>
+<p>In the order the problems actually occur.</p>
+<h3 id="turn-on-tracing-first">Turn on tracing first<a class="headerlink" href="#turn-on-tracing-first" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>epics&gt; asynSetTraceIOMask(&quot;PSU1&quot;, 0, 0x2)   # show I/O as escaped ASCII
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>epics&gt; asynSetTraceMask(&quot;PSU1&quot;, 0, 0x9)     # ASYN_TRACE_ERROR | ASYN_TRACEIO_DRIVER
+</code></pre></div>
+<p>Now every byte in and out is logged, with <code>\n</code> and <code>\r</code> visible rather than invisible. Turn it off with <code>asynSetTraceMask("PSU1", 0, 0x1)</code>.</p>
+<p><strong>This is the tool.</strong> Nine times out of ten the log makes the problem obvious in one line.</p>
+<h3 id="the-symptoms">The symptoms<a class="headerlink" href="#the-symptoms" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Every read times out, nothing in the trace</strong></td>
+<td>Wrong host/port, or the device only accepts one connection and something else holds it. Check with <code>nc</code> again.</td>
+</tr>
+<tr>
+<td><strong>Reads time out, trace shows the command going out</strong></td>
+<td><strong>Terminator mismatch</strong> — the single most common StreamDevice problem. The device wants <code>CR LF</code> and you sent <code>LF</code>, or vice versa. Try <code>Terminator = CR LF;</code>, then <code>OutTerminator</code>/<code>InTerminator</code> separately if they differ.</td>
+</tr>
+<tr>
+<td><strong>First read works, subsequent reads time out</strong></td>
+<td>Leftover bytes in the buffer from a reply longer than you parsed. Add <code>ExtraInput = Ignore;</code> or consume the rest with <code>%*c</code>.</td>
+</tr>
+<tr>
+<td><strong>Writes time out</strong></td>
+<td>You gave a set command an <code>in</code> line but the device replies with nothing. Remove the <code>in</code>.</td>
+</tr>
+<tr>
+<td><strong>Record goes <code>INVALID</code> with a parse error</strong></td>
+<td>Format string doesn't match reality. The trace shows the actual reply; make <code>%f</code> match it. Watch for units appended to the number (<code>12.0V</code>) and for leading spaces.</td>
+</tr>
+<tr>
+<td><strong>Values are right but a factor out</strong></td>
+<td>Units. The device reports millivolts and you assumed volts. Use <code>LINR</code>/<code>ESLO</code> on the record rather than fudging the protocol.</td>
+</tr>
+<tr>
+<td><strong>Intermittent timeouts under load</strong></td>
+<td><code>LockTimeout</code> too short: many records are queuing for one port. Reduce scan rates, or ask for several values in one command and parse them with <code>Separator</code>.</td>
+</tr>
+<tr>
+<td><strong>Works alone, breaks with several records</strong></td>
+<td>Same cause. One serial line is one resource, and each record takes a turn.</td>
+</tr>
+<tr>
+<td><strong>Random failures after a firmware update</strong></td>
+<td>The reply format changed. This is why the protocol file has a firmware version in its comments.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reducing-traffic">Reducing traffic<a class="headerlink" href="#reducing-traffic" title="Permanent link">&para;</a></h3>
+<p>If one port serves many records, ask once and parse several values:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Separator = &quot;,&quot;;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>getAll {
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    out &quot;MEAS:VOLT?;MEAS:CURR?&quot;;
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    in  &quot;%f&quot;, &quot;%f&quot;;
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>}
+</code></pre></div>
+<p>Bind that to a <code>waveform</code> or use StreamDevice's redirection to distribute into other records. One round trip instead of two matters when the round trip is 200 ms and you have forty records.</p>
+<h2 id="no-hardware-simulate-the-device">No hardware? Simulate the device<a class="headerlink" href="#no-hardware-simulate-the-device" title="Permanent link">&para;</a></h2>
+<p>The same records, the same protocol file, no instrument. Two routes.</p>
+<p><strong>A throwaway listener,</strong> enough to develop the protocol against:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Answers on TCP 5025 with plausible SCPI replies</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>nc<span class="w"> </span>-l<span class="w"> </span>-p<span class="w"> </span><span class="m">5025</span><span class="w"> </span>-q1<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">break</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">done</span>
+</code></pre></div>
+<p>That's crude. For anything real use <strong><a href="../../toolbox/simulation-and-testing/#lewis">Lewis</a></strong>, which models the device as a Python state machine with a protocol adapter, so the output voltage actually follows the setpoint and you can make it fail on purpose:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pip<span class="w"> </span>install<span class="w"> </span>lewis
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>lewis<span class="w"> </span>-k<span class="w"> </span>lewis.examples<span class="w"> </span>&lt;device&gt;<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;stream://port=5025&quot;</span>
+</code></pre></div>
+<p>Then point <code>drvAsynIPPortConfigure</code> at <code>localhost:5025</code> and everything above works unchanged.</p>
+<p><strong>Keep the simulator afterwards.</strong> It is your CI target and the only way to test the failure paths — device stops answering mid-scan, malformed reply, plausible-but-wrong value. Those are the cases that occur at 03:00 and the ones you cannot create on real hardware. See <a href="../../toolbox/simulation-and-testing/">Simulation &amp; Testing</a>.</p>
+<h2 id="when-streamdevice-isnt-the-answer">When StreamDevice isn't the answer<a class="headerlink" href="#when-streamdevice-isnt-the-answer" title="Permanent link">&para;</a></h2>
+<p>Escalate in this order, and only when the previous option genuinely can't work:</p>
 <ol>
-<li>Search for a PV you know is in ChannelFinder.</li>
-<li>Confirm the IOC name and host are correct.</li>
-<li>Follow the archive link and see history.</li>
-<li>Search by one of your own properties (<code>subsystem=vacuum</code>).</li>
-<li>Search for a PV that doesn't exist, and confirm the failure is clear rather than an empty page that looks like a broken service.</li>
+<li><strong>An existing module.</strong> Check the <a href="https://epics-controls.org/resources-and-support/modules/hardware-support/">hardware support directory</a> and search <a href="../../reference/community/">tech-talk</a> for the model number first. The commonest avoidable waste of a new controls engineer's first month is writing support that already existed.</li>
+<li><strong>StreamDevice</strong> — anything ASCII or simple binary over serial/TCP, including checksummed binary protocols.</li>
+<li><strong>A protocol module</strong> — <a href="../../toolbox/plc-and-fieldbus/#modbus">Modbus</a>, <a href="../../toolbox/plc-and-fieldbus/#ether_ip-allen-bradley">ether_ip</a>, <a href="../../toolbox/plc-and-fieldbus/#opc-ua">OPC UA</a>, <a href="../../toolbox/plc-and-fieldbus/#s7plc">s7plc</a>.</li>
+<li><strong><code>asynPortDriver</code> in C++</strong> — a vendor SDK, or a register-mapped card.</li>
+<li><strong>C device support from scratch</strong> — custom hardware, bus-level access, an RTOS target. Weeks of work and real EPICS depth.</li>
 </ol>
+<h2 id="then">Then<a class="headerlink" href="#then" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Publish the protocol file.</strong> Somebody else has your instrument. Put it on GitHub, mention it on tech-talk, add it to the <a href="https://epics-controls.org/resources-and-support/modules/hardware-support/">hardware support directory</a>. The ecosystem is built entirely from people who did this.</li>
+<li>Add <a href="../../toolbox/soft-support-modules/#autosave">autosave</a> so setpoints survive a reboot.</li>
+<li>Add <a href="../../toolbox/soft-support-modules/#iocstats-and-deviocstats">iocStats</a> so you know when the IOC restarts.</li>
+<li>Build a screen: <a href="../phoebus/">Phoebus</a> or PyDM.</li>
+<li>Archive the readbacks: <a href="../../toolbox/archiving/">archiving</a>.</li>
+<li>Alarm the trips: <a href="../../toolbox/alarms/">alarms</a>.</li>
+</ul>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
-<p>→ <a href="../gateways/">Gateways</a></p>
+<p>→ <a href="../phoebus/">Phoebus</a> to put a screen on it, or the <a href="../../toolbox/hardware-support-modules/">Toolbox</a> for the device families this approach covers.</p>
 
 
 
@@ -2619,7 +3002,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../dbwr/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DBWR">
+          <a href="../first-ioc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Your First IOC">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2629,20 +3012,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                DBWR
+                Your First IOC
               </div>
             </div>
           </a>
         
         
           
-          <a href="../gateways/" class="md-footer__link md-footer__link--next" aria-label="Next: Gateways">
+          <a href="../jdk/" class="md-footer__link md-footer__link--next" aria-label="Next: Java (JDK)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Gateways
+                Java (JDK)
               </div>
             </div>
             <div class="md-footer__button md-icon">
