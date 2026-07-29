@@ -1,0 +1,151 @@
+site_name: EPICS for Dummies
+site_description: A beginner-to-competent guide to the EPICS control system ecosystem — every tool, what it does, where to get it, and how a real facility puts it together.
+site_url: https://nusaqib.github.io/EPICS-for-Dummies/
+repo_url: https://github.com/nusaqib/EPICS-for-Dummies
+repo_name: nusaqib/EPICS-for-Dummies
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Start Here:
+      - start-here/index.md
+      - What is EPICS?: start-here/what-is-epics.md
+      - Core Concepts: start-here/core-concepts.md
+      - Linux Prerequisites: start-here/linux-prerequisites.md
+      - Glossary: start-here/glossary.md
+      - FAQ: start-here/faq.md
+  - Architecture:
+      - architecture/index.md
+      - Process Database: architecture/process-database.md
+      - Protocols (CA & PVA): architecture/protocols.md
+      - Naming Conventions: architecture/naming-conventions.md
+      - Networking: architecture/networking.md
+      - Access Security: architecture/access-security.md
+      - Scaling & Availability: architecture/scaling-and-ha.md
+  - The Toolbox:
+      - toolbox/index.md
+      - Base & IOCs: toolbox/base-and-iocs.md
+      - Soft Support Modules: toolbox/soft-support-modules.md
+      - Hardware Support Modules: toolbox/hardware-support-modules.md
+      - PLCs & Fieldbus: toolbox/plc-and-fieldbus.md
+      - Motion Control: toolbox/motion.md
+      - Detectors & Imaging: toolbox/detectors-and-imaging.md
+      - Timing Systems: toolbox/timing-systems.md
+      - Client Libraries: toolbox/client-libraries.md
+      - Operator Interfaces: toolbox/operator-interfaces.md
+      - Web Interfaces: toolbox/web-interfaces.md
+      - Archiving: toolbox/archiving.md
+      - Alarms: toolbox/alarms.md
+      - Directory Services: toolbox/directory-services.md
+      - Save & Restore: toolbox/save-and-restore.md
+      - Electronic Logbooks: toolbox/logbooks.md
+      - Gateways: toolbox/gateways.md
+      - Scanning & Automation: toolbox/scanning-and-automation.md
+      - Simulation & Testing: toolbox/simulation-and-testing.md
+      - Scientific Data: toolbox/scientific-data.md
+      - Physics & Optimisation: toolbox/physics-and-optimization.md
+      - Deployment & Operations: toolbox/deployment-and-operations.md
+      - Observability: toolbox/observability.md
+  - Build & Install:
+      - build-install/index.md
+      - EPICS Base: build-install/epics-base.md
+      - Your First IOC: build-install/first-ioc.md
+      - Java (JDK): build-install/jdk.md
+      - Tomcat: build-install/tomcat.md
+      - Phoebus: build-install/phoebus.md
+      - Archiver Appliance: build-install/archiver-appliance.md
+      - Alarm System: build-install/alarm-system.md
+      - ChannelFinder & recsync: build-install/channelfinder-recsync.md
+      - Save & Restore: build-install/save-and-restore.md
+      - Olog: build-install/olog.md
+      - PVWS: build-install/pvws.md
+      - DBWR: build-install/dbwr.md
+      - PV Info: build-install/pvinfo.md
+      - Gateways: build-install/gateways.md
+      - Containers: build-install/containers.md
+  - Example Facility:
+      - example-facility/index.md
+      - Machine Parameters: example-facility/machine-parameters.md
+      - Subsystems: example-facility/subsystems.md
+      - Naming Convention: example-facility/naming-convention.md
+      - IOC Inventory: example-facility/ioc-inventory.md
+      - Network Design: example-facility/network-design.md
+      - Service Deployment: example-facility/services-deployment.md
+      - Operator Interfaces: example-facility/operator-interfaces.md
+      - Archiving Plan: example-facility/archiving-plan.md
+      - Alarm Plan: example-facility/alarm-plan.md
+      - Machine Protection: example-facility/machine-protection.md
+      - A Beamline: example-facility/beamline.md
+      - Operations Scenarios: example-facility/operations-scenarios.md
+      - Build a Mini-HLS: example-facility/build-a-mini-hls.md
+  - Reference:
+      - Command Cheat Sheet: reference/cheatsheet.md
+      - Environment Variables: reference/environment-variables.md
+      - Record Types: reference/record-types.md
+      - Troubleshooting: reference/troubleshooting.md
+      - Official Documentation: reference/documentation.md
+      - Training Material: reference/training.md
+      - Community: reference/community.md
+      - Books & Papers: reference/books-and-papers.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nusaqib/EPICS-for-Dummies
