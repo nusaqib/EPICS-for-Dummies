@@ -52,13 +52,13 @@ flowchart TB
     SIOC --- DEV
 ```
 
-### Tier 1 — IOCs and devices
+### Tier 1: IOCs and devices
 
 Where physics meets software. Every PV has exactly one owner here, and that owner is authoritative. IOCs are independent processes with no knowledge of each other beyond the PVs they read from one another.
 
 Design pressure at this tier: **failure domains**. One IOC per device means a crashed IOC costs you one device. One IOC per subsystem means it costs you the subsystem. Nothing enforces a choice, so it becomes convention — and conventions that aren't written down decay. See [IOC inventory](../example-facility/ioc-inventory.md).
 
-### Tier 2 — Network and mediation
+### Tier 2: Network and mediation
 
 Channel Access and PV Access. No broker, no registry, no master: PV name resolution is by broadcast search, answered by whichever IOC owns the name.
 
@@ -66,13 +66,13 @@ This is the tier that surprises people. There is nothing in the middle of an EPI
 
 [Gateways](../toolbox/gateways.md) are the only mediating processes, and they exist for two reasons: to reduce the number of TCP connections IOCs must serve, and to enforce a policy boundary (typically read-only) between network segments.
 
-### Tier 3 — Central services
+### Tier 3: Central services
 
 Everything that needs to remember, notice, or coordinate. All of it is *just another CA/PVA client* — the archiver has no privileged access, no hook into the IOC. That uniformity is the design's best property: you can add, restart, or replace any service without touching a single IOC.
 
 Services are also where the heavyweight infrastructure lives — Kafka, Elasticsearch, relational databases, Kubernetes. That's an inversion worth noticing: the tier nearest the beam has the fewest dependencies, and the tier furthest from it has the most.
 
-### Tier 4 — Presentation and analysis
+### Tier 4: Presentation and analysis
 
 Screens, browsers, notebooks, physics applications, optimisers. Tier 4 is where the largest number of humans meet the system and where per-facility divergence is greatest.
 

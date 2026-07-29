@@ -50,7 +50,7 @@ Accelerator
 └── Protection Systems    (read-only status from MPS / PPS / radiation)
 ```
 
-Level-1 branches map exactly onto the [level-2 synoptic screens](operator-interfaces.md#level-2--subsystem-synoptics), so an alarm at `Storage Ring / Vacuum` and the vacuum synoptic are the same mental object. That correspondence is deliberate and it is what makes the tree navigable under stress.
+Level-1 branches map exactly onto the [level-2 synoptic screens](operator-interfaces.md#level-2-subsystem-synoptics), so an alarm at `Storage Ring / Vacuum` and the vacuum synoptic are the same mental object. That correspondence is deliberate and it is what makes the tree navigable under stress.
 
 ## Designing for the flood
 

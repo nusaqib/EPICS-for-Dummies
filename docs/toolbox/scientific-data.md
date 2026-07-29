@@ -39,7 +39,7 @@ RE(scan([detector], sample_x, -5, 5, 101))
 
 **Where it belongs:** experiments. It is a Python session, so a Bluesky plan does not survive a closed laptop, and nothing the *machine* depends on should live there. Use `queueserver` to make it a supervised service if beamline operations depend on it. See [Scanning & Automation](scanning-and-automation.md).
 
-### ophyd / ophyd-async
+### ophyd and ophyd-async
 
 Worth understanding separately, because it's the boundary between EPICS and everything above it. `ophyd` wraps PVs into device objects:
 

@@ -21,6 +21,22 @@ References: [Channel Access Reference Manual](https://epics.anl.gov/base/R3-14/8
 | Base server | Every IOC; `softIoc` | Every Base 7 IOC with `pvAccess`; `softIocPVA` |
 | Share of production traffic | Overwhelming majority | Growing; dominant in new services and imaging |
 
+### Channel Access (CA)
+
+The original protocol, in production since the early 1990s, and still carrying the overwhelming majority of EPICS traffic worldwide.
+
+A channel is a single named value — a scalar, an array, or an enum — offered in several *request types* that bundle progressively more metadata alongside the value (see [DBR types](#channel-access-dbr-types) below). Discovery is by UDP broadcast on port 5064; data flows over TCP on the same port. The client library, `libca`, ships in Base, and every other CA implementation is either a binding to it or a reimplementation of its wire protocol.
+
+Its limitations are the ones you'd expect of a design from 1990: no structured data, no partial reads, a 40-character limit on string values, no RPC, and [no authentication or encryption](#security-posture-stated-plainly). Its strengths are that it is small, fast, extremely well tested, and understood by every tool in the ecosystem.
+
+### PV Access (PVA)
+
+Introduced with EPICS 7, having been developed as EPICS v4. It transports **self-describing structures** rather than bare values, which is the whole point: a value, its timestamp, its alarm state and its display metadata arrive as one atomic object, and a client can request just the fields it wants.
+
+The standard structure definitions are the [Normative Types](https://docs.epics-controls.org/en/latest/pv-access/Normative-Types-Specification.html) — `NTScalar`, `NTNDArray`, `NTTable`, `NTEnum` and others — which is what makes structured data interoperable between tools that know nothing about each other. PVA also supports RPC, so a service can expose typed calls rather than a set of magic PVs.
+
+Discovery is UDP on port 5076 (multicast-capable), data over TCP on 5075. Implementations: [PVXS](../toolbox/client-libraries.md#pvxs) for modern C++, [p4p](../toolbox/client-libraries.md#p4p) for Python, and the pvAccess stack bundled in Base 7.
+
 ### Which should you use?
 
 **Learn with CA.** Its tooling, examples, and mailing-list history are vastly larger, and it is what your facility's existing screens use.

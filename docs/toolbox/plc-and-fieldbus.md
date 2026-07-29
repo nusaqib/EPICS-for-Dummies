@@ -167,7 +167,7 @@ Why it's the right default for new PLC work:
 
 Cost: heavier than Modbus, needs an OPC UA stack as a build dependency, and PLC-side licensing sometimes applies. Worth it.
 
-## Beckhoff ADS / TwinCAT
+## Beckhoff ADS and TwinCAT
 
 Beckhoff PLCs speak ADS natively. Options: their OPC UA server (simplest, and often the right answer), or an ADS-protocol driver — several facilities maintain these, notably SLAC's [ads-ioc](https://github.com/pcdshub/ads-ioc) and ESS's ADS support. Check current status before committing; this area has more facility-specific forks than settled community modules.
 
@@ -184,7 +184,7 @@ Real-time fieldbus, common for distributed I/O and motion. EPICS integration is 
 | USB-TMC | asyn USB-TMC support |
 | VME | Board-specific modules in `epics-modules`; [ipac](https://github.com/epics-modules/ipac) for IndustryPack carriers |
 | CAN bus | Facility-specific; several published modules |
-| SNMP | [snmp module](https://github.com/epics-modules/snmp) — PDUs, UPSs, network switches, environmental monitors |
+| SNMP | [snmp module](https://github.com/epicsdeb/epics-snmp) — PDUs, UPSs, network switches, environmental monitors |
 
 Serial-over-Ethernet deserves a note: it decouples IOC placement from device location entirely, which is why most modern installations use it even for devices in the same rack. The downside is one more box to fail, and its failure looks like a device failure.
 

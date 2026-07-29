@@ -2,7 +2,7 @@
 
 The foundation. Everything else needs this.
 
-**Upstream instructions:** [Installation on Linux / macOS / Windows](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html) — the authoritative version. This page covers the same ground with the things that trip people up.
+**Upstream instructions:** [Installation on Linux / macOS / Windows](https://docs.epics-controls.org/en/latest/getting-started/installation-linux.html) — the authoritative version. This page covers the same ground with the things that trip people up.
 
 ## Prerequisites
 

@@ -39,7 +39,7 @@ flowchart TB
     OV --> L2 --> L3
 ```
 
-### Level 1 — the machine overview
+### Level 1: the machine overview
 
 One screen. Always displayed on the control room wall. Answers *"is the machine doing what it should?"* from across the room.
 
@@ -61,13 +61,13 @@ The subsystem summary row is the navigational heart of the screen: each tile is 
 
 Those `-Sum` PVs are computed **in IOCs**, by `calc` records with `MS` links inheriting severity from their inputs — not by the screen. So the archiver, the alarm system and every other client see the same summary. See [process database](../architecture/process-database.md#links-how-records-connect).
 
-### Level 2 — subsystem synoptics
+### Level 2: subsystem synoptics
 
 Roughly fifteen, one per subsystem, each showing its whole subsystem geometrically: the ring drawn as twenty cells, with per-cell status.
 
 The vacuum synoptic, for instance: twenty cells around a ring outline, each coloured by worst pressure severity, with the sector valve states drawn as they physically are. An operator sees a pressure rise's *location* immediately, and location is the first diagnostic question in a vacuum event.
 
-### Level 3 — device detail, templated
+### Level 3: device detail, templated
 
 Around 200 distinct display files, opened thousands of times with different macros:
 
@@ -85,7 +85,7 @@ One file per *device type*, not per device. All 900 power supplies share one dis
 
 These are enforced in review, not suggested.
 
-**Readback prominent, setpoint secondary.** Large readback, smaller editable setpoint clearly labelled. Confusing "what I asked for" with "what it's doing" is a dangerous class of error — see [naming](naming-convention.md#setpoint-versus-readback).
+**Readback prominent, setpoint secondary.** Large readback, smaller editable setpoint clearly labelled. Confusing "what I asked for" with "what it's doing" is a dangerous class of error — see [naming](../architecture/naming-conventions.md#setpoint-versus-readback).
 
 **Never override disconnected styling.** Phoebus marks disconnected widgets distinctively. A stale value presented as live is the most dangerous thing a screen can do.
 

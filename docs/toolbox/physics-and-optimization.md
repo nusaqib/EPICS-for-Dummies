@@ -29,7 +29,7 @@ Offline codes that model the accelerator. EPICS doesn't run these; physicists ru
 | **elegant** | Electron accelerator tracking (APS). [aps.anl.gov](https://www.aps.anl.gov/Accelerator-Operations-Physics/Software) |
 | **[Ocelot](https://github.com/ocelot-collab/ocelot)** | Python framework for accelerator physics — tracking, optimisation, and online control |
 | **MAD-X** | CERN's lattice design code. [madx.web.cern.ch](https://madx.web.cern.ch/) |
-| **[OPAL](https://gitlab.psi.ch/OPAL/src)** | Space-charge-dominated beam dynamics (PSI) |
+| **[OPAL](https://amas.web.psi.ch/opal/)** | Space-charge-dominated beam dynamics (PSI) |
 | **[Xsuite](https://xsuite.readthedocs.io/)** | Modern Python tracking suite from CERN |
 | **[Bmad / Tao](https://www.classe.cornell.edu/bmad/)** | Cornell's beam dynamics library, with an online-model tradition |
 
@@ -39,10 +39,17 @@ Offline codes that model the accelerator. EPICS doesn't run these; physicists ru
 
 | Framework | Notes |
 | --- | --- |
-| **Matlab Middle Layer (MML)** | The long-standing accelerator physics application layer: a device-abstraction and unit-conversion layer over CA, with orbit correction, response matrix measurement, tune and chromaticity routines. Decades of entrenchment at light sources. [github.com/atcollab/MML](https://github.com/atcollab/MML) |
 | **[aphla](https://github.com/NSLS-II/aphla)** | NSLS-II's Python high-level applications layer, an early Python answer to MML. Check current status before adopting. |
 | **[pyaccel / PyDM physics apps](https://github.com/slaclab/pydm)** | Several facilities build physics applications as [PyDM](operator-interfaces.md#pydm) screens with Python behind them |
 | **Facility-specific** | Every facility has its own. This is genuinely the least standardised area in the ecosystem, because the applications encode the machine's specific physics. |
+
+### Matlab Middle Layer (MML)
+
+The long-standing accelerator physics application layer: a device-abstraction and unit-conversion layer over Channel Access, with orbit correction, response-matrix measurement, and tune and chromaticity routines built on top.
+
+- [github.com/atcollab/MML](https://github.com/atcollab/MML)
+
+Decades of entrenchment at light sources, and still in daily operational use at many of them.
 
 The MML-to-Python migration is a live, slow conversation at most light sources. The obstacle is not language preference; it's that MML encodes twenty years of validated machine-specific procedures, and reimplementing those correctly is a physics project rather than a porting project.
 

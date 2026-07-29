@@ -35,7 +35,7 @@ The module provides the **`motor` record** — a device-independent abstraction 
 
 **The distinction that matters most:** `VAL` is where you asked it to go, `RBV` is where it is. Screens must show `RBV`, scans must record `RBV`, and interlocks must use `RBV`. A screen showing `VAL` as "position" is the [setpoint/readback confusion](../architecture/naming-conventions.md#setpoint-versus-readback) in its most consequential form — the operator sees the stage at 45 mm when it is jammed at 12 mm.
 
-**Waiting for completion:** write with `ca_put_callback` (`caput -c`) and the put completes when `DMOV` goes to 1. Polling `DMOV` in a loop works but races; the callback is the correct mechanism, and it's what [sscan](scanning-and-automation.md#sscan) and [ophyd](scientific-data.md#ophyd--ophyd-async) use.
+**Waiting for completion:** write with `ca_put_callback` (`caput -c`) and the put completes when `DMOV` goes to 1. Polling `DMOV` in a loop works but races; the callback is the correct mechanism, and it's what [sscan](scanning-and-automation.md#sscan) and [ophyd](scientific-data.md#ophyd-and-ophyd-async) use.
 
 ### Supported controllers
 

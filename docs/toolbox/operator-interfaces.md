@@ -65,7 +65,7 @@ A Qt display manager that **reads MEDM `.adl` files directly**, which is why it 
 | Tool | Status |
 | --- | --- |
 | **MEDM** — Motif Editor and Display Manager | The original. `.adl` files. [github.com/epics-extensions/medm](https://github.com/epics-extensions/medm). Still installed nearly everywhere, still occasionally the fastest thing available, and the source of an enormous body of existing screens. |
-| **EDM** — Extensible Display Manager | ORNL/SNS's Motif tool, `.edl` files. [github.com/epics-extensions/edm](https://github.com/epics-extensions/edm). Still in production at several facilities. |
+| **EDM** — Extensible Display Manager | ORNL/SNS's Motif tool, `.edl` files. [github.com/slac-epics/edm](https://github.com/slac-epics/edm). Still in production at several facilities. |
 
 Neither is a reasonable choice for new work — Motif, X11-era look, and increasingly hard to build on modern distributions. Both matter because **you will inherit their files**. Phoebus and caQtDM both import `.adl`; Phoebus imports `.edl`. Converted screens always need cleanup, so treat conversion as a starting point rather than a migration.
 

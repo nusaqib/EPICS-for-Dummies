@@ -82,7 +82,7 @@ The catalogue. Every significant piece of the EPICS ecosystem, what it does, who
 | keep an IOC running and consoled | [procServ](deployment-and-operations.md#procserv) |
 | deploy IOCs as containers | [epics-containers](deployment-and-operations.md#epics-containers) + [ibek](deployment-and-operations.md#ibek) |
 | get a tested set of modules | [synApps](deployment-and-operations.md#synapps) |
-| monitor IOC health | [iocStats](soft-support-modules.md#iocstats--deviocstats) → [Grafana/Prometheus](observability.md) |
+| monitor IOC health | [iocStats](soft-support-modules.md#iocstats-and-deviocstats) → [Grafana/Prometheus](observability.md) |
 | write experiment data as NeXus/HDF5 | [areaDetector HDF5 plugin](detectors-and-imaging.md#file-writing-plugins) or [Bluesky](scientific-data.md#bluesky) |
 | optimise machine performance online | [Xopt](physics-and-optimization.md#xopt), [Badger](physics-and-optimization.md#badger), [Ocelot](physics-and-optimization.md#ocelot) |
 

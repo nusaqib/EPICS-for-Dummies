@@ -106,9 +106,21 @@ Python bindings to the C++ pvAccess implementation, with strong support for buil
 | Library | Protocol | Notes |
 | --- | --- | --- |
 | **libca** (in Base) | CA | The reference implementation. Every other CA library is ultimately this or a reimplementation of it. C API, callback-based, well documented in the [CA Reference Manual](https://epics.anl.gov/base/R3-14/8-docs/CAref.html). |
-| **[PVXS](https://epics-base.github.io/pvxs/)** | PVA | **The modern choice for new C++ work.** Michael Davidsaver's clean-sheet PVA implementation: modern C++11+, far simpler API than pvAccessCPP, client and server, and the foundation p4p is built on. |
 | **pvAccessCPP / pvDataCPP** | PVA | The original C++ PVA stack, bundled in Base 7. Still present and used; new code should prefer PVXS. |
 | **pcas** | CA server | The [portable CA server](https://github.com/epics-modules/pcas) library — how a non-IOC program serves PVs. Underlies gateways and pcaspy. |
+
+### PVXS
+
+| | |
+| --- | --- |
+| Documentation | [epics-base.github.io/pvxs](https://epics-base.github.io/pvxs/) |
+| Source | [github.com/epics-base/pvxs](https://github.com/epics-base/pvxs) |
+| Author | Michael Davidsaver |
+| Protocol | PV Access |
+
+**The modern choice for new C++ work.** A clean-sheet PVA implementation: modern C++11 and later, a far simpler API than pvAccessCPP, both client and server, and the foundation [p4p](#p4p) is built on.
+
+If you are writing C++ that speaks PVA — a service, a gateway, a high-throughput data consumer — start here rather than with the older stack.
 
 For device support inside an IOC you generally don't use these directly — you use [asyn](soft-support-modules.md#asyn)'s `asynPortDriver`, and the record layer handles the network.
 

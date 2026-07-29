@@ -18,10 +18,10 @@ Two different problems that people conflate, then solve badly.
 Covered in [Soft Support Modules → autosave](soft-support-modules.md#autosave). In one line: it periodically writes selected PV values to a local file and restores them at `iocInit`, so restarting an IOC doesn't reset every setpoint to zero.
 
 - [github.com/epics-modules/autosave](https://github.com/epics-modules/autosave)
-- [autoSaveRestore.md](https://github.com/epics-modules/autosave/blob/master/docs/autoSaveRestore.md)
+- [epics-modules.github.io/autosave](https://epics-modules.github.io/autosave/)
 - [Autosave](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/09%20Autosave.pdf) and [its lab exercise](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/09l%20Autosave%20Lab.pdf) (USPAS)
 
-## Phoebus Save & Restore service
+## Phoebus Save and Restore service
 
 | | |
 | --- | --- |

@@ -4,9 +4,9 @@ Is the control system itself healthy? Distinct from "is the machine healthy", an
 
 ## What to watch
 
-### IOC health — from iocStats
+### IOC health: from iocStats
 
-[iocStats](soft-support-modules.md#iocstats--deviocstats) on every IOC gives you PVs for:
+[iocStats](soft-support-modules.md#iocstats-and-deviocstats) on every IOC gives you PVs for:
 
 | Signal | Alarm on | Why |
 | --- | --- | --- |

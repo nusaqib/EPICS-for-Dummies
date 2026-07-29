@@ -113,7 +113,7 @@ Scale ranges over five orders of magnitude, from one soft IOC with 20 PVs to fac
 
 **Not a SCADA product.** No vendor, no licence, no support contract, no wizard. What you get instead is source, a mailing list where core developers answer questions, and thirty years of continuity.
 
-**Not the only option.** [TANGO](https://www.tango-controls.org/) is the main alternative in the same community (ESRF, SOLEIL, ALBA, MAX IV runs both); [DOOCS](https://doocs-web.desy.de/index.html) at DESY, [SCADA products](https://ep-ews.web.cern.ch/) and CERN's own stack elsewhere. Mixed facilities are common, and bridges exist.
+**Not the only option.** [TANGO](https://www.tango-controls.org/) is the main alternative in the same community (ESRF, SOLEIL, ALBA, MAX IV runs both); [DOOCS](https://doocs-web.desy.de/index.html) at DESY; commercial SCADA products and CERN's own stack elsewhere. Mixed facilities are common, and bridges exist.
 
 ## Why the name is odd
 

@@ -114,7 +114,7 @@ Every acronym and term used in this guide. EPICS conversations are dense with th
 
 **IOC** — [Input/Output Controller](core-concepts.md#4-ioc-inputoutput-controller). A process that owns PVs and serves them on the network.
 
-**iocStats / devIocStats** — [Module](../toolbox/soft-support-modules.md#iocstats--deviocstats) exposing IOC health as PVs: CPU, memory, uptime, CA client count.
+**iocStats / devIocStats** — [Module](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) exposing IOC health as PVs: CPU, memory, uptime, CA client count.
 
 **ipac** — IndustryPack carrier support for VME. Legacy but alive.
 
@@ -152,7 +152,7 @@ Every acronym and term used in this guide. EPICS conversations are dense with th
 
 **Olog** — [Electronic logbook](../toolbox/logbooks.md#olog) integrated with Phoebus.
 
-**ophyd / ophyd-async** — [Bluesky's device abstraction layer](../toolbox/scientific-data.md#ophyd--ophyd-async); wraps EPICS PVs as Python objects with a uniform interface.
+**ophyd / ophyd-async** — [Bluesky's device abstraction layer](../toolbox/scientific-data.md#ophyd-and-ophyd-async); wraps EPICS PVs as Python objects with a uniform interface.
 
 **OPI** — Operator Interface. A screen; also the file format thereof (Phoebus `.bob`, older `.opi`).
 

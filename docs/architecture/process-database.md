@@ -99,7 +99,7 @@ A link is a field whose value is a *reference*, not data. Three kinds:
 | **Database (DB) link** | `field(INPA, "OtherRecord.VAL PP")` | A record in *this* IOC. Resolved at init; direct memory access, no network, and the source of lock sets. |
 | **Channel Access (CA) link** | `field(INPA, "OtherIoc:Record CP")` | Goes over the network, even to a record in the same IOC if you force it with `CA`. |
 
-### Link modifiers — the part that bites
+### Link modifiers: the part that bites
 
 | Modifier | Effect |
 | --- | --- |

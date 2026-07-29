@@ -4,7 +4,7 @@ Thirty minutes, and by the end you'll have records that compute, alarm, and resp
 
 Prerequisite: [EPICS Base built and on your `PATH`](epics-base.md).
 
-## Part 1 — softIoc, no build required
+## Part 1: softIoc, no build required
 
 The fastest possible start. No application, no Makefile, no `st.cmd`.
 
@@ -101,7 +101,7 @@ epics> dbgf DEMO:Temperature.SEVR
 
 `dbpr` is the tool you'll use for the rest of your career.
 
-## Part 2 — a real IOC application
+## Part 2: a real IOC application
 
 `softIoc` is genuinely fine for a lot of production work. But you need a built application to load device-support modules, and every facility IOC is one, so build one now.
 
@@ -187,7 +187,7 @@ The order is not arbitrary:
 
 Putting something on the wrong side of `iocInit` is a classic failure: `dbLoadRecords` after `iocInit` does nothing useful, and `create_monitor_set` before it fails.
 
-## Part 3 — add macros so it scales
+## Part 3: add macros so it scales
 
 Real databases are templates. Rewrite `demo.db` as `demo.template`:
 
@@ -227,7 +227,7 @@ Or with a `.substitutions` file and `msi`/`dbLoadTemplate` for larger sets — s
 | Talk to real hardware | [StreamDevice](../toolbox/plc-and-fieldbus.md#streamdevice) over [asyn](../toolbox/soft-support-modules.md#asyn) |
 | Survive a restart | [autosave](../toolbox/soft-support-modules.md#autosave) |
 | Understand what you just wrote | [Process Database](../architecture/process-database.md) |
-| Add IOC health PVs | [iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats) |
+| Add IOC health PVs | [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) |
 | Fake a device to talk to | [Lewis or pcaspy](../toolbox/simulation-and-testing.md) |
 | Do it properly, at scale | [Example Facility](../example-facility/index.md) |
 

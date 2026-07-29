@@ -12,7 +12,7 @@ Base is the only mandatory component. Everything else in [the Toolbox](index.md)
 | Releases & downloads | [epics-controls.org/resources-and-support/base](https://epics-controls.org/resources-and-support/base/) |
 | Documentation | [docs.epics-controls.org](https://docs.epics-controls.org) |
 | App Developer's Guide | [AppDevGuide](https://docs.epics-controls.org/en/latest/appdevguide/AppDevGuide.html) |
-| Install how-to | [Getting started — installation](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html) |
+| Install how-to | [Getting started — installation](https://docs.epics-controls.org/en/latest/getting-started/installation-linux.html) |
 | This guide | [Build EPICS Base](../build-install/epics-base.md) |
 
 **Current series is 7.0.x**, which merged the former EPICS V4 work (PV Access, PVXS's predecessors, normative types) into Base. Base 3.15 and 3.14 are still found in production and are effectively frozen; new work should target 7.
@@ -34,7 +34,7 @@ Base is the only mandatory component. Everything else in [the Toolbox](index.md)
 
 **Supported platforms:** Linux (x86_64, ARM, others), macOS, Windows (MinGW and Visual Studio), RTEMS, VxWorks. Cross-compilation for embedded and RTOS targets is a first-class feature of the build system, not an afterthought — one source tree, many `EPICS_HOST_ARCH`/`CROSS_COMPILER_TARGET_ARCHS` outputs.
 
-### `softIoc` — the underrated tool
+### `softIoc`: the underrated tool
 
 ```bash
 softIoc -d mydatabase.db      # serve a database, drop to the epics> prompt

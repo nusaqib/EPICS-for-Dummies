@@ -17,7 +17,8 @@ The rule: **the more the machine depends on it, the deeper it should live.** A m
 
 | | |
 | --- | --- |
-| Documentation | [State Notation Language and Sequencer manual](https://www-csr.bessy.de/control/SoftDist/sequencer/) |
+| Documentation | [epics-modules.github.io/sequencer](https://epics-modules.github.io/sequencer/) — the SNL reference and users' guide |
+| Source | [github.com/epics-modules/sequencer](https://github.com/epics-modules/sequencer) |
 | Mirror | [mdavidsaver.github.io/sequencer-mirror](https://mdavidsaver.github.io/sequencer-mirror/) |
 | Training | [Sequencer](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/14%20Sequencer.pdf) · [lab](https://controlssoftware.sns.ornl.gov/training/2022_USPAS/Presentations/14l%20SequencerLab.pdf) (USPAS) |
 
@@ -100,7 +101,7 @@ Why not: expressing a complex, conditional, adaptive experiment in `sscan` recor
 
 | | |
 | --- | --- |
-| Documentation | [Scan server](https://control-system-studio.readthedocs.io/en/latest/services/scan-server/doc/index.html) |
+| Documentation | [Scan server](https://control-system-studio.readthedocs.io/en/latest/services.html) |
 | Client | The Scan application in [Phoebus](operator-interfaces.md#phoebus) |
 
 A service that executes scans described as XML or built in the Phoebus scan editor. Commands include `set`, `wait`, `loop`, `log`, `parallel`, `sequence`, `if`, `script`, and `include` — so a scan is a structured, reviewable, restartable document rather than a program.
@@ -128,7 +129,7 @@ Related: [luaEpics](https://github.com/epics-modules/lua) does the same with Lua
 
 | Tool | Purpose |
 | --- | --- |
-| **[sseq](https://github.com/epics-modules/sseq)** | Sequenced output records: write ten values, with delays and conditions, driven by one trigger. Declarative sequencing without SNL. |
+| **[sseq](https://epics-modules.github.io/calc/sseqRecord.html)** | Sequenced output records: write ten values, with delays and conditions, driven by one trigger. Declarative sequencing without SNL. |
 | **`seq` record** (Base) | Up to sixteen values to sixteen links with delays. The simplest sequencing available. |
 | **`calcout` with `ODLY`** | Delayed conditional output. Two records like this replace a surprising number of scripts. |
 | **[caputRecorder](https://github.com/epics-modules/caputRecorder)** | Records what an operator does as replayable Python. Good for capturing a procedure someone performs by hand and turning it into automation. |

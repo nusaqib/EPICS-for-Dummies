@@ -113,7 +113,7 @@ The instinct is "everything", which is nearly right and needs qualification.
 | Fast diagnostics waveforms | Selective, short retention, or event-triggered only | Large. Archive the *summary* continuously and the waveform on demand. |
 | Images | Generally **not** in the archiver | Use the [file-writing path](detectors-and-imaging.md#file-writing-plugins). Archive metadata and statistics. |
 | Internal / debug PVs | Don't | Noise, and they change meaning between releases. |
-| IOC health from [iocStats](soft-support-modules.md#iocstats--deviocstats) | MONITOR, medium retention | Correlating "the readings went odd" with "that IOC restarted" is a very common investigation. |
+| IOC health from [iocStats](soft-support-modules.md#iocstats-and-deviocstats) | MONITOR, medium retention | Correlating "the readings went odd" with "that IOC restarted" is a very common investigation. |
 
 **The asymmetry that decides these arguments:** storage is cheap and retroactive archiving is impossible. If in doubt, archive it — you cannot go back and collect last year.
 

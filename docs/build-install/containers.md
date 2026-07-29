@@ -80,7 +80,7 @@ Support modules ship YAML *definitions* of what they can instantiate; `ibek` com
 
 **Process Variable Interface** — [github.com/epics-containers/pvi](https://github.com/epics-containers/pvi)
 
-Describes a device's PV interface once, then generates the database template, the [operator screen](../toolbox/operator-interfaces.md), the documentation, and the [ophyd](../toolbox/scientific-data.md#ophyd--ophyd-async) device class. Attacks the duplication that otherwise has you writing the same device structure by hand in four places, and drifting in all four.
+Describes a device's PV interface once, then generates the database template, the [operator screen](../toolbox/operator-interfaces.md), the documentation, and the [ophyd](../toolbox/scientific-data.md#ophyd-and-ophyd-async) device class. Attacks the duplication that otherwise has you writing the same device structure by hand in four places, and drifting in all four.
 
 ## What it costs
 

@@ -67,7 +67,7 @@ The unglamorous layer that matters during a failure.
 | **`iocLogServer`** | Base's own log collector: IOCs send `errlog` messages over the network to one host | Simple and effective; many facilities use syslog instead |
 | **[caPutLog](#caputlog)** | Writes | Central log store |
 | **[Alarm logger](alarms.md#alarm-logger)** | Alarm transitions and acknowledgements | Elasticsearch |
-| **[iocStats](soft-support-modules.md#iocstats--deviocstats)** | IOC health as PVs | The [archiver](archiving.md), and [Grafana](observability.md) |
+| **[iocStats](soft-support-modules.md#iocstats-and-deviocstats)** | IOC health as PVs | The [archiver](archiving.md), and [Grafana](observability.md) |
 | **Host logs** | OS, network, hardware, NTP | Standard IT log aggregation |
 
 **Get all of these into one searchable place.** During an incident you want a single timeline spanning "the IOC restarted", "the alarm fired", "someone wrote a setpoint", "the host lost its network link" and "an operator wrote a logbook entry". Assembling that timeline from six disconnected systems, at 03:00, is how short incidents become long ones.
@@ -81,7 +81,7 @@ The corollary is that **timestamps must agree** — see [Timing Systems](timing-
 | An operator changed a setpoint | [caPutLog](#caputlog) (automatic) |
 | An operator changed a setpoint *and why* | Olog / ELOG (human) |
 | A value went out of range | [Archiver](archiving.md) + [alarm log](alarms.md) (automatic) |
-| An IOC crashed and restarted | IOC log + [iocStats](soft-support-modules.md#iocstats--deviocstats) (automatic) |
+| An IOC crashed and restarted | IOC log + [iocStats](soft-support-modules.md#iocstats-and-deviocstats) (automatic) |
 | A subsystem was worked on during maintenance | Logbook, with what was done and what to watch for |
 | An unexplained beam dump | Logbook entry linking to the archiver time range and the alarm log |
 | A configuration was changed | [Alarm config logger](alarms.md#alarm-config-logger) for alarms; git for everything else |

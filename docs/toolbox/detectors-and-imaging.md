@@ -109,7 +109,6 @@ The general principle: **EPICS controls the detector; it does not have to carry 
 | --- | --- |
 | [ADSupport](https://github.com/areaDetector/ADSupport) | Bundled third-party libraries (HDF5, TIFF, JPEG, zlib, blosc) so areaDetector builds without hunting system packages |
 | [ADViewers](https://github.com/areaDetector/ADViewers) | Image viewers: ImageJ plugins, a Python PVA viewer |
-| [ADPva](https://github.com/areaDetector/ADPva) | PVA-related components |
 | [pvapy](client-libraries.md#pvapy) | Python PVA, widely used for `NTNDArray` processing pipelines |
 | [Bluesky / ophyd](scientific-data.md#bluesky) | Orchestrating detectors within experiments |
 | [Tiled](scientific-data.md#tiled) | Serving the resulting data to analysis clients |

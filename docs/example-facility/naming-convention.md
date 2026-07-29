@@ -91,7 +91,7 @@ Controlled lists. Additions go through the convention's owner, because organical
 | `MPS` | Machine protection status (**read-only**) |
 | `PPS` | Personnel protection status (**read-only**) |
 | `RAD` | Radiation monitoring (**read-only**) |
-| `IOC` | IOC self-monitoring ([iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats)) |
+| `IOC` | IOC self-monitoring ([iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats)) |
 | `GW` | Gateway statistics |
 
 ### Signal qualifiers

@@ -2,7 +2,7 @@
 
 EPICS Base has a built-in mechanism for restricting who may write to which PVs, from where. It is genuinely useful and it is not a security boundary. Both halves of that sentence matter.
 
-Reference: [Access Security](https://docs.epics-controls.org/en/latest/appdevguide/accessSecurity.html) in the Application Developer's Guide.
+Reference: [Access Security](https://docs.epics-controls.org/en/latest/appdevguide/AccessSecurity.html) in the Application Developer's Guide.
 
 ## What it can do
 

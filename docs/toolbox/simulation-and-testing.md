@@ -18,8 +18,8 @@ Both matter more in controls than in most software, because the cost of testing 
 
 | | |
 | --- | --- |
-| Documentation | [lewis.readthedocs.io](https://lewis.readthedocs.io/) |
-| Source | [github.com/ess-dmsc/lewis](https://github.com/ess-dmsc/lewis) |
+| Documentation | [isiscomputinggroup.github.io/lewis](https://isiscomputinggroup.github.io/lewis/) |
+| Source | [github.com/ISISComputingGroup/lewis](https://github.com/ISISComputingGroup/lewis) |
 | Origin | ESS / ISIS |
 
 Lewis simulates a *device*, not a PV. You describe the device as a Python state machine with a protocol adapter, and it listens on a TCP port or a serial device — so your IOC talks to it exactly as it would to the real instrument, using the real [StreamDevice](plc-and-fieldbus.md#streamdevice) protocol file or the real Modbus driver.

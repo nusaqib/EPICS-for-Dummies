@@ -12,21 +12,21 @@ This is unusual and valuable. It means a facility can restart one subsystem's IO
 
 ## What breaks as you grow
 
-### At ~10 IOCs / 10 000 PVs — nothing
+### At ~10 IOCs and 10 000 PVs: nothing
 
 A flat network, no address lists, one archiver, one alarm server, IOCs started by hand or `systemd`. Everything works. This is a test stand or a small beamline, and none of the machinery below is needed.
 
-### At ~50 IOCs / 100 000 PVs — the first real problems
+### At ~50 IOCs and 100 000 PVs: the first real problems
 
 | Problem | Symptom | Response |
 | --- | --- | --- |
 | Nobody knows which IOC serves what | Half-hour investigations for "where does this PV come from?" | [ChannelFinder + recsync](../toolbox/directory-services.md) |
-| IOCs restarted by hand, occasionally not restarted at all | Silent gaps in coverage | [procServ](../toolbox/deployment-and-operations.md#procserv) or systemd, plus [iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats) monitoring |
+| IOCs restarted by hand, occasionally not restarted at all | Silent gaps in coverage | [procServ](../toolbox/deployment-and-operations.md#procserv) or systemd, plus [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) monitoring |
 | Naming drift | Four spellings of "power supply" | Enforced [convention](naming-conventions.md) + CI validation |
 | Deployment is per-IOC artisanal work | Nobody can reproduce an IOC from source | Consistent build/deploy tooling: [containers](../toolbox/deployment-and-operations.md#epics-containers), [e3](../toolbox/deployment-and-operations.md#e3-ess-epics-environment), or a site standard |
 | Archive is growing faster than expected | Disk alarms | `MDEL`/`ADEL` audit, archiving policy per PV class |
 
-### At ~300 IOCs / 400 000 PVs — the facility scale
+### At ~300 IOCs and 400 000 PVs: the facility scale
 
 This is the [example facility](../example-facility/index.md), and this is where architecture stops being optional.
 
@@ -42,7 +42,7 @@ This is the [example facility](../example-facility/index.md), and this is where 
 
 **Time synchronisation becomes correctness, not hygiene.** Timestamps come from IOCs. Correlating a BPM reading with the RF trip that caused it requires clocks agreeing to better than the phenomenon's timescale. NTP gives milliseconds; an [event system](../toolbox/timing-systems.md) gives you beam-synchronous timestamps and is what diagnostics actually need.
 
-### At >1 000 000 PVs — the frontier
+### At >1 000 000 PVs: the frontier
 
 A handful of facilities. Everything above, plus: multiple archiver clusters, hierarchical gateways, careful subnet design, and an operations team with dedicated controls infrastructure engineers. If you're here you're not reading this guide.
 
@@ -104,7 +104,7 @@ Order-of-magnitude figures, not benchmarks — measure your own system.
 | Resource | Practical guidance |
 | --- | --- |
 | Records per IOC | Tens of thousands is routine. The limit is processing rate, not count: 100 000 idle records are cheaper than 5 000 at 10 Hz. |
-| Records × scan rate per IOC | Watch CPU with [iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats). A scan task that can't complete within its period is the failure to detect, and it manifests as jitter and late timestamps rather than an error. |
+| Records × scan rate per IOC | Watch CPU with [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats). A scan task that can't complete within its period is the failure to detect, and it manifests as jitter and late timestamps rather than an error. |
 | CA clients per IOC | Hundreds work. Thousands mean you should have a gateway. `casr 2` shows the reality. |
 | Monitor rate | The dominant cost. Small-packet rate limits switches before bandwidth does. |
 | Array traffic | One 4 MP camera at 30 fps ≈ 250 Mbit/s. Plan interfaces and segments accordingly, and keep it away from control traffic. |
@@ -115,7 +115,7 @@ Order-of-magnitude figures, not benchmarks — measure your own system.
 
 Uncomfortable truth: at most facilities, uptime is limited by process rather than by design.
 
-- **Know what's running.** [iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats) on every IOC, alarmed on uptime resets and heartbeat loss. An IOC that has been down for three weeks and nobody noticed is a real and common occurrence.
+- **Know what's running.** [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) on every IOC, alarmed on uptime resets and heartbeat loss. An IOC that has been down for three weeks and nobody noticed is a real and common occurrence.
 - **Version-control everything, deploy from it.** Including `.acf` files, gateway rules, archiver policies, and alarm configuration. Especially those, because they're the files people edit in place at 2 a.m.
 - **Make restarts boring.** If restarting an IOC is frightening, it will be avoided, and problems accumulate until something worse happens. Boring restarts require autosave, `PINI`, and hardware that holds state.
 - **Test the restore path, not just the backup.** Archiver backups nobody has restored are a hypothesis.

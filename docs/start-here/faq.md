@@ -27,7 +27,7 @@ For a great deal of IOC work, **none** — databases are declarative and [Stream
 
 ## Concepts
 
-### CA or PVA — which should I use?
+### CA or PVA: which should I use?
 
 Learn with CA: more tools, more examples, more of everything you'll encounter. Use PVA when you need what it adds — structured data, images with metadata attached, tables, RPC-style calls, or a service that requires it. An EPICS 7 IOC serves both from the same records, so this is not a lock-in decision. See [Protocols](../architecture/protocols.md).
 
@@ -43,7 +43,7 @@ Because you're ignoring severity. Comms failure sets `INVALID`, usually leaving 
 
 Many small ones, biased toward one IOC per device or per crate. Failure domains stay small, restarts are cheap, and ownership is clear. The counter-pressure is real though: several hundred IOCs need [deployment tooling](../toolbox/deployment-and-operations.md) and [monitoring](../toolbox/observability.md), and records that must interlock with each other are simpler in one IOC than across two. See the [example facility's reasoning](../example-facility/ioc-inventory.md).
 
-### What's the difference between autosave and save & restore?
+### What's the difference between autosave and save and restore?
 
 [autosave](../toolbox/soft-support-modules.md#autosave) runs *inside* an IOC and exists to survive reboots: it periodically writes values to a local file and restores them at `iocInit`, invisibly. [save & restore](../toolbox/save-and-restore.md) is a *facility service* for deliberate configurations: "the settings we ran the 2 keV experiment with", compared and restored by operators, with history. You want both. They solve different problems.
 
@@ -88,7 +88,7 @@ No.
 
 ### How many PVs can one IOC serve?
 
-Tens of thousands is routine. The limits you actually hit are CPU (record processing rate × record count) and the number of monitored channels × update rate × client count. An IOC pushing 50 000 monitors a second to 40 clients is doing more work than one holding a million idle records. Measure with [iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats) rather than guessing.
+Tens of thousands is routine. The limits you actually hit are CPU (record processing rate × record count) and the number of monitored channels × update rate × client count. An IOC pushing 50 000 monitors a second to 40 clients is doing more work than one holding a million idle records. Measure with [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) rather than guessing.
 
 ### How much does archiving everything cost?
 

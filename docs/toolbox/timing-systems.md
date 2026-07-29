@@ -18,7 +18,7 @@ Every IOC host must run NTP (or chrony) against a facility time source. This cos
 - Typical accuracy on a LAN: **1–10 ms**. Adequate for slow signals, archiving of process values, and log correlation.
 - Not adequate for: pulse-to-pulse correlation, fast diagnostics, or anything where you need to know the *order* of two events milliseconds apart.
 
-The most common EPICS archive pathology is not a missing PV — it's a subsystem whose IOC host has drifted, producing data that looks plausible and correlates wrongly. Alarm on NTP offset via [iocStats](soft-support-modules.md#iocstats--deviocstats) or your host monitoring, and treat a drift alarm as a data-integrity incident.
+The most common EPICS archive pathology is not a missing PV — it's a subsystem whose IOC host has drifted, producing data that looks plausible and correlates wrongly. Alarm on NTP offset via [iocStats](soft-support-modules.md#iocstats-and-deviocstats) or your host monitoring, and treat a drift alarm as a data-integrity incident.
 
 ## PTP: IEEE 1588
 

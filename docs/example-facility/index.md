@@ -67,7 +67,7 @@ Read in order the first time — each builds on the last.
 
 If you read nothing else, these are the choices the chapters argue for:
 
-**Location first in the PV name.** `SR-C05-PS-QF-01:Current-RB` — section, then area, then device class. Because "everything in cell 5" is the most common operational query, and because gateway rules, archiver policies, alarm hierarchy and access-security groups are all written as name patterns. [Why](naming-convention.md#why-location-comes-first)
+**Location first in the PV name.** `SR-C05-PS-QF-01:Current-RB` — section, then area, then device class. Because "everything in cell 5" is the most common operational query, and because gateway rules, archiver policies, alarm hierarchy and access-security groups are all written as name patterns. [Why](../architecture/naming-conventions.md#why-location-comes-first)
 
 **Fine-grained IOCs.** One per device group or crate, ~330 of them, not 20 large ones. Failure domains stay small and restarts stay cheap, which is affordable only because deployment is containerised. [Why](ioc-inventory.md#the-granularity-decision)
 

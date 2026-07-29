@@ -94,14 +94,14 @@ The support modules ship YAML *definitions* describing what they can instantiate
 
 **Process Variable Interface** — [github.com/epics-containers/pvi](https://github.com/epics-containers/pvi)
 
-Describes a device's PV interface once, then generates the database template, the operator screen, the documentation, and the [ophyd](scientific-data.md#ophyd--ophyd-async) device class from it. Attacks the duplication problem directly: the same device structure otherwise gets written out by hand in four places and drifts in all four.
+Describes a device's PV interface once, then generates the database template, the operator screen, the documentation, and the [ophyd](scientific-data.md#ophyd-and-ophyd-async) device class from it. Attacks the duplication problem directly: the same device structure otherwise gets written out by hand in four places and drifts in all four.
 
 ## e3 (ESS EPICS Environment)
 
 | | |
 | --- | --- |
-| Documentation | [e3.pages.esss.lu.se](https://e3.pages.esss.lu.se/) |
-| Source | [gitlab.esss.lu.se/e3](https://gitlab.esss.lu.se/e3) |
+| Documentation | [e3pages.readthedocs.io](https://e3pages.readthedocs.io/en/latest/) |
+| Source | [github.com/icshwi/e3](https://github.com/icshwi/e3) |
 | Origin | European Spallation Source |
 
 A different, equally coherent answer, descended from PSI's approach: build every module as a **loadable module** with its version in its name, and load them into a generic IOC executable at runtime.
@@ -166,7 +166,7 @@ If you're building this from nothing, the decisions that matter:
 
 **How are IOCs started?** systemd + procServ, or Kubernetes. Pick one and apply it everywhere; a facility with three mechanisms has three mechanisms to debug at 03:00.
 
-**What's the naming scheme for IOCs?** Related to but distinct from [PV naming](../architecture/naming-conventions.md). The IOC name appears in [iocStats](soft-support-modules.md#iocstats--deviocstats) PVs, [ChannelFinder](directory-services.md) properties, log files, and procServ ports, so make it systematic — including a port-allocation scheme, because ad-hoc procServ ports collide eventually.
+**What's the naming scheme for IOCs?** Related to but distinct from [PV naming](../architecture/naming-conventions.md). The IOC name appears in [iocStats](soft-support-modules.md#iocstats-and-deviocstats) PVs, [ChannelFinder](directory-services.md) properties, log files, and procServ ports, so make it systematic — including a port-allocation scheme, because ad-hoc procServ ports collide eventually.
 
 **Who may deploy?** And is there a change window for IOCs serving operating subsystems? This is a policy question that will be answered by default if you don't answer it deliberately.
 
@@ -174,7 +174,7 @@ If you're building this from nothing, the decisions that matter:
 
 ## Operational practices
 
-**Every IOC runs [iocStats](soft-support-modules.md#iocstats--deviocstats).** Alarmed on heartbeat loss and uptime reset. Non-negotiable at any scale above a handful.
+**Every IOC runs [iocStats](soft-support-modules.md#iocstats-and-deviocstats).** Alarmed on heartbeat loss and uptime reset. Non-negotiable at any scale above a handful.
 
 **Every IOC's console is reachable.** procServ port or `kubectl exec`, documented, with the port allocation in a table somebody maintains.
 

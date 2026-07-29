@@ -147,7 +147,7 @@ Step 7 is worth doing deliberately: it's the property that makes this architectu
 
 **Keep the configuration in version control** as XML, and import it, rather than treating the live Kafka topic as the master. The config logger's git repository gives you history either way, but a reviewable source file is what lets you *change* it safely.
 
-**Give control-system health its own branch.** [iocStats](../toolbox/soft-support-modules.md#iocstats--deviocstats) heartbeats belong in the alarm tree, under a distinct subtree, so the controls team's problems don't interleave with the machine's. See [Observability](../toolbox/observability.md).
+**Give control-system health its own branch.** [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) heartbeats belong in the alarm tree, under a distinct subtree, so the controls team's problems don't interleave with the machine's. See [Observability](../toolbox/observability.md).
 
 ## Simpler alternatives
 

@@ -37,7 +37,7 @@ flowchart TB
 
 ## The pages
 
-### Stage 1 — a working IOC
+### Stage 1: a working IOC
 
 | Page | Time | Gets you |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ flowchart TB
 
 **Stop here and play for a while.** Everything else is easier once PVs feel ordinary.
 
-### Stage 2 — see it
+### Stage 2: see it
 
 | Page | Gets you |
 | --- | --- |
@@ -55,7 +55,7 @@ flowchart TB
 
 Python alternative: `pip install pydm` gives you [PyDM](../toolbox/operator-interfaces.md#pydm) with no JDK at all. Legitimate, and much faster to a first screen.
 
-### Stage 3 — remember it
+### Stage 3: remember it
 
 | Page | Gets you |
 | --- | --- |
@@ -63,7 +63,7 @@ Python alternative: `pip install pydm` gives you [PyDM](../toolbox/operator-inte
 
 Easier alternative for a first archiver: the [Phoebus RDB archive engine](../toolbox/archiving.md#phoebus-rdb-archive-engine), which you already built with Phoebus and which needs only a database.
 
-### Stage 4 — the services
+### Stage 4: the services
 
 | Page | Needs | Gets you |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ Easier alternative for a first archiver: the [Phoebus RDB archive engine](../too
 
 All four are built from the Phoebus source tree you already have. The work is in their infrastructure dependencies, not in the services.
 
-### Stage 5 — remote and web access
+### Stage 5: remote and web access
 
 | Page | Gets you |
 | --- | --- |
