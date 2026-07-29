@@ -26,6 +26,11 @@ mkdocs.yml           Site config and navigation
 
 Adding a page means adding it to `nav:` in [`mkdocs.yml`](mkdocs.yml) — otherwise it builds but nobody can find it.
 
+**Two kinds of landing page.** Each section uses `index.md` as its landing page on the built site. A section may *also* carry a `README.md`, which exists only so the directory is browsable on GitHub — mkdocs warns fatally under `--strict` when both live in one directory, so `exclude_docs` in `mkdocs.yml` keeps READMEs out of the build. Consequences for contributors:
+
+- A `README.md` is never in `nav:` and its links are not checked by `mkdocs build --strict`. Check them by hand.
+- Keep a README to an overview and a file map. Anything substantive belongs in a chapter, linked from both, so the two can't drift apart.
+
 ## Local preview
 
 ```bash

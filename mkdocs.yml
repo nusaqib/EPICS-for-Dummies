@@ -62,6 +62,12 @@ markdown_extensions:
 plugins:
   - search
 
+# Folder-level READMEs exist so directories are browsable on GitHub. The site
+# uses index.md for section landing pages, and mkdocs warns (fatally, under
+# --strict) if both live in one directory — so keep READMEs out of the build.
+exclude_docs: |
+  */README.md
+
 nav:
   - Home: index.md
   - Start Here:
