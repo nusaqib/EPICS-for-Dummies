@@ -72,7 +72,7 @@ plugins:
 # uses index.md for section landing pages, and mkdocs warns (fatally, under
 # --strict) if both live in one directory — so keep READMEs out of the build.
 exclude_docs: |
-  */README.md
+  README.md
 
 nav:
   - Home: index.md
@@ -159,6 +159,7 @@ nav:
       - Training Material: reference/training.md
       - Community: reference/community.md
       - Books & Papers: reference/books-and-papers.md
+      - Accuracy & Uncertainties: reference/accuracy.md
 
 extra:
   social:

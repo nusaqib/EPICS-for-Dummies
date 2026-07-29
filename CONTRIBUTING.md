@@ -6,7 +6,7 @@ This is a documentation repository. The most valuable contributions are small an
 
 1. **No code.** No install scripts, no IOC templates, no Dockerfiles. Upstream maintains those better than we can. Inline commands in the how-to pages are fine — they are meant to be read, then typed.
 2. **Link, don't copy.** If upstream documents something, link to upstream. Duplicated documentation goes stale silently and misleads people. Add just enough context that a reader knows *why* they should click.
-3. **Say when you don't know.** "This is untested on RHEL" is more useful than confident guessing. Mark uncertainty with a `!!! warning` admonition.
+3. **Say when you don't know.** "This is untested on RHEL" is more useful than confident guessing. Mark uncertainty with a `!!! warning` admonition, and add anything structural to [`docs/reference/accuracy.md`](docs/reference/accuracy.md), which tracks what this guide is and isn't confident about.
 4. **Every tool entry needs**: what it is, who maintains it, what problem it solves, and a link that resolves. Prefer the project's own docs site over its README, and the README over a conference slide deck.
 5. **Keep the Helios Light Source consistent.** The [example facility](docs/example-facility/) is fictional but internally coherent — magnet counts, PV counts, and IOC counts are cross-referenced between pages. If you change a number on one page, grep for it and fix the others.
 6. **Nothing safety-related.** Do not add guidance on designing interlocks, personnel protection, or machine protection logic. Point at standards (IEC 61508 / IEC 61511) and the vendors, and stop there.

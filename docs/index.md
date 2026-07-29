@@ -72,3 +72,5 @@ Documentation only — no scripts, no templates, no code. Where upstream documen
 
 !!! note "This is a learner's map, not an authority"
     Where this site and the [official EPICS documentation](https://docs.epics-controls.org) disagree, the official documentation is right and this site is out of date.
+
+    [Accuracy & Known Uncertainties](reference/accuracy.md) is the honest account of which parts are solid, which are a learner's best understanding, and which specific claims most need an expert's eye.
