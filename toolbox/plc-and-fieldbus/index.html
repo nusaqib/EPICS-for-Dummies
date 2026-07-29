@@ -1064,10 +1064,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#beckhoff-ads-twincat" class="md-nav__link">
+  <a href="#beckhoff-ads-and-twincat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Beckhoff ADS / TwinCAT
+        Beckhoff ADS and TwinCAT
       
     </span>
   </a>
@@ -2532,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2560,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2588,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2688,7 +2688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2716,7 +2716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2744,7 +2744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2772,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2800,7 +2800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2828,7 +2828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2856,7 +2856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2884,7 +2884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -2994,10 +2994,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#beckhoff-ads-twincat" class="md-nav__link">
+  <a href="#beckhoff-ads-and-twincat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Beckhoff ADS / TwinCAT
+        Beckhoff ADS and TwinCAT
       
     </span>
   </a>
@@ -3285,7 +3285,7 @@
 <li><strong>Security</strong> — OPC UA has certificates and encryption. Whether your PLC's implementation is any good is a separate question, but the standard provides for it.</li>
 </ul>
 <p>Cost: heavier than Modbus, needs an OPC UA stack as a build dependency, and PLC-side licensing sometimes applies. Worth it.</p>
-<h2 id="beckhoff-ads-twincat">Beckhoff ADS / TwinCAT<a class="headerlink" href="#beckhoff-ads-twincat" title="Permanent link">&para;</a></h2>
+<h2 id="beckhoff-ads-and-twincat">Beckhoff ADS and TwinCAT<a class="headerlink" href="#beckhoff-ads-and-twincat" title="Permanent link">&para;</a></h2>
 <p>Beckhoff PLCs speak ADS natively. Options: their OPC UA server (simplest, and often the right answer), or an ADS-protocol driver — several facilities maintain these, notably SLAC's <a href="https://github.com/pcdshub/ads-ioc">ads-ioc</a> and ESS's ADS support. Check current status before committing; this area has more facility-specific forks than settled community modules.</p>
 <h2 id="ethercat">EtherCAT<a class="headerlink" href="#ethercat" title="Permanent link">&para;</a></h2>
 <p>Real-time fieldbus, common for distributed I/O and motion. EPICS integration is generally facility-specific — Diamond and ESS have both built EtherCAT masters with EPICS layers, and the usual practical path at other sites is an EtherCAT master in a PLC or dedicated controller, with EPICS talking to <em>that</em> over OPC UA or Modbus rather than acting as master itself.</p>
@@ -3320,7 +3320,7 @@
 </tr>
 <tr>
 <td>SNMP</td>
-<td><a href="https://github.com/epics-modules/snmp">snmp module</a> — PDUs, UPSs, network switches, environmental monitors</td>
+<td><a href="https://github.com/epicsdeb/epics-snmp">snmp module</a> — PDUs, UPSs, network switches, environmental monitors</td>
 </tr>
 </tbody>
 </table>

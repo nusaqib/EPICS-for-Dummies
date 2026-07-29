@@ -2349,7 +2349,7 @@
   <a href="#level-1-the-machine-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Level 1 — the machine overview
+        Level 1: the machine overview
       
     </span>
   </a>
@@ -2360,7 +2360,7 @@
   <a href="#level-2-subsystem-synoptics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Level 2 — subsystem synoptics
+        Level 2: subsystem synoptics
       
     </span>
   </a>
@@ -2371,7 +2371,7 @@
   <a href="#level-3-device-detail-templated" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Level 3 — device detail, templated
+        Level 3: device detail, templated
       
     </span>
   </a>
@@ -2549,7 +2549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../beamline.md" class="md-nav__link">
+      <a href="../beamline/" class="md-nav__link">
         
   
   
@@ -2577,7 +2577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations-scenarios.md" class="md-nav__link">
+      <a href="../operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2605,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../build-a-mini-hls.md" class="md-nav__link">
+      <a href="../build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2705,7 +2705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2733,7 +2733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2761,7 +2761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2789,7 +2789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2817,7 +2817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2845,7 +2845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2873,7 +2873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2901,7 +2901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -2982,7 +2982,7 @@
   <a href="#level-1-the-machine-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Level 1 — the machine overview
+        Level 1: the machine overview
       
     </span>
   </a>
@@ -2993,7 +2993,7 @@
   <a href="#level-2-subsystem-synoptics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Level 2 — subsystem synoptics
+        Level 2: subsystem synoptics
       
     </span>
   </a>
@@ -3004,7 +3004,7 @@
   <a href="#level-3-device-detail-templated" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Level 3 — device detail, templated
+        Level 3: device detail, templated
       
     </span>
   </a>
@@ -3136,7 +3136,7 @@
         D5["One IOC"]
     end
     OV --&gt; L2 --&gt; L3</code></pre>
-<h3 id="level-1-the-machine-overview">Level 1 — the machine overview<a class="headerlink" href="#level-1-the-machine-overview" title="Permanent link">&para;</a></h3>
+<h3 id="level-1-the-machine-overview">Level 1: the machine overview<a class="headerlink" href="#level-1-the-machine-overview" title="Permanent link">&para;</a></h3>
 <p>One screen. Always displayed on the control room wall. Answers <em>"is the machine doing what it should?"</em> from across the room.</p>
 <table>
 <thead>
@@ -3194,10 +3194,10 @@
 </table>
 <p>The subsystem summary row is the navigational heart of the screen: each tile is coloured by the worst alarm severity within that subsystem, and clicking it opens the level-2 synoptic. An operator sees <em>where</em> before reading any numbers.</p>
 <p>Those <code>-Sum</code> PVs are computed <strong>in IOCs</strong>, by <code>calc</code> records with <code>MS</code> links inheriting severity from their inputs — not by the screen. So the archiver, the alarm system and every other client see the same summary. See <a href="../../architecture/process-database/#links-how-records-connect">process database</a>.</p>
-<h3 id="level-2-subsystem-synoptics">Level 2 — subsystem synoptics<a class="headerlink" href="#level-2-subsystem-synoptics" title="Permanent link">&para;</a></h3>
+<h3 id="level-2-subsystem-synoptics">Level 2: subsystem synoptics<a class="headerlink" href="#level-2-subsystem-synoptics" title="Permanent link">&para;</a></h3>
 <p>Roughly fifteen, one per subsystem, each showing its whole subsystem geometrically: the ring drawn as twenty cells, with per-cell status.</p>
 <p>The vacuum synoptic, for instance: twenty cells around a ring outline, each coloured by worst pressure severity, with the sector valve states drawn as they physically are. An operator sees a pressure rise's <em>location</em> immediately, and location is the first diagnostic question in a vacuum event.</p>
-<h3 id="level-3-device-detail-templated">Level 3 — device detail, templated<a class="headerlink" href="#level-3-device-detail-templated" title="Permanent link">&para;</a></h3>
+<h3 id="level-3-device-detail-templated">Level 3: device detail, templated<a class="headerlink" href="#level-3-device-detail-templated" title="Permanent link">&para;</a></h3>
 <p>Around 200 distinct display files, opened thousands of times with different macros:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sr_powersupply.bob?P=SR-C05-PS-QF-01
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sr_vacuum_cell.bob?CELL=05
@@ -3208,7 +3208,7 @@
 <p>One file per <em>device type</em>, not per device. All 900 power supplies share one display file. This is the same argument as <a href="../../architecture/process-database/#templates-and-substitutions">database templates</a>, for the same reason: 900 near-identical files diverge, and then a fix applies to one of them.</p>
 <h2 id="screen-design-rules">Screen design rules<a class="headerlink" href="#screen-design-rules" title="Permanent link">&para;</a></h2>
 <p>These are enforced in review, not suggested.</p>
-<p><strong>Readback prominent, setpoint secondary.</strong> Large readback, smaller editable setpoint clearly labelled. Confusing "what I asked for" with "what it's doing" is a dangerous class of error — see <a href="../naming-convention/#setpoint-versus-readback">naming</a>.</p>
+<p><strong>Readback prominent, setpoint secondary.</strong> Large readback, smaller editable setpoint clearly labelled. Confusing "what I asked for" with "what it's doing" is a dangerous class of error — see <a href="../../architecture/naming-conventions/#setpoint-versus-readback">naming</a>.</p>
 <p><strong>Never override disconnected styling.</strong> Phoebus marks disconnected widgets distinctively. A stale value presented as live is the most dangerous thing a screen can do.</p>
 <p><strong>Colour by severity, everywhere.</strong> From the record's <code>SEVR</code>, so screen and alarm system agree.</p>
 <p><strong>Units on every number.</strong> From <code>EGU</code>. A number without units is an invitation to a mistake.</p>

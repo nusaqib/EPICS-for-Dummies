@@ -2375,7 +2375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/beamline.md" class="md-nav__link">
+      <a href="../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2403,7 +2403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2431,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2531,7 +2531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2559,7 +2559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/environment-variables.md" class="md-nav__link">
+      <a href="../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2587,7 +2587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/record-types.md" class="md-nav__link">
+      <a href="../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2615,7 +2615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2643,7 +2643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/documentation.md" class="md-nav__link">
+      <a href="../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2671,7 +2671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/training.md" class="md-nav__link">
+      <a href="../reference/training/" class="md-nav__link">
         
   
   
@@ -2699,7 +2699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/community.md" class="md-nav__link">
+      <a href="../reference/community/" class="md-nav__link">
         
   
   
@@ -2727,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -2869,10 +2869,10 @@
 <p><strong>Goal: understand what a process variable is by owning one.</strong></p>
 <ol>
 <li>Read <a href="what-is-epics/">What is EPICS?</a> and <a href="core-concepts/">Core Concepts</a>. Don't try to memorise; you'll come back.</li>
-<li>Get EPICS Base onto a Linux machine — either <a href="../build-install/epics-base/">build it</a> (30 minutes, teaches you the build system) or <code>conda install epics-base</code> / grab a <a href="../reference/training.md">training VM</a> (5 minutes, teaches you nothing but gets you moving).</li>
+<li>Get EPICS Base onto a Linux machine — either <a href="../build-install/epics-base/">build it</a> (30 minutes, teaches you the build system) or <code>conda install epics-base</code> / grab a <a href="../reference/training/">training VM</a> (5 minutes, teaches you nothing but gets you moving).</li>
 <li>Run <code>softIoc</code> with no arguments. Type <code>dbl</code> at the <code>epics&gt;</code> prompt. Nothing there yet.</li>
 <li>Follow <a href="../build-install/first-ioc/">Your First IOC</a> to create two records and watch one drive the other.</li>
-<li>In a second terminal: <code>caget</code>, <code>caput</code>, <code>camonitor</code> your records. See the <a href="../reference/cheatsheet.md">cheat sheet</a>.</li>
+<li>In a second terminal: <code>caget</code>, <code>caput</code>, <code>camonitor</code> your records. See the <a href="../reference/cheatsheet/">cheat sheet</a>.</li>
 </ol>
 <p><strong>You have finished week 1 when</strong> you can explain, out loud, what happened between <code>caput</code> in one terminal and the value changing in the other.</p>
 </div>
@@ -2909,9 +2909,9 @@
 <p><strong>Goal: understand the decisions, not just the commands.</strong></p>
 <ol>
 <li>Read the <a href="../example-facility/">Example Facility</a> chapters in order. This is where naming, segmentation, sizing, and alarm philosophy stop being abstract.</li>
-<li>Read the <a href="../reference/documentation.md">EPICS Application Developer's Guide</a> properly. Yes, all of it. It is the actual specification and it is readable.</li>
-<li>Work through a real training course: the <a href="../reference/training.md">USPAS and EPICS Collaboration Meeting material</a> is free, complete, and has exercises.</li>
-<li>Subscribe to <a href="../reference/community.md">tech-talk</a>. Lurk for a month. The archive is the largest EPICS troubleshooting corpus in existence.</li>
+<li>Read the <a href="../reference/documentation/">EPICS Application Developer's Guide</a> properly. Yes, all of it. It is the actual specification and it is readable.</li>
+<li>Work through a real training course: the <a href="../reference/training/">USPAS and EPICS Collaboration Meeting material</a> is free, complete, and has exercises.</li>
+<li>Subscribe to <a href="../reference/community/">tech-talk</a>. Lurk for a month. The archive is the largest EPICS troubleshooting corpus in existence.</li>
 <li>Learn how your site actually deploys IOCs — <a href="../toolbox/deployment-and-operations/#epics-containers">containers</a>, <a href="../toolbox/deployment-and-operations/#e3-ess-epics-environment">e3</a>, plain <code>make</code> and <code>procServ</code>, or something homegrown. This is the most site-specific knowledge you will acquire, and none of it is in this guide.</li>
 </ol>
 </div>

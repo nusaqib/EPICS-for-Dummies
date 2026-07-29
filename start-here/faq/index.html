@@ -611,7 +611,7 @@
   <a href="#ca-or-pva-which-should-i-use" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CA or PVA — which should I use?
+        CA or PVA: which should I use?
       
     </span>
   </a>
@@ -652,10 +652,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#whats-the-difference-between-autosave-and-save-restore" class="md-nav__link">
+  <a href="#whats-the-difference-between-autosave-and-save-and-restore" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's the difference between autosave and save &amp; restore?
+        What's the difference between autosave and save and restore?
       
     </span>
   </a>
@@ -2738,7 +2738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2766,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2794,7 +2794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2894,7 +2894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2922,7 +2922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2950,7 +2950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2978,7 +2978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -3006,7 +3006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -3034,7 +3034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -3062,7 +3062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -3090,7 +3090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3221,7 +3221,7 @@
   <a href="#ca-or-pva-which-should-i-use" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CA or PVA — which should I use?
+        CA or PVA: which should I use?
       
     </span>
   </a>
@@ -3262,10 +3262,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#whats-the-difference-between-autosave-and-save-restore" class="md-nav__link">
+  <a href="#whats-the-difference-between-autosave-and-save-and-restore" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's the difference between autosave and save &amp; restore?
+        What's the difference between autosave and save and restore?
       
     </span>
   </a>
@@ -3494,16 +3494,16 @@
 <li><strong>conda</strong>: <code>conda install -c conda-forge epics-base</code> — fast, and how a lot of Python-side people work.</li>
 <li><strong>Distribution packages</strong>: <code>apt install epics-dev</code> on Debian/Ubuntu via <a href="../../toolbox/deployment-and-operations/#distribution-packages">epicsdeb</a>.</li>
 <li><strong>Containers</strong>: images from <a href="../../toolbox/deployment-and-operations/#epics-containers">epics-containers</a>.</li>
-<li><strong>A <a href="../reference/training.md">training VM</a></strong> with the entire stack pre-installed.</li>
+<li><strong>A <a href="../../reference/training/">training VM</a></strong> with the entire stack pre-installed.</li>
 </ul>
 <h3 id="how-long-until-im-useful">How long until I'm useful?<a class="headerlink" href="#how-long-until-im-useful" title="Permanent link">&para;</a></h3>
 <p>A week to serve and read your own PVs. A month to write an IOC for real hardware with someone reviewing it. Six months to a year to have opinions about database design, and that's the point at which you stop needing guides like this one.</p>
 <h3 id="which-programming-language-do-i-need">Which programming language do I need?<a class="headerlink" href="#which-programming-language-do-i-need" title="Permanent link">&para;</a></h3>
 <p>For a great deal of IOC work, <strong>none</strong> — databases are declarative and <a href="../../toolbox/plc-and-fieldbus/#streamdevice">StreamDevice</a> protocols are text files. Beyond that: <strong>Python</strong> for clients, scripting, and tests; <strong>C</strong> for classic device support; <strong>C++</strong> for <code>asynPortDriver</code> and areaDetector; <strong>Java</strong> if you touch Phoebus or the services; <strong>Perl</strong> if you go digging in the build system. Nobody knows all of these on day one.</p>
 <h3 id="where-do-i-ask-for-help">Where do I ask for help?<a class="headerlink" href="#where-do-i-ask-for-help" title="Permanent link">&para;</a></h3>
-<p><a href="../reference/community.md">tech-talk</a>, the main EPICS mailing list. Read the archive first — it's a huge, well-indexed corpus and your question is probably in it. When you do post, include your Base version, module versions, platform, the actual error text, and what you already tried. The core developers read that list and answer, which is genuinely unusual for software of this age.</p>
+<p><a href="../../reference/community/">tech-talk</a>, the main EPICS mailing list. Read the archive first — it's a huge, well-indexed corpus and your question is probably in it. When you do post, include your Base version, module versions, platform, the actual error text, and what you already tried. The core developers read that list and answer, which is genuinely unusual for software of this age.</p>
 <h2 id="concepts">Concepts<a class="headerlink" href="#concepts" title="Permanent link">&para;</a></h2>
-<h3 id="ca-or-pva-which-should-i-use">CA or PVA — which should I use?<a class="headerlink" href="#ca-or-pva-which-should-i-use" title="Permanent link">&para;</a></h3>
+<h3 id="ca-or-pva-which-should-i-use">CA or PVA: which should I use?<a class="headerlink" href="#ca-or-pva-which-should-i-use" title="Permanent link">&para;</a></h3>
 <p>Learn with CA: more tools, more examples, more of everything you'll encounter. Use PVA when you need what it adds — structured data, images with metadata attached, tables, RPC-style calls, or a service that requires it. An EPICS 7 IOC serves both from the same records, so this is not a lock-in decision. See <a href="../../architecture/protocols/">Protocols</a>.</p>
 <h3 id="is-a-pv-the-same-thing-as-a-record">Is a PV the same thing as a record?<a class="headerlink" href="#is-a-pv-the-same-thing-as-a-record" title="Permanent link">&para;</a></h3>
 <p>Nearly. A record <em>is</em> a set of PVs: the record's own name maps to its <code>.VAL</code> field, and every other field is addressable too (<code>MyRecord.EGU</code>, <code>MyRecord.HIGH</code>). One record can also answer to several names via <code>alias()</code>. So: records live inside IOCs, PVs are what the network sees.</p>
@@ -3511,7 +3511,7 @@
 <p>Because you're ignoring severity. Comms failure sets <code>INVALID</code>, usually leaving the last value or zero in <code>VAL</code>. A screen or script that reads only the number cannot tell "0.0, correct" from "0.0, meaningless". Always check <code>SEVR</code>/<code>STAT</code> — <code>caget -a</code> shows them. This is the single most common category of "the control system lied to me".</p>
 <h3 id="should-one-ioc-serve-everything-or-should-i-have-many-small-ones">Should one IOC serve everything, or should I have many small ones?<a class="headerlink" href="#should-one-ioc-serve-everything-or-should-i-have-many-small-ones" title="Permanent link">&para;</a></h3>
 <p>Many small ones, biased toward one IOC per device or per crate. Failure domains stay small, restarts are cheap, and ownership is clear. The counter-pressure is real though: several hundred IOCs need <a href="../../toolbox/deployment-and-operations/">deployment tooling</a> and <a href="../../toolbox/observability/">monitoring</a>, and records that must interlock with each other are simpler in one IOC than across two. See the <a href="../../example-facility/ioc-inventory/">example facility's reasoning</a>.</p>
-<h3 id="whats-the-difference-between-autosave-and-save-restore">What's the difference between autosave and save &amp; restore?<a class="headerlink" href="#whats-the-difference-between-autosave-and-save-restore" title="Permanent link">&para;</a></h3>
+<h3 id="whats-the-difference-between-autosave-and-save-and-restore">What's the difference between autosave and save and restore?<a class="headerlink" href="#whats-the-difference-between-autosave-and-save-and-restore" title="Permanent link">&para;</a></h3>
 <p><a href="../../toolbox/soft-support-modules/#autosave">autosave</a> runs <em>inside</em> an IOC and exists to survive reboots: it periodically writes values to a local file and restores them at <code>iocInit</code>, invisibly. <a href="../../toolbox/save-and-restore/">save &amp; restore</a> is a <em>facility service</em> for deliberate configurations: "the settings we ran the 2 keV experiment with", compared and restored by operators, with history. You want both. They solve different problems.</p>
 <h2 id="practical-problems">Practical problems<a class="headerlink" href="#practical-problems" title="Permanent link">&para;</a></h2>
 <h3 id="caget-says-channel-connect-timed-out-but-the-ioc-is-definitely-running"><code>caget</code> says "Channel connect timed out" but the IOC is definitely running<a class="headerlink" href="#caget-says-channel-connect-timed-out-but-the-ioc-is-definitely-running" title="Permanent link">&para;</a></h3>
@@ -3523,7 +3523,7 @@
 <li>The IOC is running but <code>iocInit</code> failed, so it serves nothing. Read its startup log.</li>
 <li>Docker/VPN networking. Try <code>EPICS_CA_ADDR_LIST=&lt;ioc-ip&gt;</code> with <code>EPICS_CA_AUTO_ADDR_LIST=NO</code>.</li>
 </ol>
-<p>Fuller list: <a href="../reference/troubleshooting.md">Troubleshooting</a>.</p>
+<p>Fuller list: <a href="../../reference/troubleshooting/">Troubleshooting</a>.</p>
 <h3 id="two-iocs-are-serving-the-same-pv-name-what-happens">Two IOCs are serving the same PV name. What happens?<a class="headerlink" href="#two-iocs-are-serving-the-same-pv-name-what-happens" title="Permanent link">&para;</a></h3>
 <p>Whichever answers a client's search first wins, per client. Different clients get different IOCs; readings become mysteriously inconsistent and irreproducible. Base logs a warning about duplicate names when it notices, but you must be watching. This is a bug with no upside — prevented by a <a href="../../architecture/naming-conventions/">naming convention</a> plus a <a href="../../toolbox/directory-services/">directory service</a> that makes collisions visible.</p>
 <h3 id="my-record-wont-update">My record won't update<a class="headerlink" href="#my-record-wont-update" title="Permanent link">&para;</a></h3>
@@ -3540,13 +3540,13 @@
 </div>
 <h2 id="scale-and-operations">Scale and operations<a class="headerlink" href="#scale-and-operations" title="Permanent link">&para;</a></h2>
 <h3 id="how-many-pvs-can-one-ioc-serve">How many PVs can one IOC serve?<a class="headerlink" href="#how-many-pvs-can-one-ioc-serve" title="Permanent link">&para;</a></h3>
-<p>Tens of thousands is routine. The limits you actually hit are CPU (record processing rate × record count) and the number of monitored channels × update rate × client count. An IOC pushing 50 000 monitors a second to 40 clients is doing more work than one holding a million idle records. Measure with <a href="../../toolbox/soft-support-modules/#iocstats--deviocstats">iocStats</a> rather than guessing.</p>
+<p>Tens of thousands is routine. The limits you actually hit are CPU (record processing rate × record count) and the number of monitored channels × update rate × client count. An IOC pushing 50 000 monitors a second to 40 clients is doing more work than one holding a million idle records. Measure with <a href="../../toolbox/soft-support-modules/#iocstats-and-deviocstats">iocStats</a> rather than guessing.</p>
 <h3 id="how-much-does-archiving-everything-cost">How much does archiving everything cost?<a class="headerlink" href="#how-much-does-archiving-everything-cost" title="Permanent link">&para;</a></h3>
 <p>Cheaper than you fear if you use monitor-based (event-driven) archiving with sensible deadbands, and ruinous if you scan everything at 10 Hz. The <a href="../../example-facility/archiving-plan/">example facility's archiving plan</a> works the arithmetic end to end: ~415 000 PVs, ~24 TB/year, and where every term comes from.</p>
 <h3 id="do-i-need-kafka-elasticsearch-mysql-and-kubernetes">Do I need Kafka, Elasticsearch, MySQL and Kubernetes?<a class="headerlink" href="#do-i-need-kafka-elasticsearch-mysql-and-kubernetes" title="Permanent link">&para;</a></h3>
 <p>Not to learn, and not for a test stand. Those are dependencies of the <em>services</em> — the Phoebus alarm system needs Kafka, Olog and ChannelFinder want Elasticsearch, the Archiver Appliance wants MySQL/MariaDB for configuration. A single IOC plus a GUI needs none of it. Add each service when you have the problem it solves.</p>
 <h3 id="is-epics-still-actively-developed">Is EPICS still actively developed?<a class="headerlink" href="#is-epics-still-actively-developed" title="Permanent link">&para;</a></h3>
-<p>Yes. Base 7 releases regularly, PVXS and p4p are current work, <a href="../../toolbox/deployment-and-operations/#epics-containers">epics-containers</a> is reshaping deployment, and Phoebus is under continuous development. There are annual <a href="../reference/community.md">collaboration meetings and codeathons</a>. It's a 35-year-old codebase with a live community — the interesting kind of old.</p>
+<p>Yes. Base 7 releases regularly, PVXS and p4p are current work, <a href="../../toolbox/deployment-and-operations/#epics-containers">epics-containers</a> is reshaping deployment, and Phoebus is under continuous development. There are annual <a href="../../reference/community/">collaboration meetings and codeathons</a>. It's a 35-year-old codebase with a live community — the interesting kind of old.</p>
 <h2 id="meta">Meta<a class="headerlink" href="#meta" title="Permanent link">&para;</a></h2>
 <h3 id="why-does-this-guide-invent-a-fake-synchrotron">Why does this guide invent a fake synchrotron?<a class="headerlink" href="#why-does-this-guide-invent-a-fake-synchrotron" title="Permanent link">&para;</a></h3>
 <p>Because "you need a naming convention" teaches nothing, and <em>watching</em> a naming convention get chosen — with its constraints, its compromises, and the 60-character CA limit pressing on it — teaches a lot. The <a href="../../example-facility/">Helios Light Source</a> exists so every architectural claim in this guide has to survive contact with a concrete machine.</p>

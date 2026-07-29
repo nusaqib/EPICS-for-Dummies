@@ -1441,10 +1441,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ophyd-ophyd-async" class="md-nav__link">
+  <a href="#ophyd-and-ophyd-async" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ophyd / ophyd-async
+        ophyd and ophyd-async
       
     </span>
   </a>
@@ -2527,7 +2527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2555,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2583,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2683,7 +2683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2711,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2739,7 +2739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2767,7 +2767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2795,7 +2795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2823,7 +2823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2851,7 +2851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2879,7 +2879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -2946,10 +2946,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ophyd-ophyd-async" class="md-nav__link">
+  <a href="#ophyd-and-ophyd-async" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ophyd / ophyd-async
+        ophyd and ophyd-async
       
     </span>
   </a>
@@ -3136,7 +3136,7 @@
 </code></pre></div>
 <p><strong>What it gets right:</strong> the <em>document model</em>. Every run produces a self-describing stream containing not just the data but the plan, the devices, the metadata, and the timestamps. That means analysis code doesn't need to know how the scan was performed, and a run from 2019 is still readable. Solving metadata provenance properly, rather than as an afterthought, is the core contribution.</p>
 <p><strong>Where it belongs:</strong> experiments. It is a Python session, so a Bluesky plan does not survive a closed laptop, and nothing the <em>machine</em> depends on should live there. Use <code>queueserver</code> to make it a supervised service if beamline operations depend on it. See <a href="../scanning-and-automation/">Scanning &amp; Automation</a>.</p>
-<h3 id="ophyd-ophyd-async">ophyd / ophyd-async<a class="headerlink" href="#ophyd-ophyd-async" title="Permanent link">&para;</a></h3>
+<h3 id="ophyd-and-ophyd-async">ophyd and ophyd-async<a class="headerlink" href="#ophyd-and-ophyd-async" title="Permanent link">&para;</a></h3>
 <p>Worth understanding separately, because it's the boundary between EPICS and everything above it. <code>ophyd</code> wraps PVs into device objects:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Slits</span><span class="p">(</span><span class="n">Device</span><span class="p">):</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">top</span>    <span class="o">=</span> <span class="n">Cpt</span><span class="p">(</span><span class="n">EpicsMotor</span><span class="p">,</span> <span class="s1">&#39;-TOP&#39;</span><span class="p">)</span>

@@ -1487,6 +1487,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="High-level application frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matlab-middle-layer-mml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matlab Middle Layer (MML)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2549,7 +2566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2577,7 +2594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2605,7 +2622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2705,7 +2722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2733,7 +2750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2761,7 +2778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2789,7 +2806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2817,7 +2834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2845,7 +2862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2873,7 +2890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2901,7 +2918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -2985,6 +3002,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="High-level application frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matlab-middle-layer-mml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matlab Middle Layer (MML)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3181,7 +3215,7 @@
 <td>CERN's lattice design code. <a href="https://madx.web.cern.ch/">madx.web.cern.ch</a></td>
 </tr>
 <tr>
-<td><strong><a href="https://gitlab.psi.ch/OPAL/src">OPAL</a></strong></td>
+<td><strong><a href="https://amas.web.psi.ch/opal/">OPAL</a></strong></td>
 <td>Space-charge-dominated beam dynamics (PSI)</td>
 </tr>
 <tr>
@@ -3205,10 +3239,6 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Matlab Middle Layer (MML)</strong></td>
-<td>The long-standing accelerator physics application layer: a device-abstraction and unit-conversion layer over CA, with orbit correction, response matrix measurement, tune and chromaticity routines. Decades of entrenchment at light sources. <a href="https://github.com/atcollab/MML">github.com/atcollab/MML</a></td>
-</tr>
-<tr>
 <td><strong><a href="https://github.com/NSLS-II/aphla">aphla</a></strong></td>
 <td>NSLS-II's Python high-level applications layer, an early Python answer to MML. Check current status before adopting.</td>
 </tr>
@@ -3222,6 +3252,12 @@
 </tr>
 </tbody>
 </table>
+<h3 id="matlab-middle-layer-mml">Matlab Middle Layer (MML)<a class="headerlink" href="#matlab-middle-layer-mml" title="Permanent link">&para;</a></h3>
+<p>The long-standing accelerator physics application layer: a device-abstraction and unit-conversion layer over Channel Access, with orbit correction, response-matrix measurement, and tune and chromaticity routines built on top.</p>
+<ul>
+<li><a href="https://github.com/atcollab/MML">github.com/atcollab/MML</a></li>
+</ul>
+<p>Decades of entrenchment at light sources, and still in daily operational use at many of them.</p>
 <p>The MML-to-Python migration is a live, slow conversation at most light sources. The obstacle is not language preference; it's that MML encodes twenty years of validated machine-specific procedures, and reimplementing those correctly is a physics project rather than a porting project.</p>
 <h2 id="online-optimisation">Online optimisation<a class="headerlink" href="#online-optimisation" title="Permanent link">&para;</a></h2>
 <p>Machine tuning as an optimisation problem: adjust N parameters to maximise an objective (injection efficiency, beam lifetime, photon flux, emittance), where each evaluation costs a measurement on the real machine.</p>

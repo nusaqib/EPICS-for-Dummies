@@ -109,6 +109,14 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/example-facility/beamline/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/example-facility/build-a-mini-hls/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/example-facility/ioc-inventory/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
@@ -129,6 +137,10 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/example-facility/operations-scenarios/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/example-facility/operator-interfaces/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
@@ -138,6 +150,38 @@
     </url>
     <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/example-facility/subsystems/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/books-and-papers/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/cheatsheet/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/community/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/documentation/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/environment-variables/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/record-types/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/training/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/reference/troubleshooting/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>

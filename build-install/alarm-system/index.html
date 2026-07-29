@@ -2532,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2560,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2588,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2688,7 +2688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2716,7 +2716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2744,7 +2744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2772,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2800,7 +2800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2828,7 +2828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2856,7 +2856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2884,7 +2884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3224,7 +3224,7 @@
 <p><strong>Monitor the pipeline</strong>: alarm server alive, Kafka broker health, consumer lag, Elasticsearch health. And alarm on <strong>alarm rate going to zero</strong> — a silent alarm system looks exactly like a quiet machine.</p>
 <p><strong>Review the alarm log monthly.</strong> Rank by frequency; the top ten are your problem list. This one practice improves alarm quality more than any amount of configuration.</p>
 <p><strong>Keep the configuration in version control</strong> as XML, and import it, rather than treating the live Kafka topic as the master. The config logger's git repository gives you history either way, but a reviewable source file is what lets you <em>change</em> it safely.</p>
-<p><strong>Give control-system health its own branch.</strong> <a href="../../toolbox/soft-support-modules/#iocstats--deviocstats">iocStats</a> heartbeats belong in the alarm tree, under a distinct subtree, so the controls team's problems don't interleave with the machine's. See <a href="../../toolbox/observability/">Observability</a>.</p>
+<p><strong>Give control-system health its own branch.</strong> <a href="../../toolbox/soft-support-modules/#iocstats-and-deviocstats">iocStats</a> heartbeats belong in the alarm tree, under a distinct subtree, so the controls team's problems don't interleave with the machine's. See <a href="../../toolbox/observability/">Observability</a>.</p>
 <h2 id="simpler-alternatives">Simpler alternatives<a class="headerlink" href="#simpler-alternatives" title="Permanent link">&para;</a></h2>
 <p><strong>No alarm system at all</strong>: record-level limits displayed with alarm colouring on a <a href="../phoebus/">Phoebus</a> screen. Genuinely adequate for a test stand — you get severity, colour, and <code>camonitor</code> visibility with zero infrastructure. What you don't get is latching, acknowledgement, hierarchy, or history.</p>
 <p><strong>BEAST</strong>, the older RDB-backed alarm system, is still in service at some facilities and needs no Kafka. Migration tooling to the Phoebus system exists. Don't start here for new work.</p>

@@ -2462,7 +2462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/beamline.md" class="md-nav__link">
+      <a href="example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2490,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2518,7 +2518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2618,7 +2618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/cheatsheet.md" class="md-nav__link">
+      <a href="reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2646,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/environment-variables.md" class="md-nav__link">
+      <a href="reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2674,7 +2674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/record-types.md" class="md-nav__link">
+      <a href="reference/record-types/" class="md-nav__link">
         
   
   
@@ -2702,7 +2702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/troubleshooting.md" class="md-nav__link">
+      <a href="reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2730,7 +2730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/documentation.md" class="md-nav__link">
+      <a href="reference/documentation/" class="md-nav__link">
         
   
   
@@ -2758,7 +2758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/training.md" class="md-nav__link">
+      <a href="reference/training/" class="md-nav__link">
         
   
   
@@ -2786,7 +2786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/community.md" class="md-nav__link">
+      <a href="reference/community/" class="md-nav__link">
         
   
   
@@ -2814,7 +2814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/books-and-papers.md" class="md-nav__link">
+      <a href="reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -2969,7 +2969,7 @@
 <p>The Helios Light Source — a complete hypothetical synchrotron, designed end to end.</p>
 </li>
 <li>
-<p>📚 <strong><a href="reference/cheatsheet.md">Reference</a></strong></p>
+<p>📚 <strong><a href="reference/cheatsheet/">Reference</a></strong></p>
 <p>Commands, environment variables, record types, troubleshooting, training material, community.</p>
 </li>
 </ul>
@@ -2977,8 +2977,8 @@
 <h2 id="the-worked-example-helios-light-source">The worked example: Helios Light Source<a class="headerlink" href="#the-worked-example-helios-light-source" title="Permanent link">&para;</a></h2>
 <p>Layer diagrams only teach so much. This guide therefore invents a facility and designs the whole control system for it:</p>
 <p><strong>Helios Light Source (HLS)</strong> — 3 GeV, 4th-generation storage ring, 528 m circumference, 100 pm·rad emittance, 500 mA in top-up mode, 20 beamlines, ~330 IOCs, ~415 000 process variables.</p>
-<p>Every chapter shows the reasoning, not just the answer: why the <a href="example-facility/naming-convention/">naming convention</a> puts the area code second, how the <a href="example-facility/archiving-plan/">archiver storage estimate</a> arrives at 24 TB/year, where the <a href="example-facility/machine-protection/">machine protection system</a> stops and EPICS begins, and what actually happens during a <a href="example-facility/operations-scenarios.md">beam dump at 03:00</a>.</p>
-<p>Then <a href="example-facility/build-a-mini-hls.md">Build a Mini-HLS</a> shrinks the whole thing onto a laptop with soft IOCs, so you can watch it work.</p>
+<p>Every chapter shows the reasoning, not just the answer: why the <a href="example-facility/naming-convention/">naming convention</a> puts the area code second, how the <a href="example-facility/archiving-plan/">archiver storage estimate</a> arrives at 24 TB/year, where the <a href="example-facility/machine-protection/">machine protection system</a> stops and EPICS begins, and what actually happens during a <a href="example-facility/operations-scenarios/">beam dump at 03:00</a>.</p>
+<p>Then <a href="example-facility/build-a-mini-hls/">Build a Mini-HLS</a> shrinks the whole thing onto a laptop with soft IOCs, so you can watch it work.</p>
 <div class="admonition warning">
 <p class="admonition-title">HLS is fictional</p>
 <p>Its parameters are plausible and internally consistent — chosen in the spirit of published 4th-generation light source design reports — but Helios is a teaching device. Do not treat any number here as a design value, and do not treat any page here as safety guidance.</p>
@@ -2988,12 +2988,12 @@
 <li><a href="start-here/what-is-epics/">What is EPICS?</a> — the 10-minute version</li>
 <li><a href="start-here/core-concepts/">Core Concepts</a> — PVs, records, IOCs, CA and PVA</li>
 <li><a href="build-install/epics-base/">Build EPICS Base</a>, then <a href="build-install/first-ioc/">Your First IOC</a></li>
-<li><a href="reference/cheatsheet.md">Command Cheat Sheet</a> — poke at your IOC with <code>caget</code>, <code>caput</code>, <code>camonitor</code></li>
+<li><a href="reference/cheatsheet/">Command Cheat Sheet</a> — poke at your IOC with <code>caget</code>, <code>caput</code>, <code>camonitor</code></li>
 <li><a href="architecture/">Architecture Overview</a> — the layer model will now mean something</li>
 <li><a href="toolbox/">The Toolbox</a> — browse it; you will not need all of it</li>
 <li><a href="example-facility/">Example Facility</a> — watch it assemble at scale</li>
 </ol>
-<p>In a hurry, or allergic to compilers? Use a <a href="reference/training.md">prebuilt training VM</a> with the whole stack already running.</p>
+<p>In a hurry, or allergic to compilers? Use a <a href="reference/training/">prebuilt training VM</a> with the whole stack already running.</p>
 <h2 id="how-this-site-is-maintained">How this site is maintained<a class="headerlink" href="#how-this-site-is-maintained" title="Permanent link">&para;</a></h2>
 <p>Documentation only — no scripts, no templates, no code. Where upstream documents something, this site links to upstream rather than paraphrasing it, because paraphrases go stale silently. External links are checked monthly in CI. Corrections are welcome via <a href="https://github.com/nusaqib/EPICS-for-Dummies">GitHub</a>.</p>
 <div class="admonition note">

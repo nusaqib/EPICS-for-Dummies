@@ -2538,7 +2538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2566,7 +2566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2594,7 +2594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2694,7 +2694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2722,7 +2722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2750,7 +2750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2778,7 +2778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2806,7 +2806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2834,7 +2834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2862,7 +2862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2890,7 +2890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3116,7 +3116,7 @@
 <li>Typical accuracy on a LAN: <strong>1–10 ms</strong>. Adequate for slow signals, archiving of process values, and log correlation.</li>
 <li>Not adequate for: pulse-to-pulse correlation, fast diagnostics, or anything where you need to know the <em>order</em> of two events milliseconds apart.</li>
 </ul>
-<p>The most common EPICS archive pathology is not a missing PV — it's a subsystem whose IOC host has drifted, producing data that looks plausible and correlates wrongly. Alarm on NTP offset via <a href="../soft-support-modules/#iocstats--deviocstats">iocStats</a> or your host monitoring, and treat a drift alarm as a data-integrity incident.</p>
+<p>The most common EPICS archive pathology is not a missing PV — it's a subsystem whose IOC host has drifted, producing data that looks plausible and correlates wrongly. Alarm on NTP offset via <a href="../soft-support-modules/#iocstats-and-deviocstats">iocStats</a> or your host monitoring, and treat a drift alarm as a data-integrity incident.</p>
 <h2 id="ptp-ieee-1588">PTP: IEEE 1588<a class="headerlink" href="#ptp-ieee-1588" title="Permanent link">&para;</a></h2>
 <p>Precision Time Protocol achieves sub-microsecond synchronisation over Ethernet, given switches that support it (hardware timestamping, transparent or boundary clocks).</p>
 <p>Good for: distributed digitisers, camera timestamping, anything needing microsecond-level correlation without a dedicated timing network. Increasingly common as switch support has become standard, and much cheaper than an event system. It gives you <em>time</em>, not <em>triggers</em> — a distinction that matters when you actually need to fire something.</p>

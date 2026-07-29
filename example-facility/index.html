@@ -2375,7 +2375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="beamline.md" class="md-nav__link">
+      <a href="beamline/" class="md-nav__link">
         
   
   
@@ -2403,7 +2403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="operations-scenarios.md" class="md-nav__link">
+      <a href="operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2431,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="build-a-mini-hls.md" class="md-nav__link">
+      <a href="build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2531,7 +2531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2559,7 +2559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/environment-variables.md" class="md-nav__link">
+      <a href="../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2587,7 +2587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/record-types.md" class="md-nav__link">
+      <a href="../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2615,7 +2615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2643,7 +2643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/documentation.md" class="md-nav__link">
+      <a href="../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2671,7 +2671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/training.md" class="md-nav__link">
+      <a href="../reference/training/" class="md-nav__link">
         
   
   
@@ -2699,7 +2699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/community.md" class="md-nav__link">
+      <a href="../reference/community/" class="md-nav__link">
         
   
   
@@ -2727,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3028,28 +3028,28 @@
 <td>Where does EPICS stop, and why is that line absolute?</td>
 </tr>
 <tr>
-<td><strong><a href="beamline.md">A Beamline</a></strong></td>
+<td><strong><a href="beamline/">A Beamline</a></strong></td>
 <td>BL07 in full: optics, detector, data, and its own IOCs</td>
 </tr>
 <tr>
-<td><strong><a href="operations-scenarios.md">Operations Scenarios</a></strong></td>
+<td><strong><a href="operations-scenarios/">Operations Scenarios</a></strong></td>
 <td>Startup, a 03:00 beam dump, a maintenance day</td>
 </tr>
 <tr>
-<td><strong><a href="build-a-mini-hls.md">Build a Mini-HLS</a></strong></td>
+<td><strong><a href="build-a-mini-hls/">Build a Mini-HLS</a></strong></td>
 <td>Run a shrunken version of all of it on your laptop</td>
 </tr>
 </tbody>
 </table>
 <h2 id="the-design-decisions-summarised">The design decisions, summarised<a class="headerlink" href="#the-design-decisions-summarised" title="Permanent link">&para;</a></h2>
 <p>If you read nothing else, these are the choices the chapters argue for:</p>
-<p><strong>Location first in the PV name.</strong> <code>SR-C05-PS-QF-01:Current-RB</code> — section, then area, then device class. Because "everything in cell 5" is the most common operational query, and because gateway rules, archiver policies, alarm hierarchy and access-security groups are all written as name patterns. <a href="naming-convention/#why-location-comes-first">Why</a></p>
+<p><strong>Location first in the PV name.</strong> <code>SR-C05-PS-QF-01:Current-RB</code> — section, then area, then device class. Because "everything in cell 5" is the most common operational query, and because gateway rules, archiver policies, alarm hierarchy and access-security groups are all written as name patterns. <a href="../architecture/naming-conventions/#why-location-comes-first">Why</a></p>
 <p><strong>Fine-grained IOCs.</strong> One per device group or crate, ~330 of them, not 20 large ones. Failure domains stay small and restarts stay cheap, which is affordable only because deployment is containerised. <a href="ioc-inventory/#the-granularity-decision">Why</a></p>
 <p><strong>Six network zones, and the office boundary is read-only by topology.</strong> Not by configuration, and not by access-security rules — by there being no path that can carry a write. <a href="network-design/">Why</a></p>
 <p><strong>Monitor-based archiving with deliberate deadbands, set when records are created.</strong> Because <code>ADEL</code> lives in the IOC, and retrofitting it across a facility is much harder than thinking about it up front. <a href="archiving-plan/#the-decision-that-dominates-everything">Why</a></p>
 <p><strong>A three-level alarm hierarchy with delays on consequential alarms.</strong> So a beam dump produces one alarm at the top and a findable first cause underneath, instead of four thousand simultaneous red rectangles. <a href="alarm-plan/#designing-for-the-flood">Why</a></p>
 <p><strong>Protection systems are outside EPICS entirely.</strong> Certified PLCs and hard-wired logic; EPICS reads their status and cannot influence it. <a href="machine-protection/">Why</a></p>
-<p><strong>Detector data never crosses Channel Access.</strong> Its own network, its own path to storage. EPICS controls the detector and supplies the metadata. <a href="beamline.md#the-data-path">Why</a></p>
+<p><strong>Detector data never crosses Channel Access.</strong> Its own network, its own path to storage. EPICS controls the detector and supplies the metadata. <a href="beamline/#the-data-path">Why</a></p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>→ <a href="machine-parameters/">Machine Parameters</a></p>
 

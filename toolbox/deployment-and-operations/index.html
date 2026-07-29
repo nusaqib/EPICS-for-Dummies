@@ -2571,7 +2571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2599,7 +2599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2627,7 +2627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2727,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2755,7 +2755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2783,7 +2783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2811,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2839,7 +2839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2867,7 +2867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2895,7 +2895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2923,7 +2923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3251,7 +3251,7 @@
 <p>The support modules ship YAML <em>definitions</em> describing what they can instantiate, and <code>ibek</code> composes them. The point is that the IOC's definition becomes a reviewable, validated, diffable document rather than a shell script — and generating it means it can also generate screens and documentation from the same source.</p>
 <h3 id="pvi">PVI<a class="headerlink" href="#pvi" title="Permanent link">&para;</a></h3>
 <p><strong>Process Variable Interface</strong> — <a href="https://github.com/epics-containers/pvi">github.com/epics-containers/pvi</a></p>
-<p>Describes a device's PV interface once, then generates the database template, the operator screen, the documentation, and the <a href="../scientific-data/#ophyd--ophyd-async">ophyd</a> device class from it. Attacks the duplication problem directly: the same device structure otherwise gets written out by hand in four places and drifts in all four.</p>
+<p>Describes a device's PV interface once, then generates the database template, the operator screen, the documentation, and the <a href="../scientific-data/#ophyd-and-ophyd-async">ophyd</a> device class from it. Attacks the duplication problem directly: the same device structure otherwise gets written out by hand in four places and drifts in all four.</p>
 <h2 id="e3-ess-epics-environment">e3 (ESS EPICS Environment)<a class="headerlink" href="#e3-ess-epics-environment" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -3263,11 +3263,11 @@
 <tbody>
 <tr>
 <td>Documentation</td>
-<td><a href="https://e3.pages.esss.lu.se/">e3.pages.esss.lu.se</a></td>
+<td><a href="https://e3pages.readthedocs.io/en/latest/">e3pages.readthedocs.io</a></td>
 </tr>
 <tr>
 <td>Source</td>
-<td><a href="https://gitlab.esss.lu.se/e3">gitlab.esss.lu.se/e3</a></td>
+<td><a href="https://github.com/icshwi/e3">github.com/icshwi/e3</a></td>
 </tr>
 <tr>
 <td>Origin</td>
@@ -3367,11 +3367,11 @@
 <p><strong>Where does software live?</strong> <code>/opt/epics/base-7.0.9</code>, <code>/opt/epics/modules/&lt;name&gt;/&lt;version&gt;</code>, <code>/opt/epics/ioc/&lt;iocname&gt;</code>. Versioned paths, never a bare <code>base</code> symlink that someone repoints on a Tuesday.</p>
 <p><strong>How is the environment set?</strong> One site script or environment module. Never per-user <code>.bashrc</code> archaeology.</p>
 <p><strong>How are IOCs started?</strong> systemd + procServ, or Kubernetes. Pick one and apply it everywhere; a facility with three mechanisms has three mechanisms to debug at 03:00.</p>
-<p><strong>What's the naming scheme for IOCs?</strong> Related to but distinct from <a href="../../architecture/naming-conventions/">PV naming</a>. The IOC name appears in <a href="../soft-support-modules/#iocstats--deviocstats">iocStats</a> PVs, <a href="../directory-services/">ChannelFinder</a> properties, log files, and procServ ports, so make it systematic — including a port-allocation scheme, because ad-hoc procServ ports collide eventually.</p>
+<p><strong>What's the naming scheme for IOCs?</strong> Related to but distinct from <a href="../../architecture/naming-conventions/">PV naming</a>. The IOC name appears in <a href="../soft-support-modules/#iocstats-and-deviocstats">iocStats</a> PVs, <a href="../directory-services/">ChannelFinder</a> properties, log files, and procServ ports, so make it systematic — including a port-allocation scheme, because ad-hoc procServ ports collide eventually.</p>
 <p><strong>Who may deploy?</strong> And is there a change window for IOCs serving operating subsystems? This is a policy question that will be answered by default if you don't answer it deliberately.</p>
 <p><strong>How is a rollback done?</strong> If the answer isn't obvious and fast, deployments will be feared and therefore batched, which makes each one riskier. Container tags and e3 versioning both make rollback trivial, which is a large part of their value.</p>
 <h2 id="operational-practices">Operational practices<a class="headerlink" href="#operational-practices" title="Permanent link">&para;</a></h2>
-<p><strong>Every IOC runs <a href="../soft-support-modules/#iocstats--deviocstats">iocStats</a>.</strong> Alarmed on heartbeat loss and uptime reset. Non-negotiable at any scale above a handful.</p>
+<p><strong>Every IOC runs <a href="../soft-support-modules/#iocstats-and-deviocstats">iocStats</a>.</strong> Alarmed on heartbeat loss and uptime reset. Non-negotiable at any scale above a handful.</p>
 <p><strong>Every IOC's console is reachable.</strong> procServ port or <code>kubectl exec</code>, documented, with the port allocation in a table somebody maintains.</p>
 <p><strong>Every IOC's logs go somewhere central.</strong> See <a href="../logbooks/#ioc-and-infrastructure-logging">Logbooks</a>.</p>
 <p><strong>Every IOC's <a href="../soft-support-modules/#autosave">autosave</a> directory is writable and backed up.</strong> Check after every deployment; a read-only autosave directory fails silently.</p>

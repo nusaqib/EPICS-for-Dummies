@@ -2593,7 +2593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../beamline.md" class="md-nav__link">
+      <a href="../beamline/" class="md-nav__link">
         
   
   
@@ -2621,7 +2621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations-scenarios.md" class="md-nav__link">
+      <a href="../operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2649,7 +2649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../build-a-mini-hls.md" class="md-nav__link">
+      <a href="../build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2749,7 +2749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2777,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2805,7 +2805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2833,7 +2833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2861,7 +2861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2889,7 +2889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2917,7 +2917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2945,7 +2945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3325,7 +3325,7 @@
 <p><strong>GW-4</strong> lets the accelerator see what it needs from beamlines: front-end shutter requests, beamline interlock status, and whether a beamline is ready for beam. About ten PVs per beamline, read-only.</p>
 <p>Note what this <em>doesn't</em> carry: 130 000 beamline PVs and 20 detectors' worth of traffic stay in zone 2. The accelerator has no reason to see them.</p>
 <h3 id="zone-4-carries-no-epics-traffic-at-all">Zone 4 carries no EPICS traffic at all<a class="headerlink" href="#zone-4-carries-no-epics-traffic-at-all" title="Permanent link">&para;</a></h3>
-<p>Detector data gets its own physical network and its own VLAN per beamline, sized for the data rate — a 4 MP camera at 20 fps is 1.3 Gbit/s, and the Eiger-class detectors are far worse. See <a href="beamline.md#the-data-path">the beamline data path</a>.</p>
+<p>Detector data gets its own physical network and its own VLAN per beamline, sized for the data rate — a 4 MP camera at 20 fps is 1.3 Gbit/s, and the Eiger-class detectors are far worse. See <a href="../beamline/#the-data-path">the beamline data path</a>.</p>
 <p>The detector's <em>control</em> PVs are on zone 2, where the rest of the beamline lives. Only bulk data is on zone 4, and it goes detector → storage without passing through EPICS. Mixing image bursts with vacuum readings on one VLAN adds latency to control traffic for no benefit.</p>
 <h3 id="zone-3-sits-in-the-middle">Zone 3 sits in the middle<a class="headerlink" href="#zone-3-sits-in-the-middle" title="Permanent link">&para;</a></h3>
 <p>Services must reach everything and be reachable by everything, so they route to zones 1 and 2 directly with full read/write — the <a href="../archiving-plan/">archiver</a> needs to connect to every IOC, and the <a href="../alarm-plan/">alarm server</a> likewise.</p>

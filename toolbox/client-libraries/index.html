@@ -1212,6 +1212,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="C and C++">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pvxs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PVXS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2582,7 +2599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2610,7 +2627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2638,7 +2655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2738,7 +2755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2766,7 +2783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2794,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2822,7 +2839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2850,7 +2867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2878,7 +2895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2906,7 +2923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2934,7 +2951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3079,6 +3096,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="C and C++">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pvxs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PVXS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3343,11 +3377,6 @@
 <td>The reference implementation. Every other CA library is ultimately this or a reimplementation of it. C API, callback-based, well documented in the <a href="https://epics.anl.gov/base/R3-14/8-docs/CAref.html">CA Reference Manual</a>.</td>
 </tr>
 <tr>
-<td><strong><a href="https://epics-base.github.io/pvxs/">PVXS</a></strong></td>
-<td>PVA</td>
-<td><strong>The modern choice for new C++ work.</strong> Michael Davidsaver's clean-sheet PVA implementation: modern C++11+, far simpler API than pvAccessCPP, client and server, and the foundation p4p is built on.</td>
-</tr>
-<tr>
 <td><strong>pvAccessCPP / pvDataCPP</strong></td>
 <td>PVA</td>
 <td>The original C++ PVA stack, bundled in Base 7. Still present and used; new code should prefer PVXS.</td>
@@ -3359,6 +3388,35 @@
 </tr>
 </tbody>
 </table>
+<h3 id="pvxs">PVXS<a class="headerlink" href="#pvxs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Documentation</td>
+<td><a href="https://epics-base.github.io/pvxs/">epics-base.github.io/pvxs</a></td>
+</tr>
+<tr>
+<td>Source</td>
+<td><a href="https://github.com/epics-base/pvxs">github.com/epics-base/pvxs</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Michael Davidsaver</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>PV Access</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The modern choice for new C++ work.</strong> A clean-sheet PVA implementation: modern C++11 and later, a far simpler API than pvAccessCPP, both client and server, and the foundation <a href="#p4p">p4p</a> is built on.</p>
+<p>If you are writing C++ that speaks PVA — a service, a gateway, a high-throughput data consumer — start here rather than with the older stack.</p>
 <p>For device support inside an IOC you generally don't use these directly — you use <a href="../soft-support-modules/#asyn">asyn</a>'s <code>asynPortDriver</code>, and the record layer handles the network.</p>
 <h2 id="java">Java<a class="headerlink" href="#java" title="Permanent link">&para;</a></h2>
 <table>

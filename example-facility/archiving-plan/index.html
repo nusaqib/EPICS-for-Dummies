@@ -2532,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../beamline.md" class="md-nav__link">
+      <a href="../beamline/" class="md-nav__link">
         
   
   
@@ -2560,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operations-scenarios.md" class="md-nav__link">
+      <a href="../operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2588,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../build-a-mini-hls.md" class="md-nav__link">
+      <a href="../build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2688,7 +2688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2716,7 +2716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2744,7 +2744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2772,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2800,7 +2800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2828,7 +2828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2856,7 +2856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2884,7 +2884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3124,7 +3124,7 @@
 </tbody>
 </table>
 <p>Of 415 000 PVs, 70% are archived. The 30% that aren't are mostly <a href="../../toolbox/detectors-and-imaging/">areaDetector</a> plugin internals — buffer counts, queue depths, plugin-internal state — which change meaning between releases and whose useful summaries are archived instead.</p>
-<p><strong>Images are never in the archiver.</strong> They go through the <a href="beamline.md#the-data-path">file-writing path</a>. What's archived is the metadata and the <a href="../../toolbox/detectors-and-imaging/#analysis-plugins">statistics plugin</a> outputs — centroid, total, dropped-frame counters.</p>
+<p><strong>Images are never in the archiver.</strong> They go through the <a href="../beamline/#the-data-path">file-writing path</a>. What's archived is the metadata and the <a href="../../toolbox/detectors-and-imaging/#analysis-plugins">statistics plugin</a> outputs — centroid, total, dropped-frame counters.</p>
 <h2 id="the-decision-that-dominates-everything">The decision that dominates everything<a class="headerlink" href="#the-decision-that-dominates-everything" title="Permanent link">&para;</a></h2>
 <p><strong>MONITOR sampling with deliberate deadbands, set on the record when it is created.</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>record(ai, &quot;SR-C05-VA-IP-03:Pressure-Mon&quot;) {

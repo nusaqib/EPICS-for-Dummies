@@ -2505,7 +2505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/beamline.md" class="md-nav__link">
+      <a href="../../example-facility/beamline/" class="md-nav__link">
         
   
   
@@ -2533,7 +2533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operations-scenarios.md" class="md-nav__link">
+      <a href="../../example-facility/operations-scenarios/" class="md-nav__link">
         
   
   
@@ -2561,7 +2561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/build-a-mini-hls.md" class="md-nav__link">
+      <a href="../../example-facility/build-a-mini-hls/" class="md-nav__link">
         
   
   
@@ -2661,7 +2661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/cheatsheet.md" class="md-nav__link">
+      <a href="../../reference/cheatsheet/" class="md-nav__link">
         
   
   
@@ -2689,7 +2689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/environment-variables.md" class="md-nav__link">
+      <a href="../../reference/environment-variables/" class="md-nav__link">
         
   
   
@@ -2717,7 +2717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/record-types.md" class="md-nav__link">
+      <a href="../../reference/record-types/" class="md-nav__link">
         
   
   
@@ -2745,7 +2745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/troubleshooting.md" class="md-nav__link">
+      <a href="../../reference/troubleshooting/" class="md-nav__link">
         
   
   
@@ -2773,7 +2773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/documentation.md" class="md-nav__link">
+      <a href="../../reference/documentation/" class="md-nav__link">
         
   
   
@@ -2801,7 +2801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/training.md" class="md-nav__link">
+      <a href="../../reference/training/" class="md-nav__link">
         
   
   
@@ -2829,7 +2829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/community.md" class="md-nav__link">
+      <a href="../../reference/community/" class="md-nav__link">
         
   
   
@@ -2857,7 +2857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/books-and-papers.md" class="md-nav__link">
+      <a href="../../reference/books-and-papers/" class="md-nav__link">
         
   
   
@@ -3121,7 +3121,7 @@
 </tbody>
 </table>
 <p><strong>The distinction that matters most:</strong> <code>VAL</code> is where you asked it to go, <code>RBV</code> is where it is. Screens must show <code>RBV</code>, scans must record <code>RBV</code>, and interlocks must use <code>RBV</code>. A screen showing <code>VAL</code> as "position" is the <a href="../../architecture/naming-conventions/#setpoint-versus-readback">setpoint/readback confusion</a> in its most consequential form — the operator sees the stage at 45 mm when it is jammed at 12 mm.</p>
-<p><strong>Waiting for completion:</strong> write with <code>ca_put_callback</code> (<code>caput -c</code>) and the put completes when <code>DMOV</code> goes to 1. Polling <code>DMOV</code> in a loop works but races; the callback is the correct mechanism, and it's what <a href="../scanning-and-automation/#sscan">sscan</a> and <a href="../scientific-data/#ophyd--ophyd-async">ophyd</a> use.</p>
+<p><strong>Waiting for completion:</strong> write with <code>ca_put_callback</code> (<code>caput -c</code>) and the put completes when <code>DMOV</code> goes to 1. Polling <code>DMOV</code> in a loop works but races; the callback is the correct mechanism, and it's what <a href="../scanning-and-automation/#sscan">sscan</a> and <a href="../scientific-data/#ophyd-and-ophyd-async">ophyd</a> use.</p>
 <h3 id="supported-controllers">Supported controllers<a class="headerlink" href="#supported-controllers" title="Permanent link">&para;</a></h3>
 <p>Dozens, in <code>motor</code>'s own tree or as separate <code>motor&lt;Vendor&gt;</code> repositories:</p>
 <table>
