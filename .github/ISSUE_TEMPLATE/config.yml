@@ -1,0 +1,19 @@
+blank_issues_enabled: true
+contact_links:
+  - name: I need help with EPICS itself
+    url: https://epics.anl.gov/tech-talk/
+    about: >-
+      This repo is a guide, not a support channel — we can't debug your IOC.
+      tech-talk is the EPICS community mailing list, it is genuinely responsive,
+      and core developers answer there. Search the archive first; your question
+      has probably already been answered.
+  - name: Official EPICS documentation
+    url: https://docs.epics-controls.org
+    about: >-
+      The authoritative reference. Where it and this guide disagree, it is right
+      and this guide is out of date — please tell us by opening an issue here.
+  - name: A specific project has a bug
+    url: https://epics-controls.org/resources-and-support/modules/
+    about: >-
+      For a bug in Phoebus, asyn, areaDetector, the Archiver Appliance or any
+      other project, file it on that project's own issue tracker rather than here.

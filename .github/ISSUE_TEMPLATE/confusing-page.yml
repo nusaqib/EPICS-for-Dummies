@@ -1,0 +1,52 @@
+name: A page confused me
+description: Something was unclear, assumed knowledge you didn't have, or sent you down a wrong path.
+title: "[confusing] "
+labels: ["clarity"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        **This is the most valuable kind of issue you can file.** You know exactly
+        which sentence lost you, and that knowledge evaporates within six months
+        of learning EPICS. Please don't assume it's your fault for not knowing
+        something — if a beginner's guide requires knowledge a beginner lacks,
+        the guide is wrong.
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      placeholder: docs/architecture/process-database.md, or the URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What was confusing?
+      description: Quote the sentence or section if you can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, or what were you trying to find out?
+      description: >-
+        Knowing what you came looking for is often more useful than knowing what
+        confused you — it tells us what the page should have said.
+
+  - type: dropdown
+    id: background
+    attributes:
+      label: Where are you coming from?
+      description: So we know which assumptions the page was making unfairly.
+      options:
+        - New to EPICS and to software generally
+        - New to EPICS, comfortable with software
+        - Physics or engineering background, some EPICS exposure
+        - Experienced with EPICS
+        - Experienced with another control system (TANGO, DOOCS, SCADA, …)
+        - Prefer not to say
+    validations:
+      required: false

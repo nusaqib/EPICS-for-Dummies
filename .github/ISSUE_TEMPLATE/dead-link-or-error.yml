@@ -1,0 +1,52 @@
+name: Dead link or factual error
+description: A link no longer resolves, a version number is wrong, or a claim is inaccurate.
+title: "[fix] "
+labels: ["accuracy"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        A monthly CI job checks every external link, but link rot outruns
+        automation and CI can't tell that a page moved to a *different wrong*
+        page. Factual corrections are equally welcome — this guide is written by
+        someone learning EPICS, not by the core developers.
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      placeholder: docs/toolbox/archiving.md, or the URL
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - Dead or redirecting link
+        - Wrong version number
+        - Factually incorrect statement
+        - Project has moved, been renamed, or been superseded
+        - Project is no longer maintained
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: What's wrong, and what should it say?
+      description: >-
+        If you know the correct link or fact, please include it — that turns this
+        from a report into a fix.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source (optional)
+      description: >-
+        A link to upstream documentation, a release note, or a tech-talk thread.
+        Helpful for anything version-specific.

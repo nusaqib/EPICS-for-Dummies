@@ -61,6 +61,12 @@ markdown_extensions:
 
 plugins:
   - search
+  # Stamps each page with the date of its last commit, so a reader can see how
+  # current it is. The failure mode for a guide like this is silent staleness.
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+      fallback_to_build_date: true
 
 # Folder-level READMEs exist so directories are browsable on GitHub. The site
 # uses index.md for section landing pages, and mkdocs warns (fatally, under

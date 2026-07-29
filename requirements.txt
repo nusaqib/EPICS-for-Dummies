@@ -1,0 +1,12 @@
+# Documentation build dependencies.
+#
+# Pinned so that a breaking release upstream cannot break the deploy without a
+# commit here, and so local previews match what CI builds.
+#
+#   pip install -r requirements.txt
+#   mkdocs serve
+#
+# To update: bump a pin, run `mkdocs build --strict` locally, then commit.
+
+mkdocs-material==9.5.44
+mkdocs-git-revision-date-localized-plugin==1.2.9

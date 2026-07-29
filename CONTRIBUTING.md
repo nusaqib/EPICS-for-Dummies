@@ -34,12 +34,14 @@ Adding a page means adding it to `nav:` in [`mkdocs.yml`](mkdocs.yml) — otherw
 ## Local preview
 
 ```bash
-pip install mkdocs-material
+pip install -r requirements.txt
 mkdocs serve          # http://127.0.0.1:8000
 mkdocs build --strict # fails on broken internal links; run before opening a PR
 ```
 
-`--strict` catches broken *internal* links and nav entries pointing at files that don't exist. External links are checked monthly by [`.github/workflows/link-check.yml`](.github/workflows/link-check.yml).
+Install from [`requirements.txt`](requirements.txt) rather than `pip install mkdocs-material` — the versions are pinned so local previews match CI, and the site uses a plugin (`git-revision-date-localized`, for the last-updated stamp on each page) that a bare install won't provide.
+
+`--strict` catches broken *internal* links and nav entries pointing at files that don't exist; [`.github/workflows/build.yml`](.github/workflows/build.yml) runs it on every pull request. External links are checked monthly by [`.github/workflows/link-check.yml`](.github/workflows/link-check.yml).
 
 ## Style
 

@@ -1,0 +1,85 @@
+name: You forgot tool X
+description: Something significant in the EPICS ecosystem isn't in the catalogue.
+title: "[tool] "
+labels: ["catalogue"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        The [toolbox](https://github.com/nusaqib/EPICS-for-Dummies/tree/main/docs/toolbox)
+        aims to cover everything significant, and it certainly doesn't. Facilities
+        publish far more than they announce, so pointers to work we've never heard
+        of are especially welcome.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name of the tool or module
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Prefer the project's own documentation site; failing that, its repository.
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What problem does it solve?
+      description: One or two sentences. What would make someone reach for this?
+    validations:
+      required: true
+
+  - type: input
+    id: maintainer
+    attributes:
+      label: Who maintains it?
+      description: A facility, a group, or a person. Helps readers judge whether to depend on it.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Which toolbox page does it belong on?
+      options:
+        - Base & IOCs
+        - Soft support modules
+        - Hardware support modules
+        - PLCs & fieldbus
+        - Motion control
+        - Detectors & imaging
+        - Timing systems
+        - Client libraries
+        - Operator interfaces
+        - Web interfaces
+        - Archiving
+        - Alarms
+        - Directory services
+        - Save & restore
+        - Electronic logbooks
+        - Gateways
+        - Scanning & automation
+        - Simulation & testing
+        - Scientific data
+        - Physics & optimisation
+        - Deployment & operations
+        - Observability
+        - None of these / not sure
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: maintained
+    attributes:
+      label: Maintenance check
+      description: >-
+        The catalogue tries to be honest about this, because several widely
+        installed EPICS tools have had no commits in years — sometimes because
+        they're finished, sometimes because they're abandoned, and the difference
+        matters when you hit a bug.
+      options:
+        - label: This project has seen activity in roughly the last two years, or is stable and complete rather than abandoned
+          required: false
