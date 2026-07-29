@@ -21,7 +21,7 @@ Where to go when this guide isn't enough — which for anything authoritative is
 | **[Channel Access Reference Manual](https://epics.anl.gov/base/R3-14/8-docs/CAref.html)** | The CA protocol, the C API, and the complete environment-variable list. |
 | [EPICS Process Database Concepts](https://docs.epics-controls.org/en/latest/guides/EPICS_Process_Database_Concepts.html) | The conceptual introduction to records, links and processing. Read this before the AppDevGuide. |
 | [What is EPICS](https://docs.epics-controls.org/en/latest/guides/EPICS_Intro.html) | The official overview |
-| [How-to guides](https://docs.epics-controls.org/en/latest/getting-started/EPICS_Intro.html) | Installation and practical tasks, maintained upstream |
+| [Getting started, and installation](https://docs.epics-controls.org/en/latest/getting-started/installation-linux.html) | Installing Base on Linux, macOS, Windows and RTEMS, maintained upstream |
 
 If you read one document properly, make it the **Application Developer's Guide**. It's the difference between using EPICS and understanding it.
 

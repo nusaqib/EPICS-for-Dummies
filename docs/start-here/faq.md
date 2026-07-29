@@ -59,7 +59,7 @@ In order of likelihood:
 4. The IOC is running but `iocInit` failed, so it serves nothing. Read its startup log.
 5. Docker/VPN networking. Try `EPICS_CA_ADDR_LIST=<ioc-ip>` with `EPICS_CA_AUTO_ADDR_LIST=NO`.
 
-Fuller list: [Troubleshooting](../reference/troubleshooting.md).
+Fuller list: [Troubleshooting](../reference/troubleshooting.md), or the [Error Message Index](../reference/error-messages.md) if you have an error string to paste.
 
 ### Two IOCs are serving the same PV name. What happens?
 

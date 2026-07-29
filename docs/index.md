@@ -36,7 +36,7 @@ Nobody hands you the list. Every new facility, and every new hire, rediscovers i
 
 - 📚 **[Reference](reference/cheatsheet.md)**
 
-    Commands, environment variables, record types, troubleshooting, training material, community.
+    Commands, environment variables, record types, an error-message index, training material, community.
 
 </div>
 
@@ -59,9 +59,10 @@ Then [Build a Mini-HLS](example-facility/build-a-mini-hls.md) shrinks the whole 
 2. [Core Concepts](start-here/core-concepts.md) — PVs, records, IOCs, CA and PVA
 3. [Build EPICS Base](build-install/epics-base.md), then [Your First IOC](build-install/first-ioc.md)
 4. [Command Cheat Sheet](reference/cheatsheet.md) — poke at your IOC with `caget`, `caput`, `camonitor`
-5. [Architecture Overview](architecture/index.md) — the layer model will now mean something
-6. [The Toolbox](toolbox/index.md) — browse it; you will not need all of it
-7. [Example Facility](example-facility/index.md) — watch it assemble at scale
+5. [Talk to a Real Device](build-install/talk-to-a-device.md) — one instrument, end to end, including what breaks
+6. [Architecture Overview](architecture/index.md) — the layer model will now mean something
+7. [The Toolbox](toolbox/index.md) — browse it; you will not need all of it
+8. [Example Facility](example-facility/index.md) — watch it assemble at scale
 
 In a hurry, or allergic to compilers? Use a [prebuilt training VM](reference/training.md) with the whole stack already running.
 

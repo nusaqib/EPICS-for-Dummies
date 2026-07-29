@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Symptoms, in the order you're likely to meet them.
+Symptoms, in the order you're likely to meet them. If you have a literal error string to paste, the [Error Message Index](error-messages.md) is keyed on the text instead.
 
 ## "Channel connect timed out"
 

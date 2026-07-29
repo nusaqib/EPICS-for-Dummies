@@ -224,7 +224,7 @@ Or with a `.substitutions` file and `msi`/`dbLoadTemplate` for larger sets — s
 | Next step | Page |
 | --- | --- |
 | Put a screen on it | [Phoebus](phoebus.md) or `pip install pydm` |
-| Talk to real hardware | [StreamDevice](../toolbox/plc-and-fieldbus.md#streamdevice) over [asyn](../toolbox/soft-support-modules.md#asyn) |
+| Talk to real hardware | **[Talk to a Real Device](talk-to-a-device.md)** — one instrument, end to end |
 | Survive a restart | [autosave](../toolbox/soft-support-modules.md#autosave) |
 | Understand what you just wrote | [Process Database](../architecture/process-database.md) |
 | Add IOC health PVs | [iocStats](../toolbox/soft-support-modules.md#iocstats-and-deviocstats) |

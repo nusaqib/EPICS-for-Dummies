@@ -9,6 +9,7 @@ This section is the on-ramp.
 | [What is EPICS?](what-is-epics.md) | The 10-minute version. What problem it solves, who uses it, what it is *not*. |
 | [Core Concepts](core-concepts.md) | Process variables, records, the database, IOCs, Channel Access, PV Access. The vocabulary everything else assumes. |
 | [Linux Prerequisites](linux-prerequisites.md) | The shell, paths, environment variables, and build tools you need before compiling anything. |
+| [Your First Week at a Facility](first-week-at-a-facility.md) | The questions to ask your colleagues, because the most important knowledge at any site was never written down. |
 | [Glossary](glossary.md) | Every acronym in this guide, expanded. |
 | [FAQ](faq.md) | The questions every newcomer asks on the mailing list. |
 
@@ -48,6 +49,8 @@ Nobody learns EPICS by reading. You learn it by making a number change on a scre
     - A USB webcam → [areaDetector](../toolbox/detectors-and-imaging.md) with ADUVC, or `ADSimDetector` if you have no camera.
     - Nothing at all → simulate a device with [Lewis](../toolbox/simulation-and-testing.md#lewis) and talk to it over TCP as if it were real. This is genuinely how a lot of facility software gets developed.
 
+    Walked end to end, with the failure modes: [Talk to a Real Device](../build-install/talk-to-a-device.md).
+
     You will spend most of this week on protocol details and terminator characters. That is the job.
 
 === "Week 4 — Add the services"
@@ -67,7 +70,7 @@ Nobody learns EPICS by reading. You learn it by making a number change on a scre
     2. Read the [EPICS Application Developer's Guide](../reference/documentation.md) properly. Yes, all of it. It is the actual specification and it is readable.
     3. Work through a real training course: the [USPAS and EPICS Collaboration Meeting material](../reference/training.md) is free, complete, and has exercises.
     4. Subscribe to [tech-talk](../reference/community.md). Lurk for a month. The archive is the largest EPICS troubleshooting corpus in existence.
-    5. Learn how your site actually deploys IOCs — [containers](../toolbox/deployment-and-operations.md#epics-containers), [e3](../toolbox/deployment-and-operations.md#e3-ess-epics-environment), plain `make` and `procServ`, or something homegrown. This is the most site-specific knowledge you will acquire, and none of it is in this guide.
+    5. Learn how your site actually deploys IOCs — [containers](../toolbox/deployment-and-operations.md#epics-containers), [e3](../toolbox/deployment-and-operations.md#e3-ess-epics-environment), plain `make` and `procServ`, or something homegrown. This is the most site-specific knowledge you will acquire, and none of it is in this guide. [Your First Week at a Facility](first-week-at-a-facility.md) is the list of questions to ask.
 
 ## Three things that will confuse you, stated up front
 

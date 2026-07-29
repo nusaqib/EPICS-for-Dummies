@@ -81,6 +81,7 @@ nav:
       - What is EPICS?: start-here/what-is-epics.md
       - Core Concepts: start-here/core-concepts.md
       - Linux Prerequisites: start-here/linux-prerequisites.md
+      - Your First Week at a Facility: start-here/first-week-at-a-facility.md
       - Glossary: start-here/glossary.md
       - FAQ: start-here/faq.md
   - Architecture:
@@ -119,6 +120,7 @@ nav:
       - build-install/index.md
       - EPICS Base: build-install/epics-base.md
       - Your First IOC: build-install/first-ioc.md
+      - Talk to a Real Device: build-install/talk-to-a-device.md
       - Java (JDK): build-install/jdk.md
       - Tomcat: build-install/tomcat.md
       - Phoebus: build-install/phoebus.md
@@ -152,6 +154,7 @@ nav:
       - Environment Variables: reference/environment-variables.md
       - Record Types: reference/record-types.md
       - Troubleshooting: reference/troubleshooting.md
+      - Error Message Index: reference/error-messages.md
       - Official Documentation: reference/documentation.md
       - Training Material: reference/training.md
       - Community: reference/community.md

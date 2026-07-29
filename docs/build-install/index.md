@@ -43,6 +43,7 @@ flowchart TB
 | --- | --- | --- |
 | [EPICS Base](epics-base.md) | ~30 min | `softIoc`, `caget`, `caput`, the build system |
 | [Your First IOC](first-ioc.md) | ~30 min | Records you own, changing on demand |
+| [Talk to a Real Device](talk-to-a-device.md) | ~2 h | One real instrument, end to end, with the failures |
 
 **Stop here and play for a while.** Everything else is easier once PVs feel ordinary.
 

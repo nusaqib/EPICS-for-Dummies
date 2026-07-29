@@ -24,6 +24,8 @@ This repo is that list, organised so you can find your way:
 | need to get software running on a box | [Build & Install](docs/build-install/index.md) |
 | want to see a whole facility designed end-to-end | [Example Facility](docs/example-facility/index.md) |
 | need a command, a record field, an env var | [Reference](docs/reference/cheatsheet.md) |
+| have an error message and no idea what it means | [Error Message Index](docs/reference/error-messages.md) |
+| have just joined a facility | [Your First Week](docs/start-here/first-week-at-a-facility.md) |
 
 There is **no code in this repository** — no install scripts, no IOC templates. Everything here points at upstream projects maintained by people who know their own software better than a shell script in a beginner's guide ever will. Commands appear inline in the how-to pages so you can read them before you run them.
 
@@ -43,9 +45,10 @@ HLS is invented. Its numbers are plausible and internally consistent, in the spi
 2. [Core Concepts](docs/start-here/core-concepts.md) — PVs, records, IOCs, CA/PVA
 3. [Build EPICS Base](docs/build-install/epics-base.md) → [Your First IOC](docs/build-install/first-ioc.md)
 4. [Command Cheat Sheet](docs/reference/cheatsheet.md) — poke at it with `caget`/`caput`/`camonitor`
-5. [Architecture Overview](docs/architecture/index.md) — now the layer model will mean something
-6. [The Toolbox](docs/toolbox/index.md) — browse; you don't need it all
-7. [Example Facility](docs/example-facility/index.md) — see it assembled at scale
+5. [Talk to a Real Device](docs/build-install/talk-to-a-device.md) — one instrument, end to end
+6. [Architecture Overview](docs/architecture/index.md) — now the layer model will mean something
+7. [The Toolbox](docs/toolbox/index.md) — browse; you don't need it all
+8. [Example Facility](docs/example-facility/index.md) — see it assembled at scale
 
 Or skip straight to a [prebuilt training VM](docs/reference/training.md) if you'd rather click than compile.
 
