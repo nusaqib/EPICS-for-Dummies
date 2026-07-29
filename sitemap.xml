@@ -37,6 +37,22 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/alarm-system/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/archiver-appliance/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/channelfinder-recsync/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/containers/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/dbwr/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
@@ -45,7 +61,19 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/first-ioc/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/gateways/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/jdk/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/olog/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
@@ -53,7 +81,15 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/pvinfo/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/pvws/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
+         <loc>https://nusaqib.github.io/EPICS-for-Dummies/build-install/save-and-restore/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>

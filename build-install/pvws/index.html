@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://nusaqib.github.io/EPICS-for-Dummies/build-install/pvws/">
       
       
-        <link rel="prev" href="../phoebus/">
+        <link rel="prev" href="../olog/">
       
       
         <link rel="next" href="../dbwr/">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-build-and-install-pvws-pv-web-socket" class="md-skip">
+        <a href="#install-pvws-pv-web-socket" class="md-skip">
           Skip to content
         </a>
       
@@ -1608,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../first-ioc.md" class="md-nav__link">
+      <a href="../first-ioc/" class="md-nav__link">
         
   
   
@@ -1720,7 +1720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archiver-appliance.md" class="md-nav__link">
+      <a href="../archiver-appliance/" class="md-nav__link">
         
   
   
@@ -1748,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../alarm-system.md" class="md-nav__link">
+      <a href="../alarm-system/" class="md-nav__link">
         
   
   
@@ -1776,7 +1776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../channelfinder-recsync.md" class="md-nav__link">
+      <a href="../channelfinder-recsync/" class="md-nav__link">
         
   
   
@@ -1804,7 +1804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../save-and-restore.md" class="md-nav__link">
+      <a href="../save-and-restore/" class="md-nav__link">
         
   
   
@@ -1832,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../olog.md" class="md-nav__link">
+      <a href="../olog/" class="md-nav__link">
         
   
   
@@ -1920,10 +1920,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pre-requisites
+        Prerequisites
       
     </span>
   </a>
@@ -1931,10 +1931,76 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-install" class="md-nav__link">
+  <a href="#build" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Build &amp; Install
+        Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-epics-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure EPICS access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-it-safely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy it safely
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
       
     </span>
   </a>
@@ -1985,7 +2051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pvinfo.md" class="md-nav__link">
+      <a href="../pvinfo/" class="md-nav__link">
         
   
   
@@ -2013,7 +2079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gateways.md" class="md-nav__link">
+      <a href="../gateways/" class="md-nav__link">
         
   
   
@@ -2041,7 +2107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../containers.md" class="md-nav__link">
+      <a href="../containers/" class="md-nav__link">
         
   
   
@@ -2868,10 +2934,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pre-requisites
+        Prerequisites
       
     </span>
   </a>
@@ -2879,10 +2945,76 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-install" class="md-nav__link">
+  <a href="#build" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Build &amp; Install
+        Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-epics-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure EPICS access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-it-safely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploy it safely
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
       
     </span>
   </a>
@@ -2914,33 +3046,91 @@
   
 
 
-<h1 id="how-to-build-and-install-pvws-pv-web-socket">How To build and install PVWS (PV Web Socket)<a class="headerlink" href="#how-to-build-and-install-pvws-pv-web-socket" title="Permanent link">&para;</a></h1>
+<h1 id="install-pvws-pv-web-socket">Install PVWS (PV Web Socket)<a class="headerlink" href="#install-pvws-pv-web-socket" title="Permanent link">&para;</a></h1>
+<p>The WebSocket bridge that lets browsers read PVs. Foundation for <a href="../dbwr/">DBWR</a> and for any custom web dashboard.</p>
+<p>Overview: <a href="../../toolbox/web-interfaces/#pvws-pv-web-socket">Toolbox → PVWS</a>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href="https://github.com/ornl-epics/pvws">github.com/ornl-epics/pvws</a></td>
+</tr>
+<tr>
+<td>Origin</td>
+<td>ORNL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/ornl-epics/pvws">PV Web Socket - GitHub</a></li>
+<li><a href="../jdk/">JDK</a> and Maven</li>
+<li><a href="../tomcat/">Tomcat</a></li>
+<li>Network reachability from the Tomcat host to your IOCs — <strong>this is the part that catches people out</strong>, see below</li>
 </ul>
-<h2 id="pre-requisites">Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Maven</li>
-<li>Tomcat<ul>
-<li>See <a href="./Tomcat.md">Tomcat installation and configuration</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="build-install">Build &amp; Install<a class="headerlink" href="#build-install" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>Clone the source code of EPICS base
+<h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ornl-epics/pvws.git
-</code></pre></div></p>
-</li>
-<li>
-<p>Build
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mvn<span class="w"> </span>clean<span class="w"> </span>package
-</code></pre></div></p>
-</li>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>pvws
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mvn<span class="w"> </span>clean<span class="w"> </span>package
+</code></pre></div>
+<p><code>BUILD SUCCESS</code> leaves the deployable at <code>target/pvws.war</code>.</p>
+<h2 id="deploy">Deploy<a class="headerlink" href="#deploy" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cp<span class="w"> </span>target/pvws.war<span class="w"> </span><span class="nv">$CATALINA_HOME</span>/webapps/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>tail<span class="w"> </span>-f<span class="w"> </span><span class="nv">$CATALINA_HOME</span>/logs/catalina.out<span class="w">     </span><span class="c1"># watch it deploy</span>
+</code></pre></div>
+<p>Then <a href="http://localhost:8080/pvws">http://localhost:8080/pvws</a> — the bundled demo page lets you subscribe to a PV name and watch values arrive.</p>
+<h2 id="configure-epics-access">Configure EPICS access<a class="headerlink" href="#configure-epics-access" title="Permanent link">&para;</a></h2>
+<p>PVWS is a Channel Access and PV Access <strong>client</strong>, so it needs the same environment any client needs. This is the single most common reason a fresh PVWS shows nothing.</p>
+<p>Set the EPICS variables for the Tomcat process — in <code>$CATALINA_HOME/bin/setenv.sh</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EPICS_CA_ADDR_LIST</span><span class="o">=</span><span class="s2">&quot;10.1.5.255 10.1.6.255&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EPICS_CA_AUTO_ADDR_LIST</span><span class="o">=</span>NO
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EPICS_CA_MAX_ARRAY_BYTES</span><span class="o">=</span><span class="m">10000000</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EPICS_PVA_ADDR_LIST</span><span class="o">=</span><span class="s2">&quot;10.1.5.255 10.1.6.255&quot;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EPICS_PVA_AUTO_ADDR_LIST</span><span class="o">=</span>NO
+</code></pre></div>
+<p>Restart Tomcat after changing it. Verify with a PV you know exists — if <code>caget</code> works from a shell on that host but PVWS doesn't see the PV, the variables aren't reaching the Tomcat process. See <a href="../../architecture/networking/">Networking</a>.</p>
+<p>Other configurable items, per the project's README, include the maximum array size and the maximum number of PVs per session — both worth setting deliberately rather than discovering.</p>
+<h2 id="use-it">Use it<a class="headerlink" href="#use-it" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ws</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocket</span><span class="p">(</span><span class="s2">&quot;wss://pvws.example.org/pvws/pv&quot;</span><span class="p">);</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">ws</span><span class="p">.</span><span class="nx">onopen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ws</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;subscribe&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nx">pvs</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;SR-CF-DI-DCCT-01:Current-Mon&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;SR-CF-RF-CAV-01:Volt-Mon&quot;</span><span class="p">]</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}));</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nx">ws</span><span class="p">.</span><span class="nx">onmessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="c1">// msg.pv, msg.value, msg.severity, msg.seconds, msg.units, ...</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">pv</span><span class="p">,</span><span class="w"> </span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">msg</span><span class="p">.</span><span class="nx">severity</span><span class="p">);</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">};</span>
+</code></pre></div>
+<p>The message protocol is documented in the repository. Note that the first message for a PV carries its metadata (units, precision, limits, enum labels) and subsequent messages carry values — so cache the metadata rather than expecting it every time.</p>
+<p><strong>Always display severity.</strong> A dashboard showing a number with no indication that it's <code>INVALID</code> will eventually mislead somebody about the state of the machine.</p>
+<h2 id="deploy-it-safely">Deploy it safely<a class="headerlink" href="#deploy-it-safely" title="Permanent link">&para;</a></h2>
+<p>This is the component most likely to end up reachable from outside the controls network, so the boundary matters more here than anywhere else in this section.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Browser ──HTTPS/WSS──&gt; nginx (TLS + SSO) ──&gt; Tomcat/PVWS ──CA──&gt; read-only gateway ──&gt; IOCs
+</code></pre></div>
+<ul>
+<li><strong>Behind a <a href="../gateways/">read-only gateway</a>, always.</strong> Everything the browser can reach, PVWS can reach. Making "read-only" a topological fact rather than a configuration setting is the whole point.</li>
+<li><strong>TLS and authentication at the reverse proxy.</strong> PVWS is not an identity system.</li>
+<li><strong>Watch the PV count.</strong> One PVWS holding tens of thousands of channels for a handful of dashboards is a common accident — usually a page subscribing to everything and rendering a fraction.</li>
+<li><strong>Set array limits consistently</strong> at the client, PVWS, the gateway and the IOC. A mismatch silently truncates arrays and looks like data corruption.</li>
 </ul>
-<p>Upon <code>BUILD SUCCESS</code> The deployable file will be in <code>target/pvws.war</code>. Place <code>pvws.war</code> in <code>$CATALINA_HOME/webapps</code></p>
-<p>PVWS can now be accessed at http://localhost:8080/pvws</p>
+<h2 id="verify">Verify<a class="headerlink" href="#verify" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Subscribe to a PV from the demo page and change it with <code>caput</code>.</li>
+<li>Confirm the value and the severity both update.</li>
+<li>Stop the IOC — the browser should see a disconnect, not a frozen value.</li>
+<li>Check <code>catalina.out</code> for CA connection warnings.</li>
+</ol>
+<p>Step 3 matters: a web dashboard that keeps showing the last value after the IOC dies is worse than one that shows nothing.</p>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>→ <a href="../dbwr/">DBWR</a>, which turns PVWS into a full display runtime.</p>
 
 
 
@@ -2976,7 +3166,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../phoebus/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Phoebus">
+          <a href="../olog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Olog">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2986,7 +3176,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Phoebus
+                Olog
               </div>
             </div>
           </a>

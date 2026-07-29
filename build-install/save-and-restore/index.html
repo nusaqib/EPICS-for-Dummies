@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://nusaqib.github.io/EPICS-for-Dummies/toolbox/scientific-data/">
+        <link rel="canonical" href="https://nusaqib.github.io/EPICS-for-Dummies/build-install/save-and-restore/">
       
       
-        <link rel="prev" href="../simulation-and-testing/">
+        <link rel="prev" href="../channelfinder-recsync/">
       
       
-        <link rel="next" href="../physics-and-optimization/">
+        <link rel="next" href="../olog/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Scientific Data - EPICS for Dummies</title>
+        <title>Save & Restore - EPICS for Dummies</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#scientific-data" class="md-skip">
+        <a href="#install-save-and-restore" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Scientific Data
+              Save & Restore
             
           </span>
         </div>
@@ -754,8 +754,6 @@
       
   
   
-    
-  
   
   
     
@@ -777,6 +775,723 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../toolbox/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Toolbox
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Toolbox
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/base-and-iocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base & IOCs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/soft-support-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soft Support Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/hardware-support-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Support Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/plc-and-fieldbus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PLCs & Fieldbus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/motion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motion Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/detectors-and-imaging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detectors & Imaging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/timing-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timing Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/client-libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Client Libraries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/operator-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operator Interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/web-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/archiving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archiving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/alarms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alarms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/directory-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Directory Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/save-and-restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save & Restore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/logbooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronic Logbooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/gateways/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gateways
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/scanning-and-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scanning & Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/simulation-and-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulation & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/scientific-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/physics-and-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics & Optimisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/deployment-and-operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toolbox/observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
         
       
         
@@ -817,7 +1532,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -828,7 +1543,7 @@
   <span class="md-ellipsis">
     
   
-    The Toolbox
+    Build & Install
   
 
     
@@ -839,18 +1554,18 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    The Toolbox
+    Build & Install
   
 
           </label>
@@ -865,14 +1580,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../base-and-iocs/" class="md-nav__link">
+      <a href="../epics-base/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Base & IOCs
+    EPICS Base
   
 
     
@@ -893,14 +1608,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../soft-support-modules/" class="md-nav__link">
+      <a href="../first-ioc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Soft Support Modules
+    Your First IOC
   
 
     
@@ -921,14 +1636,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware-support-modules/" class="md-nav__link">
+      <a href="../jdk/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Hardware Support Modules
+    Java (JDK)
   
 
     
@@ -949,14 +1664,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../plc-and-fieldbus/" class="md-nav__link">
+      <a href="../tomcat/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PLCs & Fieldbus
+    Tomcat
   
 
     
@@ -977,14 +1692,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../motion/" class="md-nav__link">
+      <a href="../phoebus/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Motion Control
+    Phoebus
   
 
     
@@ -1005,14 +1720,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../detectors-and-imaging/" class="md-nav__link">
+      <a href="../archiver-appliance/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Detectors & Imaging
+    Archiver Appliance
   
 
     
@@ -1033,14 +1748,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../timing-systems/" class="md-nav__link">
+      <a href="../alarm-system/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Timing Systems
+    Alarm System
   
 
     
@@ -1061,14 +1776,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../client-libraries/" class="md-nav__link">
+      <a href="../channelfinder-recsync/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Client Libraries
+    ChannelFinder & recsync
   
 
     
@@ -1086,17 +1801,26 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../operator-interfaces/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
         
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   
   <span class="md-ellipsis">
     
   
-    Operator Interfaces
+    Save & Restore
   
 
     
@@ -1104,132 +1828,10 @@
   
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../web-interfaces/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Web Interfaces
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archiving/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Archiving
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../alarms/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Alarms
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../directory-services/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Directory Services
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../save-and-restore/" class="md-nav__link">
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1245,6 +1847,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-phoebus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect Phoebus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-first-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create your first configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create your first configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readbacks-and-tolerances-are-the-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Readbacks and tolerances are the point
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-configurations-from-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build configurations from queries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore-safely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restore safely
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operating-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-confuse-this-with-autosave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't confuse this with autosave
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1257,14 +1995,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../logbooks/" class="md-nav__link">
+      <a href="../olog/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Electronic Logbooks
+    Olog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pvws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PVWS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbwr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DBWR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pvinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PV Info
   
 
     
@@ -1313,818 +2135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scanning-and-automation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Scanning & Automation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../simulation-and-testing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Simulation & Testing
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Scientific Data
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Scientific Data
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bluesky" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bluesky
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Bluesky">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ophyd-ophyd-async" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ophyd / ophyd-async
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tiled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tiled
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nexus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NeXus
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hdf5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HDF5
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-full-path-and-where-epics-stops" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The full path, and where EPICS stops
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#facility-ecosystems" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Facility ecosystems
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guidance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Guidance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../physics-and-optimization/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Physics & Optimisation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../deployment-and-operations/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Deployment & Operations
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../observability/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Observability
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../build-install/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Build & Install
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Build & Install
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/epics-base/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EPICS Base
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/first-ioc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Your First IOC
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/jdk/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Java (JDK)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/tomcat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tomcat
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/phoebus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Phoebus
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/archiver-appliance/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Archiver Appliance
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/alarm-system/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Alarm System
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/channelfinder-recsync/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ChannelFinder & recsync
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/save-and-restore/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Save & Restore
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/olog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Olog
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/pvws/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PVWS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/dbwr/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    DBWR
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/pvinfo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PV Info
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/gateways/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Gateways
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build-install/containers/" class="md-nav__link">
+      <a href="../containers/" class="md-nav__link">
         
   
   
@@ -2951,22 +2962,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bluesky" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bluesky
+        Prerequisites
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Bluesky">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-phoebus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connect Phoebus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-first-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create your first configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create your first configuration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ophyd-ophyd-async" class="md-nav__link">
+  <a href="#readbacks-and-tolerances-are-the-point" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ophyd / ophyd-async
+        Readbacks and tolerances are the point
       
     </span>
   </a>
@@ -2979,10 +3023,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tiled" class="md-nav__link">
+  <a href="#build-configurations-from-queries" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tiled
+        Build configurations from queries
       
     </span>
   </a>
@@ -2990,10 +3034,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nexus" class="md-nav__link">
+  <a href="#restore-safely" class="md-nav__link">
     <span class="md-ellipsis">
       
-        NeXus
+        Restore safely
       
     </span>
   </a>
@@ -3001,10 +3045,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hdf5" class="md-nav__link">
+  <a href="#operating-it" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HDF5
+        Operating it
       
     </span>
   </a>
@@ -3012,32 +3056,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-full-path-and-where-epics-stops" class="md-nav__link">
+  <a href="#dont-confuse-this-with-autosave" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The full path, and where EPICS stops
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#facility-ecosystems" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Facility ecosystems
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guidance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Guidance
+        Don't confuse this with autosave
       
     </span>
   </a>
@@ -3072,7 +3094,7 @@
 
 
   
-    <a href="https://github.com/nusaqib/EPICS-for-Dummies/edit/main/docs/toolbox/scientific-data.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/nusaqib/EPICS-for-Dummies/edit/main/docs/build-install/save-and-restore.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3080,89 +3102,9 @@
   
 
 
-<h1 id="scientific-data">Scientific Data<a class="headerlink" href="#scientific-data" title="Permanent link">&para;</a></h1>
-<p>EPICS controls the instrument. Getting the <em>science</em> out — orchestrated acquisition, structured files, metadata, and analysis access — is a layer above, and it's where the beamline software community has built most of its recent work.</p>
-<h2 id="bluesky">Bluesky<a class="headerlink" href="#bluesky" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Home</td>
-<td><a href="https://blueskyproject.io/">blueskyproject.io</a></td>
-</tr>
-<tr>
-<td>Origin</td>
-<td>NSLS-II (Brookhaven); now a multi-facility collaboration</td>
-</tr>
-<tr>
-<td>Language</td>
-<td>Python</td>
-</tr>
-</tbody>
-</table>
-<p>Not an EPICS tool as such — an <strong>experiment orchestration framework</strong> that happens to drive EPICS very well. Adopted at NSLS-II, Diamond, ALS, APS and others.</p>
-<p>The components:</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Role</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>bluesky</strong></td>
-<td>The run engine. Executes <em>plans</em> — generator functions that yield messages like "set this", "trigger that", "read those".</td>
-</tr>
-<tr>
-<td><strong><a href="https://blueskyproject.io/ophyd/">ophyd</a> / <a href="https://blueskyproject.io/ophyd-async/">ophyd-async</a></strong></td>
-<td>Device abstraction. Wraps EPICS PVs into Python objects with a uniform <code>set</code>/<code>trigger</code>/<code>read</code>/<code>stage</code> interface.</td>
-</tr>
-<tr>
-<td><strong><a href="https://blueskyproject.io/databroker/">databroker</a></strong></td>
-<td>Retrieval of past runs as structured data.</td>
-</tr>
-<tr>
-<td><strong><a href="#tiled">Tiled</a></strong></td>
-<td>The modern data access service that databroker fronts.</td>
-</tr>
-<tr>
-<td><strong>event-model</strong></td>
-<td>The document schema: <code>start</code>, <code>descriptor</code>, <code>event</code>, <code>stop</code>. Every run is a stream of these.</td>
-</tr>
-<tr>
-<td><strong><a href="https://blueskyproject.io/bluesky-queueserver/">queueserver</a></strong></td>
-<td>Runs plans as a supervised service with a queue and a REST API, rather than in somebody's terminal.</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">bluesky</span><span class="w"> </span><span class="kn">import</span> <span class="n">RunEngine</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">bluesky.plans</span><span class="w"> </span><span class="kn">import</span> <span class="n">scan</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">ophyd</span><span class="w"> </span><span class="kn">import</span> <span class="n">EpicsMotor</span><span class="p">,</span> <span class="n">EpicsSignalRO</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">RE</span> <span class="o">=</span> <span class="n">RunEngine</span><span class="p">({})</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">sample_x</span> <span class="o">=</span> <span class="n">EpicsMotor</span><span class="p">(</span><span class="s1">&#39;BL07-EA-STAGE-01:X&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sample_x&#39;</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">detector</span> <span class="o">=</span> <span class="n">EpicsSignalRO</span><span class="p">(</span><span class="s1">&#39;BL07-EA-DET-01:Stats1:Total_RBV&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;detector&#39;</span><span class="p">)</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">RE</span><span class="p">(</span><span class="n">scan</span><span class="p">([</span><span class="n">detector</span><span class="p">],</span> <span class="n">sample_x</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">101</span><span class="p">))</span>
-</code></pre></div>
-<p><strong>What it gets right:</strong> the <em>document model</em>. Every run produces a self-describing stream containing not just the data but the plan, the devices, the metadata, and the timestamps. That means analysis code doesn't need to know how the scan was performed, and a run from 2019 is still readable. Solving metadata provenance properly, rather than as an afterthought, is the core contribution.</p>
-<p><strong>Where it belongs:</strong> experiments. It is a Python session, so a Bluesky plan does not survive a closed laptop, and nothing the <em>machine</em> depends on should live there. Use <code>queueserver</code> to make it a supervised service if beamline operations depend on it. See <a href="../scanning-and-automation/">Scanning &amp; Automation</a>.</p>
-<h3 id="ophyd-ophyd-async">ophyd / ophyd-async<a class="headerlink" href="#ophyd-ophyd-async" title="Permanent link">&para;</a></h3>
-<p>Worth understanding separately, because it's the boundary between EPICS and everything above it. <code>ophyd</code> wraps PVs into device objects:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Slits</span><span class="p">(</span><span class="n">Device</span><span class="p">):</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">top</span>    <span class="o">=</span> <span class="n">Cpt</span><span class="p">(</span><span class="n">EpicsMotor</span><span class="p">,</span> <span class="s1">&#39;-TOP&#39;</span><span class="p">)</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">bottom</span> <span class="o">=</span> <span class="n">Cpt</span><span class="p">(</span><span class="n">EpicsMotor</span><span class="p">,</span> <span class="s1">&#39;-BOT&#39;</span><span class="p">)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">gap</span>    <span class="o">=</span> <span class="n">Cpt</span><span class="p">(</span><span class="n">EpicsSignal</span><span class="p">,</span> <span class="s1">&#39;:Gap-SP&#39;</span><span class="p">)</span>
-</code></pre></div>
-<p>Higher layers then interact with a <code>Slits</code> object, never with PV names. <code>ophyd-async</code> is the asyncio rewrite, designed around high-throughput detectors and hardware-triggered ("flyer") scanning, and is where new development is happening.</p>
-<p>The design tension is worth naming: ophyd device definitions duplicate structure that already exists in the IOC's database. Facilities resolve it by <em>generating</em> ophyd definitions from the same source that generates the database — which is another argument for <a href="../deployment-and-operations/#pvi">PVI</a> and for treating device descriptions as the primary artefact.</p>
-<h2 id="tiled">Tiled<a class="headerlink" href="#tiled" title="Permanent link">&para;</a></h2>
+<h1 id="install-save-and-restore">Install Save and Restore<a class="headerlink" href="#install-save-and-restore" title="Permanent link">&para;</a></h1>
+<p>The service that stores named machine configurations and their snapshots, and — more usefully day to day — diffs them against the live machine.</p>
+<p>Overview: <a href="../../toolbox/save-and-restore/">Toolbox → Save &amp; Restore</a>.</p>
 <table>
 <thead>
 <tr>
@@ -3173,113 +3115,70 @@
 <tbody>
 <tr>
 <td>Documentation</td>
-<td><a href="https://blueskyproject.io/tiled/">blueskyproject.io/tiled</a></td>
+<td><a href="https://control-system-studio.readthedocs.io/en/latest/services/save-and-restore/doc/index.html">services/save-and-restore</a></td>
+</tr>
+<tr>
+<td>Source</td>
+<td><code>services/save-and-restore</code> in <a href="https://github.com/ControlSystemStudio/phoebus">phoebus</a></td>
+</tr>
+<tr>
+<td>Client</td>
+<td>The Save &amp; Restore application in <a href="../phoebus/">Phoebus</a></td>
 </tr>
 </tbody>
 </table>
-<p>A data access service: serves arrays, tables and hierarchical structures over HTTP with slicing, so a client fetches the 2 GB dataset's interesting 5 MB rather than the file. Handles authentication and access control, which matters when user data must be visible to its owners and nobody else.</p>
-<p>The problem it solves: analysis clients previously needed filesystem access to the storage, which forces every analysis machine onto the facility's storage network and makes remote analysis painful. Tiled makes data access an API.</p>
-<h2 id="nexus">NeXus<a class="headerlink" href="#nexus" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Home</td>
-<td><a href="https://www.nexusformat.org/">nexusformat.org</a></td>
-</tr>
-</tbody>
-</table>
-<p>The community standard for neutron, X-ray and muon data — an HDF5 layout convention (application definitions) specifying where the data, axes, units, instrument geometry and sample information go.</p>
-<p>Why bother: a NeXus file is readable by generic tools and by other facilities' analysis software, years later, without a facility-specific reader. A bespoke HDF5 layout requires your documentation to survive, and it usually doesn't.</p>
-<p>Written from EPICS by the <a href="../detectors-and-imaging/#file-writing-plugins">areaDetector HDF5 plugin</a> (with an XML layout definition) or <code>NDFileNexus</code>, or assembled by a writer service consuming a document stream.</p>
-<h2 id="hdf5">HDF5<a class="headerlink" href="#hdf5" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Home</td>
-<td><a href="https://www.hdfgroup.org/solutions/hdf5/">hdfgroup.org</a></td>
-</tr>
-</tbody>
-</table>
-<p>The container underneath nearly all of this. Relevant features:</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Chunking and compression</strong> — blosc, zlib, szip, and specialist codecs. Chunk shape should match your read pattern, and getting it wrong can cost an order of magnitude in analysis time.</li>
-<li><strong>SWMR</strong> (single-writer/multiple-reader) — read a file that's still being written. This is what makes live analysis during a scan possible.</li>
-<li><strong>Virtual datasets</strong> — present many files as one logical array, which is how multi-module detectors and multi-scan datasets are stitched.</li>
+<li><a href="../jdk/">JDK</a></li>
+<li><a href="../phoebus/">Phoebus built</a> — the service JAR comes from that build</li>
+<li>A backing store as required by the version you're deploying — consult the service documentation, since this has changed across releases (earlier versions used Elasticsearch; check yours)</li>
 </ul>
-<h2 id="the-full-path-and-where-epics-stops">The full path, and where EPICS stops<a class="headerlink" href="#the-full-path-and-where-epics-stops" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    D["Detector&lt;br/&gt;hardware"]
-    AD["areaDetector IOC&lt;br/&gt;control + plugins"]
-    subgraph EPICS["EPICS domain"]
-        AD
-        MD["Metadata PVs&lt;br/&gt;motors, ring current,&lt;br/&gt;energy, sample name"]
-    end
-    F["HDF5 / NeXus file&lt;br/&gt;written by the plugin&lt;br/&gt;or a writer service"]
-    T["Tiled / databroker&lt;br/&gt;data access service"]
-    A["Analysis&lt;br/&gt;notebooks, pipelines,&lt;br/&gt;the user's laptop"]
-    D --&gt; AD
-    AD --&gt;|"NDAttributes carry&lt;br/&gt;metadata into the file"| F
-    MD --&gt; AD
-    AD --&gt;|"NTNDArray over PVA&lt;br/&gt;live view, small ROIs only"| A
-    F --&gt; T --&gt; A</code></pre>
-<p>The critical design decision: <strong>bulk data does not flow through Channel Access.</strong> EPICS controls the detector, provides the metadata, and serves a downsampled live view. The science data goes detector → file → data service → analysis. Above a few hundred MB/s that isn't a preference, it's the only thing that works. See <a href="../detectors-and-imaging/#data-rate-reality">Detectors &amp; Imaging</a>.</p>
-<h2 id="facility-ecosystems">Facility ecosystems<a class="headerlink" href="#facility-ecosystems" title="Permanent link">&para;</a></h2>
-<p>Beamline data software is more facility-divergent than any other part of EPICS. Worth knowing the main families:</p>
-<table>
-<thead>
-<tr>
-<th>Facility family</th>
-<th>Stack</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>NSLS-II, ALS, and collaborators</strong></td>
-<td>Bluesky + ophyd + Tiled, end to end. The reference implementation.</td>
-</tr>
-<tr>
-<td><strong>Diamond</strong></td>
-<td>Bluesky/ophyd-async and GDA, with <code>pandABlocks</code> and malcolm-style hardware-triggered scanning</td>
-</tr>
-<tr>
-<td><strong>APS</strong></td>
-<td>Historically <a href="../scanning-and-automation/#sscan">sscan</a> + saveData with SPEC; increasingly Bluesky</td>
-</tr>
-<tr>
-<td><strong>ESRF, SOLEIL</strong></td>
-<td>TANGO-centric, with BLISS as the orchestration layer</td>
-</tr>
-<tr>
-<td><strong>ESS</strong></td>
-<td>Kafka-based streaming data (<code>ess-dmsc</code>), NeXus file writers consuming the stream</td>
-</tr>
-<tr>
-<td><strong>Many beamlines everywhere</strong></td>
-<td><strong>SPEC</strong> — <a href="https://certif.com/">certif.com</a> — the commercial diffractometer control package. Decades of entrenchment; several EPICS integration paths exist.</td>
-</tr>
-</tbody>
-</table>
-<p>If you're joining a beamline, the local answer here is a much stronger constraint than any technical comparison.</p>
-<h2 id="guidance">Guidance<a class="headerlink" href="#guidance" title="Permanent link">&para;</a></h2>
-<p><strong>Capture metadata at acquisition time, in the file.</strong> Motor positions, ring current, energy, temperatures, sample identity, and the scan's intent — attached to the frames via <a href="../detectors-and-imaging/">NDAttributes</a>, not reconstructed later from the archiver. Reconstruction is lossy, error-prone, and sometimes impossible, and you only discover which when someone asks about a two-year-old dataset.</p>
-<p><strong>Use a standard format.</strong> NeXus/HDF5. A bespoke layout is a decision to maintain a reader forever, and to make your data unusable by anyone who doesn't have it.</p>
-<p><strong>Decide who deletes data, and when, before first beam.</strong> Not a software question, and it will become urgent at exactly the wrong moment. A full filesystem stops an experiment.</p>
-<p><strong>Keep the control system out of the bulk data path.</strong> EPICS's job is control, configuration, metadata and monitoring. It is not a data transport, and using it as one produces a system that works in commissioning and collapses at design rate.</p>
-<p><strong>Version the analysis, not just the data.</strong> A dataset without the code that produced its calibration is much less useful than it appears. This is where the document-model approach earns its keep — provenance recorded automatically beats provenance recorded by discipline.</p>
+<h2 id="run-it">Run it<a class="headerlink" href="#run-it" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~/phoebus/services/save-and-restore/target
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>java<span class="w"> </span>-jar<span class="w"> </span>save-and-restore-*.jar
+</code></pre></div>
+<p>Configuration is <code>application.properties</code>: the backing store's address, the service's own port, and authentication. If you already run Elasticsearch for <a href="../channelfinder-recsync/">ChannelFinder</a> or <a href="../olog/">Olog</a>, reuse that cluster rather than standing up another.</p>
+<h2 id="connect-phoebus">Connect Phoebus<a class="headerlink" href="#connect-phoebus" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># settings.ini</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">org.phoebus.applications.saveandrestore/jmasar.service.url</span><span class="o">=</span><span class="s">http://saveandrestore.example.org:8080/save-restore</span>
+</code></pre></div>
+<p>Then Applications → Save &amp; Restore.</p>
+<h2 id="create-your-first-configuration">Create your first configuration<a class="headerlink" href="#create-your-first-configuration" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Create a folder structure that mirrors your machine — <code>Accelerator/Magnets</code>, <code>Accelerator/RF</code>, <code>Beamlines/BL07</code>. This structure is how people will find things in two years, so give it five minutes' thought.</li>
+<li>Create a <strong>configuration</strong>: add the PVs it covers. For each setpoint, also specify its <strong>readback PV</strong> and a <strong>tolerance</strong>.</li>
+<li>Take a <strong>snapshot</strong>. Add a comment saying <em>why</em> — "reference configuration for 3 GeV user operation, 500 mA" is worth far more in a year than the numbers alone.</li>
+<li>Change a setpoint, then <strong>compare</strong> the snapshot to the live machine. This is the feature you'll use every day.</li>
+<li>Restore selectively from the diff.</li>
+</ol>
+<h3 id="readbacks-and-tolerances-are-the-point">Readbacks and tolerances are the point<a class="headerlink" href="#readbacks-and-tolerances-are-the-point" title="Permanent link">&para;</a></h3>
+<p>A configuration with setpoint-only PVs tells you what was asked for. A configuration pairing each setpoint with its readback and a tolerance distinguishes:</p>
+<ul>
+<li><em>the setpoint changed</em> — somebody adjusted something;</li>
+<li><em>the setpoint is unchanged but the readback disagrees</em> — <strong>the hardware is not doing what it's told</strong>.</li>
+</ul>
+<p>The second case is a fault you'd otherwise find much later, and configuring readbacks properly is the difference between a system that documents your machine and one that also diagnoses it.</p>
+<h2 id="build-configurations-from-queries">Build configurations from queries<a class="headerlink" href="#build-configurations-from-queries" title="Permanent link">&para;</a></h2>
+<p>Hand-maintaining a list of 900 magnet setpoints guarantees it's wrong within a month. Generate configurations from a <a href="../channelfinder-recsync/">ChannelFinder</a> query — "all PVs with <code>subsystem=magnets</code> and a name ending <code>-SP</code>" — so a newly installed magnet is included automatically.</p>
+<p>This is the same argument as for <a href="../archiver-appliance/#adding-pvs">archiver configuration</a>, and it's the main practical reason to deploy a directory service.</p>
+<h2 id="restore-safely">Restore safely<a class="headerlink" href="#restore-safely" title="Permanent link">&para;</a></h2>
+<p>Restore writes hundreds or thousands of PVs at once. Guidance, expanded in the <a href="../../toolbox/save-and-restore/#restoring-safely">toolbox page</a>:</p>
+<ul>
+<li><strong>Restore into a safe machine state.</strong> Beam off, systems idle. Enforce it with <a href="../../architecture/access-security/">access security <code>CALC</code> rules</a> rather than relying on discipline.</li>
+<li><strong>Order matters and the service doesn't know your machine.</strong> Where a sequence is required, drive the restore from a <a href="../../toolbox/scanning-and-automation/#sequencer-snl">sequencer</a> using the snapshot as data.</li>
+<li><strong>Restore selectively.</strong> Review the diff; restore what you meant to.</li>
+<li><strong>Don't include readbacks in the restore set.</strong> A configuration contains setpoints.</li>
+<li><strong>Restrict who can restore, and log it.</strong> A wholesale restore is among the most disruptive single actions available through the control system.</li>
+</ul>
+<h2 id="operating-it">Operating it<a class="headerlink" href="#operating-it" title="Permanent link">&para;</a></h2>
+<p><strong>Back up the database.</strong> Save sets and snapshots may be the only record of a configuration that worked — ranked highly in <a href="../../architecture/scaling-and-ha/#what-to-protect-first">what to protect</a>.</p>
+<p><strong>Take a snapshot before every shutdown</strong>, and one immediately before beam is lost for a long maintenance period. Startup after a shutdown is where this pays for itself several times over.</p>
+<p><strong>Mark golden snapshots</strong> for each machine mode, and keep a document naming which snapshot is authoritative for which mode.</p>
+<p><strong>Test a restore during a maintenance day.</strong> A snapshot nobody has restored is a hypothesis about a file format.</p>
+<h2 id="dont-confuse-this-with-autosave">Don't confuse this with autosave<a class="headerlink" href="#dont-confuse-this-with-autosave" title="Permanent link">&para;</a></h2>
+<p>Different problems, both needed. <a href="../../toolbox/soft-support-modules/#autosave">autosave</a> is invisible per-IOC reboot survival; this service is deliberate, named, comparable, cross-IOC configurations. Deploy both. The distinction is set out in the <a href="../../toolbox/save-and-restore/">toolbox page</a>.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
-<p>→ <a href="../physics-and-optimization/">Physics &amp; Optimisation</a></p>
+<p>→ <a href="../olog/">Olog</a></p>
 
 
 
@@ -3315,7 +3214,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../simulation-and-testing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Simulation &amp; Testing">
+          <a href="../channelfinder-recsync/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ChannelFinder &amp; recsync">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3325,20 +3224,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Simulation & Testing
+                ChannelFinder & recsync
               </div>
             </div>
           </a>
         
         
           
-          <a href="../physics-and-optimization/" class="md-footer__link md-footer__link--next" aria-label="Next: Physics &amp; Optimisation">
+          <a href="../olog/" class="md-footer__link md-footer__link--next" aria-label="Next: Olog">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Physics & Optimisation
+                Olog
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://nusaqib.github.io/EPICS-for-Dummies/build-install/jdk/">
       
       
-        <link rel="prev" href="../epics-base/">
+        <link rel="prev" href="../first-ioc/">
       
       
         <link rel="next" href="../tomcat/">
@@ -76,6 +76,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#java-jdk" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -1603,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../first-ioc.md" class="md-nav__link">
+      <a href="../first-ioc/" class="md-nav__link">
         
   
   
@@ -1637,6 +1642,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java (JDK)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1654,6 +1679,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#which-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-java_home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set JAVA_HOME
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-jdks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple JDKs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javafx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaFX
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maven
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1723,7 +1844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archiver-appliance.md" class="md-nav__link">
+      <a href="../archiver-appliance/" class="md-nav__link">
         
   
   
@@ -1751,7 +1872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../alarm-system.md" class="md-nav__link">
+      <a href="../alarm-system/" class="md-nav__link">
         
   
   
@@ -1779,7 +1900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../channelfinder-recsync.md" class="md-nav__link">
+      <a href="../channelfinder-recsync/" class="md-nav__link">
         
   
   
@@ -1807,7 +1928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../save-and-restore.md" class="md-nav__link">
+      <a href="../save-and-restore/" class="md-nav__link">
         
   
   
@@ -1835,7 +1956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../olog.md" class="md-nav__link">
+      <a href="../olog/" class="md-nav__link">
         
   
   
@@ -1919,7 +2040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pvinfo.md" class="md-nav__link">
+      <a href="../pvinfo/" class="md-nav__link">
         
   
   
@@ -1947,7 +2068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gateways.md" class="md-nav__link">
+      <a href="../gateways/" class="md-nav__link">
         
   
   
@@ -1975,7 +2096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../containers.md" class="md-nav__link">
+      <a href="../containers/" class="md-nav__link">
         
   
   
@@ -2792,6 +2913,93 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#which-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-java_home" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set JAVA_HOME
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-jdks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple JDKs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javafx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaFX
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maven
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2816,12 +3024,96 @@
   
 
 
-  <h1>Java (JDK)</h1>
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>apt install openjdk-xxx
+<h1 id="java-jdk">Java (JDK)<a class="headerlink" href="#java-jdk" title="Permanent link">&para;</a></h1>
+<p>Every Java tool in the EPICS ecosystem needs a JDK: <a href="../phoebus/">Phoebus</a>, the <a href="../../toolbox/archiving/#phoebus-rdb-archive-engine">archive engine</a>, the <a href="../alarm-system/">alarm services</a>, <a href="../save-and-restore/">save &amp; restore</a>, <a href="../channelfinder-recsync/">ChannelFinder</a>, <a href="../olog/">Olog</a>, <a href="../pvws/">PVWS</a>, <a href="../dbwr/">DBWR</a>, and the <a href="../archiver-appliance/">Archiver Appliance</a>.</p>
+<h2 id="which-version">Which version<a class="headerlink" href="#which-version" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Check the project, don't trust this page</p>
+<p>Java requirements move, and different tools in the ecosystem move at different times. <strong>Read the README of the specific project you're building.</strong> Phoebus in particular has raised its minimum several times, and building with too old a JDK produces confusing Maven errors rather than a clear message.</p>
+</div>
+<p>As a general guide: a recent LTS release (17 or 21) satisfies most of the ecosystem. Phoebus's Display Builder needs JavaFX, which some JDK distributions bundle and others don't — see below.</p>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Debian / Ubuntu</label><label for="__tabbed_1_2">RHEL / Rocky / Alma</label><label for="__tabbed_1_3">Manual (any distro)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>openjdk-21-jdk<span class="w"> </span>maven
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>export JAVA_HOME=/usr/lib/jvm/java-xxx
+<p>To see what's available:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>apt-cache<span class="w"> </span>search<span class="w"> </span>openjdk<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>jdk
 </code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>java-21-openjdk-devel<span class="w"> </span>maven
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Download a build from <a href="https://adoptium.net/">Adoptium</a> (Eclipse Temurin), <a href="https://www.azul.com/downloads/">Azul Zulu</a>, or <a href="https://www.oracle.com/java/technologies/downloads/">Oracle</a>, unpack it into <code>/opt</code>, and set <code>JAVA_HOME</code> accordingly.</p>
+<p>Azul Zulu offers builds <strong>with JavaFX included</strong>, which is the simplest route for Phoebus.</p>
+</div>
+</div>
+</div>
+<h2 id="set-java_home">Set JAVA_HOME<a class="headerlink" href="#set-java_home" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-21-openjdk-amd64<span class="w">      </span><span class="c1"># Debian/Ubuntu</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># export JAVA_HOME=/usr/lib/jvm/java-21-openjdk           # RHEL family</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">JAVA_HOME</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">No spaces around the <code>=</code></p>
+<p><code>export JAVA_HOME = /path</code> is not valid shell. Bash reads it as the command <code>export</code> with three arguments, <code>JAVA_HOME</code> ends up unset, and Maven then produces an error mentioning neither <code>export</code> nor <code>JAVA_HOME</code>.</p>
+</div>
+<p>Find the real path on your machine:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>readlink<span class="w"> </span>-f<span class="w"> </span><span class="k">$(</span>which<span class="w"> </span>java<span class="k">)</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s|/bin/java||&#39;</span>
+</code></pre></div>
+<p>Verify:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>java<span class="w"> </span>-version
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>javac<span class="w"> </span>-version<span class="w">        </span><span class="c1"># must work too — a JRE alone cannot build</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>mvn<span class="w"> </span>-version<span class="w">          </span><span class="c1"># should report the JDK it found</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$JAVA_HOME</span>
+</code></pre></div>
+<p>Put the exports in <code>~/.bashrc</code> or <code>~/.profile</code>, as with <a href="../epics-base/#set-up-your-environment">the EPICS variables</a>.</p>
+<h2 id="multiple-jdks">Multiple JDKs<a class="headerlink" href="#multiple-jdks" title="Permanent link">&para;</a></h2>
+<p>Common, because different tools want different versions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Debian / Ubuntu</label><label for="__tabbed_2_2">RHEL family</label><label for="__tabbed_2_3">Per-project, without changing the system</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>update-alternatives<span class="w"> </span>--config<span class="w"> </span>java
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>update-alternatives<span class="w"> </span>--config<span class="w"> </span>javac
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>alternatives<span class="w"> </span>--config<span class="w"> </span>java
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-17-openjdk-amd64<span class="w"> </span>mvn<span class="w"> </span>clean<span class="w"> </span>install
+</code></pre></div>
+<p>Or use <a href="https://sdkman.io/">SDKMAN!</a> to switch per shell — cleaner than fighting <code>alternatives</code> when you genuinely need three JDKs.</p>
+</div>
+</div>
+</div>
+<h2 id="javafx">JavaFX<a class="headerlink" href="#javafx" title="Permanent link">&para;</a></h2>
+<p>Phoebus's UI is JavaFX, which was removed from the JDK after Java 10 and is now a separate project (<a href="https://openjfx.io/">OpenJFX</a>).</p>
+<p>Three ways to satisfy it:</p>
+<ol>
+<li><strong>A JDK that bundles it</strong> — Azul Zulu "JDK FX" builds. Simplest.</li>
+<li><strong>Maven pulls it in</strong> — Phoebus's build fetches the JavaFX artefacts it needs, which works if your build has network access.</li>
+<li><strong>A distribution package</strong> — <code>openjfx</code> on Debian/Ubuntu. Version-matching with your JDK can be fiddly.</li>
+</ol>
+<p>Symptom of getting this wrong: the build succeeds and the application fails at startup with a missing <code>javafx.*</code> class. Not subtle, but confusing if you don't know JavaFX is separable from the JDK.</p>
+<h2 id="maven">Maven<a class="headerlink" href="#maven" title="Permanent link">&para;</a></h2>
+<p>Most of the ecosystem builds with Maven.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mvn<span class="w"> </span>-version
+</code></pre></div>
+<p>Worth knowing:</p>
+<ul>
+<li>Maven caches dependencies in <code>~/.m2/repository</code>. First builds download a lot; later builds are much faster.</li>
+<li>A corrupted cache produces bizarre errors. <code>rm -rf ~/.m2/repository</code> and rebuild is the standard remedy, at the cost of a re-download.</li>
+<li><code>mvn clean install -o</code> builds offline once the cache is warm — useful on a controls network with no internet access, and a good reason to warm the cache deliberately before you need it.</li>
+<li>Behind a proxy, configure it in <code>~/.m2/settings.xml</code>, not in environment variables.</li>
+</ul>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<p>→ <a href="../phoebus/">Phoebus</a>, or <a href="../tomcat/">Tomcat</a> if you're heading for the web services.</p>
 
 
 
@@ -2857,7 +3149,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../epics-base/" class="md-footer__link md-footer__link--prev" aria-label="Previous: EPICS Base">
+          <a href="../first-ioc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Your First IOC">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2867,7 +3159,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                EPICS Base
+                Your First IOC
               </div>
             </div>
           </a>
