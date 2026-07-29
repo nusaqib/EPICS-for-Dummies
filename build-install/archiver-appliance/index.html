@@ -2167,6 +2167,8 @@
     
       
         
+          
+        
       
         
       
@@ -2205,8 +2207,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2220,8 +2223,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2235,32 +2244,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2269,7 +2252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2297,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2325,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2353,7 +2336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2381,7 +2364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2409,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2437,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2465,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2493,7 +2476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2521,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3215,7 +3198,7 @@
 <p><strong>Alarm on disconnected PVs.</strong> A configured PV that stopped connecting three months ago is a gap you'll find exactly when you need the data.</p>
 <p><strong>Back up the MySQL configuration database.</strong> Losing the <em>list of what you archive</em>, with all its policies, is worse than losing samples — you stop collecting correctly going forward, and reconstructing thousands of per-PV policies is a project.</p>
 <p><strong>Test retrieval of old data quarterly.</strong> Pull something from a year ago. Facilities have discovered, two years in, that their long-term store was never actually being written to.</p>
-<p><strong>Plan capacity from arithmetic, not intuition.</strong> The <a href="../example-facility/archiving-plan.md">Helios archiving plan</a> works through a full facility estimate — PV counts, event rates, bytes per sample, and where 24 TB/year comes from.</p>
+<p><strong>Plan capacity from arithmetic, not intuition.</strong> The <a href="../../example-facility/archiving-plan/">Helios archiving plan</a> works through a full facility estimate — PV counts, event rates, bytes per sample, and where 24 TB/year comes from.</p>
 <h2 id="the-easier-alternative">The easier alternative<a class="headerlink" href="#the-easier-alternative" title="Permanent link">&para;</a></h2>
 <p>For a first archiver, or a beamline, the <a href="../../toolbox/archiving/#phoebus-rdb-archive-engine">Phoebus RDB archive engine</a> needs only a database and a JAR you already built with <a href="../phoebus/">Phoebus</a>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>java<span class="w"> </span>-jar<span class="w"> </span>archive-engine-*.jar<span class="w"> </span>-engine<span class="w"> </span>myengine<span class="w"> </span>-config<span class="w"> </span>config.xml<span class="w"> </span>-settings<span class="w"> </span>settings.ini

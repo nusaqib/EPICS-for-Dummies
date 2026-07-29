@@ -2140,6 +2140,8 @@
     
       
         
+          
+        
       
         
       
@@ -2178,8 +2180,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2193,8 +2196,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2208,32 +2217,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2242,7 +2225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2270,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2298,7 +2281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2326,7 +2309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2354,7 +2337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2382,7 +2365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2410,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2438,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2466,7 +2449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2494,7 +2477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3222,7 +3205,7 @@
 <p><strong>Use <code>RDBD</code> and <code>RTRY</code> deliberately.</strong> Position retries mask backlash and closed-loop error, which is helpful for accuracy and terrible for diagnosis if you don't know they're happening. A stage retrying five times per move is telling you something about the mechanics.</p>
 <p><strong>Autosave motor positions.</strong> With <a href="../soft-support-modules/#autosave">autosave</a>, an IOC restart doesn't lose your calibration — but note that for absolute-encoder axes the <em>controller</em> knows the truth, whereas for incremental axes the saved value is all you have. That distinction determines whether an IOC restart requires re-homing.</p>
 <p><strong><code>MSTA</code> is your diagnostic.</strong> Following error, limit switches, amplifier fault and home status are all in there, and a screen showing only position hides all of it.</p>
-<p><strong>Motion is where people get hurt and equipment gets broken.</strong> Not because EPICS is unsafe, but because a moving stage has energy and often has fragile things near it. Collision avoidance between independently controlled devices, and anything protecting a person, belongs in <a href="../example-facility/machine-protection.md">PLC or hardware interlocks</a> — not in a motor record's soft limits and not in a Python script.</p>
+<p><strong>Motion is where people get hurt and equipment gets broken.</strong> Not because EPICS is unsafe, but because a moving stage has energy and often has fragile things near it. Collision avoidance between independently controlled devices, and anything protecting a person, belongs in <a href="../../example-facility/machine-protection/">PLC or hardware interlocks</a> — not in a motor record's soft limits and not in a Python script.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>→ <a href="../detectors-and-imaging/">Detectors &amp; Imaging</a></p>
 

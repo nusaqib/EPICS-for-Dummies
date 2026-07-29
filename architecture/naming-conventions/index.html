@@ -2195,6 +2195,8 @@
     
       
         
+          
+        
       
         
       
@@ -2233,8 +2235,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2248,8 +2251,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2263,32 +2272,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2297,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2325,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2353,7 +2336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2381,7 +2364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2409,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2437,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2465,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2493,7 +2476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2521,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2549,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3313,7 +3296,7 @@
 </tr>
 </tbody>
 </table>
-<p>Reserving <code>-Intlk</code> strictly for <em>reporting</em> the state of a protection system that lives in a PLC — never for logic implemented in EPICS — is a small discipline that keeps the <a href="../example-facility/machine-protection.md">safety boundary</a> legible in the namespace itself.</p>
+<p>Reserving <code>-Intlk</code> strictly for <em>reporting</em> the state of a protection system that lives in a PLC — never for logic implemented in EPICS — is a small discipline that keeps the <a href="../../example-facility/machine-protection/">safety boundary</a> legible in the namespace itself.</p>
 <h2 id="budgeting-60-characters">Budgeting 60 characters<a class="headerlink" href="#budgeting-60-characters" title="Permanent link">&para;</a></h2>
 <p>Take the example facility's convention:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SR - C05 - PS - QF - 01 : Current-RB
@@ -3381,7 +3364,7 @@
 </tbody>
 </table>
 <h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
-<p>The <a href="../example-facility/naming-convention.md">Helios Light Source naming convention</a> applies all of this to a concrete machine: the full grammar, the reserved area and device-class codes, the character budget, the CI regex, and the cases where the convention had to bend.</p>
+<p>The <a href="../../example-facility/naming-convention/">Helios Light Source naming convention</a> applies all of this to a concrete machine: the full grammar, the reserved area and device-class codes, the character budget, the CI regex, and the cases where the convention had to bend.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>→ <a href="../networking/">Networking</a> — how those names get resolved across a real facility network.</p>
 

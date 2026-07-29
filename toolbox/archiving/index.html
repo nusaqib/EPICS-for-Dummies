@@ -2190,6 +2190,8 @@
     
       
         
+          
+        
       
         
       
@@ -2228,8 +2230,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2243,8 +2246,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2258,32 +2267,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2292,7 +2275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2320,7 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2348,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2376,7 +2359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2404,7 +2387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2432,7 +2415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2460,7 +2443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2488,7 +2471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2516,7 +2499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2544,7 +2527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3373,7 +3356,7 @@
 </tbody>
 </table>
 <p><strong>The asymmetry that decides these arguments:</strong> storage is cheap and retroactive archiving is impossible. If in doubt, archive it — you cannot go back and collect last year.</p>
-<p>Worked sizing arithmetic for a whole facility: <a href="../example-facility/archiving-plan.md">Helios archiving plan</a>.</p>
+<p>Worked sizing arithmetic for a whole facility: <a href="../../example-facility/archiving-plan/">Helios archiving plan</a>.</p>
 <h2 id="operational-guidance">Operational guidance<a class="headerlink" href="#operational-guidance" title="Permanent link">&para;</a></h2>
 <p><strong>Monitor the archiver's own health.</strong> Connected-PV count, disconnected-PV list, ingest rate, storage-tier utilisation, consolidation job success. Put it in <a href="../observability/">Grafana</a> and alarm on it. An archiver silently not archiving is worse than no archiver, because everyone believes the data exists.</p>
 <p><strong>Alarm on disconnected PVs.</strong> A PV in the archiver's config that stopped connecting three months ago is a gap you'll discover exactly when you need the data.</p>

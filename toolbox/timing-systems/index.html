@@ -2173,6 +2173,8 @@
     
       
         
+          
+        
       
         
       
@@ -2211,8 +2213,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2226,8 +2229,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2241,32 +2250,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2275,7 +2258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2303,7 +2286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2331,7 +2314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2359,7 +2342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2387,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2415,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2443,7 +2426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2471,7 +2454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2499,7 +2482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2527,7 +2510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3240,7 +3223,7 @@
 <h2 id="beam-synchronous-acquisition">Beam-synchronous acquisition<a class="headerlink" href="#beam-synchronous-acquisition" title="Permanent link">&para;</a></h2>
 <p>For pulsed machines the useful question isn't "what was the value at 14:03:21.442" but "what were all these values on shot 918273". Facilities build acquisition layers on the event system to answer it: each IOC tags its data with the pulse ID from its EVR, and a service assembles per-shot records across IOCs.</p>
 <p>SLAC's BSA is the best-known implementation; several other facilities have equivalents. If you work at a pulsed facility, this will be one of the first pieces of local infrastructure you meet, and it has no generic community equivalent — it's inherently facility-specific.</p>
-<p>For a storage ring in top-up mode the problem is milder: the beam is continuous, so time-based correlation with PTP or NTP plus sensible <code>TSE</code> handling usually suffices, and the event system's main jobs are injection timing, <a href="../example-facility/subsystems.md">fast orbit feedback</a> synchronisation, and gating diagnostics.</p>
+<p>For a storage ring in top-up mode the problem is milder: the beam is continuous, so time-based correlation with PTP or NTP plus sensible <code>TSE</code> handling usually suffices, and the event system's main jobs are injection timing, <a href="../../example-facility/subsystems/">fast orbit feedback</a> synchronisation, and gating diagnostics.</p>
 <h2 id="practical-guidance">Practical guidance<a class="headerlink" href="#practical-guidance" title="Permanent link">&para;</a></h2>
 <p><strong>NTP everywhere, alarmed.</strong> The cheapest correctness win available.</p>
 <p><strong>Decide your timestamp requirement explicitly.</strong> "Milliseconds is fine" is a legitimate, defensible answer for vacuum and temperature. "We need to correlate to the pulse" costs a timing system. Deciding by default means discovering the requirement during a failure investigation.</p>

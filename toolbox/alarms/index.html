@@ -2184,6 +2184,8 @@
     
       
         
+          
+        
       
         
       
@@ -2222,8 +2224,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2237,8 +2240,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2252,32 +2261,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2286,7 +2269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2314,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2342,7 +2325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2370,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2398,7 +2381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2426,7 +2409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2454,7 +2437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2482,7 +2465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2510,7 +2493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2538,7 +2521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3247,7 +3230,7 @@
 <p><strong>Use <code>HYST</code> and <code>MDEL</code>.</strong> A value oscillating across a threshold generates an alarm storm from a single physical condition. Hysteresis costs one field.</p>
 <div class="admonition danger">
 <p class="admonition-title">Alarms are not interlocks</p>
-<p>An alarm tells a human something. An interlock acts. They have different requirements, different reliability targets, and belong in different systems. Anything that must <em>act</em> to protect people or equipment belongs in <a href="../example-facility/machine-protection.md">certified PLC or hard-wired logic</a>; EPICS may alarm on it and display it, and must not be relied upon to perform it.</p>
+<p>An alarm tells a human something. An interlock acts. They have different requirements, different reliability targets, and belong in different systems. Anything that must <em>act</em> to protect people or equipment belongs in <a href="../../example-facility/machine-protection/">certified PLC or hard-wired logic</a>; EPICS may alarm on it and display it, and must not be relied upon to perform it.</p>
 </div>
 <h2 id="annunciation">Annunciation<a class="headerlink" href="#annunciation" title="Permanent link">&para;</a></h2>
 <p>Getting a human's attention:</p>
@@ -3282,7 +3265,7 @@
 </tbody>
 </table>
 <h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
-<p>The <a href="../example-facility/alarm-plan.md">Helios alarm plan</a> builds a complete hierarchy for a synchrotron: the tree structure, which subsystems get delays, how a beam-dump flood is kept legible, and the on-call routing.</p>
+<p>The <a href="../../example-facility/alarm-plan/">Helios alarm plan</a> builds a complete hierarchy for a synchrotron: the tree structure, which subsystems get delays, how a beam-dump flood is kept legible, and the on-call routing.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>→ <a href="../directory-services/">Directory Services</a></p>
 

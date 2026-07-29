@@ -2097,6 +2097,8 @@
     
       
         
+          
+        
       
         
       
@@ -2135,8 +2137,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2150,8 +2153,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2165,32 +2174,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2199,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2227,7 +2210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/subsystems.md" class="md-nav__link">
+      <a href="example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2255,7 +2238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/naming-convention.md" class="md-nav__link">
+      <a href="example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2283,7 +2266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2311,7 +2294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/network-design.md" class="md-nav__link">
+      <a href="example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2339,7 +2322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/services-deployment.md" class="md-nav__link">
+      <a href="example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2367,7 +2350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2395,7 +2378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2423,7 +2406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2451,7 +2434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example-facility/machine-protection.md" class="md-nav__link">
+      <a href="example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -2982,7 +2965,7 @@
 <p>Practical how-tos: Base, your first IOC, Phoebus, the archiver, alarms, the web stack, containers.</p>
 </li>
 <li>
-<p>🔬 <strong><a href="example-facility/index.md">Example Facility</a></strong></p>
+<p>🔬 <strong><a href="example-facility/">Example Facility</a></strong></p>
 <p>The Helios Light Source — a complete hypothetical synchrotron, designed end to end.</p>
 </li>
 <li>
@@ -2994,7 +2977,7 @@
 <h2 id="the-worked-example-helios-light-source">The worked example: Helios Light Source<a class="headerlink" href="#the-worked-example-helios-light-source" title="Permanent link">&para;</a></h2>
 <p>Layer diagrams only teach so much. This guide therefore invents a facility and designs the whole control system for it:</p>
 <p><strong>Helios Light Source (HLS)</strong> — 3 GeV, 4th-generation storage ring, 528 m circumference, 100 pm·rad emittance, 500 mA in top-up mode, 20 beamlines, ~330 IOCs, ~415 000 process variables.</p>
-<p>Every chapter shows the reasoning, not just the answer: why the <a href="example-facility/naming-convention.md">naming convention</a> puts the area code second, how the <a href="example-facility/archiving-plan.md">archiver storage estimate</a> arrives at 24 TB/year, where the <a href="example-facility/machine-protection.md">machine protection system</a> stops and EPICS begins, and what actually happens during a <a href="example-facility/operations-scenarios.md">beam dump at 03:00</a>.</p>
+<p>Every chapter shows the reasoning, not just the answer: why the <a href="example-facility/naming-convention/">naming convention</a> puts the area code second, how the <a href="example-facility/archiving-plan/">archiver storage estimate</a> arrives at 24 TB/year, where the <a href="example-facility/machine-protection/">machine protection system</a> stops and EPICS begins, and what actually happens during a <a href="example-facility/operations-scenarios.md">beam dump at 03:00</a>.</p>
 <p>Then <a href="example-facility/build-a-mini-hls.md">Build a Mini-HLS</a> shrinks the whole thing onto a laptop with soft IOCs, so you can watch it work.</p>
 <div class="admonition warning">
 <p class="admonition-title">HLS is fictional</p>
@@ -3008,7 +2991,7 @@
 <li><a href="reference/cheatsheet.md">Command Cheat Sheet</a> — poke at your IOC with <code>caget</code>, <code>caput</code>, <code>camonitor</code></li>
 <li><a href="architecture/">Architecture Overview</a> — the layer model will now mean something</li>
 <li><a href="toolbox/">The Toolbox</a> — browse it; you will not need all of it</li>
-<li><a href="example-facility/index.md">Example Facility</a> — watch it assemble at scale</li>
+<li><a href="example-facility/">Example Facility</a> — watch it assemble at scale</li>
 </ol>
 <p>In a hurry, or allergic to compilers? Use a <a href="reference/training.md">prebuilt training VM</a> with the whole stack already running.</p>
 <h2 id="how-this-site-is-maintained">How this site is maintained<a class="headerlink" href="#how-this-site-is-maintained" title="Permanent link">&para;</a></h2>

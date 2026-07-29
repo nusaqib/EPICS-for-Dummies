@@ -2167,6 +2167,8 @@
     
       
         
+          
+        
       
         
       
@@ -2205,8 +2207,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2220,8 +2223,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2235,32 +2244,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2269,7 +2252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2297,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2325,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2353,7 +2336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2381,7 +2364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2409,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2437,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2465,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2493,7 +2476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2521,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3186,7 +3169,7 @@
 <p><strong>One VLAN per beamline.</strong> Beamlines are independent experiments with independent users, independent schedules, and sometimes visiting equipment of unknown provenance. A broadcast storm or a misbehaving device on beamline 7 must not affect beamline 8. This also keeps each beamline's broadcast domain small enough that discovery stays cheap.</p>
 <p><strong>Accelerator → beamline is one-way and narrow.</strong> Beamlines need machine status: beam current, energy, shutter permits, top-up state. They do not need write access to the storage ring, and the accelerator does not need to see 20 beamlines' worth of detector traffic. A read-only gateway exporting a curated prefix list is the whole interface.</p>
 <p><strong>Services sit in the middle</strong> because they must reach everything and be reachable by everything, while hosting the only components with heavyweight dependencies (databases, Kafka, Elasticsearch).</p>
-<p>Worked out concretely, with addresses and gateway rules: <a href="../example-facility/network-design.md">Helios network design</a>.</p>
+<p>Worked out concretely, with addresses and gateway rules: <a href="../../example-facility/network-design/">Helios network design</a>.</p>
 <h2 id="gateways-in-practice">Gateways in practice<a class="headerlink" href="#gateways-in-practice" title="Permanent link">&para;</a></h2>
 <p>Two jobs, both important:</p>
 <p><strong>1. Connection multiplication control.</strong> An IOC serving 400 workstations holds 400 TCP connections and pushes 400 copies of every monitor update. Behind a gateway it holds <em>one</em>, and the gateway fans out. At facility scale this is not an optimisation, it's the difference between working and not.</p>

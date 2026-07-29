@@ -2373,6 +2373,8 @@
     
       
         
+          
+        
       
         
       
@@ -2411,8 +2413,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2426,8 +2429,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2441,32 +2450,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2475,7 +2458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2503,7 +2486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2531,7 +2514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2559,7 +2542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2587,7 +2570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/network-design.md" class="md-nav__link">
+      <a href="../../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2615,7 +2598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2643,7 +2626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2671,7 +2654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2699,7 +2682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2727,7 +2710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -3527,7 +3510,7 @@
 <h3 id="why-is-my-value-flat-and-green-when-the-device-is-unplugged">Why is my value flat and green when the device is unplugged?<a class="headerlink" href="#why-is-my-value-flat-and-green-when-the-device-is-unplugged" title="Permanent link">&para;</a></h3>
 <p>Because you're ignoring severity. Comms failure sets <code>INVALID</code>, usually leaving the last value or zero in <code>VAL</code>. A screen or script that reads only the number cannot tell "0.0, correct" from "0.0, meaningless". Always check <code>SEVR</code>/<code>STAT</code> — <code>caget -a</code> shows them. This is the single most common category of "the control system lied to me".</p>
 <h3 id="should-one-ioc-serve-everything-or-should-i-have-many-small-ones">Should one IOC serve everything, or should I have many small ones?<a class="headerlink" href="#should-one-ioc-serve-everything-or-should-i-have-many-small-ones" title="Permanent link">&para;</a></h3>
-<p>Many small ones, biased toward one IOC per device or per crate. Failure domains stay small, restarts are cheap, and ownership is clear. The counter-pressure is real though: several hundred IOCs need <a href="../../toolbox/deployment-and-operations/">deployment tooling</a> and <a href="../../toolbox/observability/">monitoring</a>, and records that must interlock with each other are simpler in one IOC than across two. See the <a href="../example-facility/ioc-inventory.md">example facility's reasoning</a>.</p>
+<p>Many small ones, biased toward one IOC per device or per crate. Failure domains stay small, restarts are cheap, and ownership is clear. The counter-pressure is real though: several hundred IOCs need <a href="../../toolbox/deployment-and-operations/">deployment tooling</a> and <a href="../../toolbox/observability/">monitoring</a>, and records that must interlock with each other are simpler in one IOC than across two. See the <a href="../../example-facility/ioc-inventory/">example facility's reasoning</a>.</p>
 <h3 id="whats-the-difference-between-autosave-and-save-restore">What's the difference between autosave and save &amp; restore?<a class="headerlink" href="#whats-the-difference-between-autosave-and-save-restore" title="Permanent link">&para;</a></h3>
 <p><a href="../../toolbox/soft-support-modules/#autosave">autosave</a> runs <em>inside</em> an IOC and exists to survive reboots: it periodically writes values to a local file and restores them at <code>iocInit</code>, invisibly. <a href="../../toolbox/save-and-restore/">save &amp; restore</a> is a <em>facility service</em> for deliberate configurations: "the settings we ran the 2 keV experiment with", compared and restored by operators, with history. You want both. They solve different problems.</p>
 <h2 id="practical-problems">Practical problems<a class="headerlink" href="#practical-problems" title="Permanent link">&para;</a></h2>
@@ -3553,20 +3536,20 @@
 <p>No.</p>
 <div class="admonition danger">
 <p class="admonition-title">Not ever</p>
-<p>Personnel protection and machine protection belong in certified PLCs or hard-wired logic designed to IEC 61508 / IEC 61511. EPICS has no safety certification, no deterministic network latency, and no failure analysis suitable for a safety case. EPICS <em>monitors and displays</em> those systems. See <a href="../example-facility/machine-protection.md">Machine Protection</a>.</p>
+<p>Personnel protection and machine protection belong in certified PLCs or hard-wired logic designed to IEC 61508 / IEC 61511. EPICS has no safety certification, no deterministic network latency, and no failure analysis suitable for a safety case. EPICS <em>monitors and displays</em> those systems. See <a href="../../example-facility/machine-protection/">Machine Protection</a>.</p>
 </div>
 <h2 id="scale-and-operations">Scale and operations<a class="headerlink" href="#scale-and-operations" title="Permanent link">&para;</a></h2>
 <h3 id="how-many-pvs-can-one-ioc-serve">How many PVs can one IOC serve?<a class="headerlink" href="#how-many-pvs-can-one-ioc-serve" title="Permanent link">&para;</a></h3>
 <p>Tens of thousands is routine. The limits you actually hit are CPU (record processing rate × record count) and the number of monitored channels × update rate × client count. An IOC pushing 50 000 monitors a second to 40 clients is doing more work than one holding a million idle records. Measure with <a href="../../toolbox/soft-support-modules/#iocstats--deviocstats">iocStats</a> rather than guessing.</p>
 <h3 id="how-much-does-archiving-everything-cost">How much does archiving everything cost?<a class="headerlink" href="#how-much-does-archiving-everything-cost" title="Permanent link">&para;</a></h3>
-<p>Cheaper than you fear if you use monitor-based (event-driven) archiving with sensible deadbands, and ruinous if you scan everything at 10 Hz. The <a href="../example-facility/archiving-plan.md">example facility's archiving plan</a> works the arithmetic end to end: ~415 000 PVs, ~24 TB/year, and where every term comes from.</p>
+<p>Cheaper than you fear if you use monitor-based (event-driven) archiving with sensible deadbands, and ruinous if you scan everything at 10 Hz. The <a href="../../example-facility/archiving-plan/">example facility's archiving plan</a> works the arithmetic end to end: ~415 000 PVs, ~24 TB/year, and where every term comes from.</p>
 <h3 id="do-i-need-kafka-elasticsearch-mysql-and-kubernetes">Do I need Kafka, Elasticsearch, MySQL and Kubernetes?<a class="headerlink" href="#do-i-need-kafka-elasticsearch-mysql-and-kubernetes" title="Permanent link">&para;</a></h3>
 <p>Not to learn, and not for a test stand. Those are dependencies of the <em>services</em> — the Phoebus alarm system needs Kafka, Olog and ChannelFinder want Elasticsearch, the Archiver Appliance wants MySQL/MariaDB for configuration. A single IOC plus a GUI needs none of it. Add each service when you have the problem it solves.</p>
 <h3 id="is-epics-still-actively-developed">Is EPICS still actively developed?<a class="headerlink" href="#is-epics-still-actively-developed" title="Permanent link">&para;</a></h3>
 <p>Yes. Base 7 releases regularly, PVXS and p4p are current work, <a href="../../toolbox/deployment-and-operations/#epics-containers">epics-containers</a> is reshaping deployment, and Phoebus is under continuous development. There are annual <a href="../reference/community.md">collaboration meetings and codeathons</a>. It's a 35-year-old codebase with a live community — the interesting kind of old.</p>
 <h2 id="meta">Meta<a class="headerlink" href="#meta" title="Permanent link">&para;</a></h2>
 <h3 id="why-does-this-guide-invent-a-fake-synchrotron">Why does this guide invent a fake synchrotron?<a class="headerlink" href="#why-does-this-guide-invent-a-fake-synchrotron" title="Permanent link">&para;</a></h3>
-<p>Because "you need a naming convention" teaches nothing, and <em>watching</em> a naming convention get chosen — with its constraints, its compromises, and the 60-character CA limit pressing on it — teaches a lot. The <a href="../example-facility/index.md">Helios Light Source</a> exists so every architectural claim in this guide has to survive contact with a concrete machine.</p>
+<p>Because "you need a naming convention" teaches nothing, and <em>watching</em> a naming convention get chosen — with its constraints, its compromises, and the 60-character CA limit pressing on it — teaches a lot. The <a href="../../example-facility/">Helios Light Source</a> exists so every architectural claim in this guide has to survive contact with a concrete machine.</p>
 <h3 id="can-i-trust-everything-on-this-site">Can I trust everything on this site?<a class="headerlink" href="#can-i-trust-everything-on-this-site" title="Permanent link">&para;</a></h3>
 <p>Trust it as a map. It's written by someone learning EPICS, so where it disagrees with <a href="https://docs.epics-controls.org">docs.epics-controls.org</a> or a project's own README, believe them and <a href="https://github.com/nusaqib/EPICS-for-Dummies/issues">file an issue here</a>.</p>
 

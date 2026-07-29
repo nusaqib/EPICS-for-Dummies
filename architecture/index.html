@@ -2010,6 +2010,8 @@
     
       
         
+          
+        
       
         
       
@@ -2048,8 +2050,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../example-facility/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2063,8 +2066,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -2078,32 +2087,6 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example-facility/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2112,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/machine-parameters.md" class="md-nav__link">
+      <a href="../example-facility/machine-parameters/" class="md-nav__link">
         
   
   
@@ -2140,7 +2123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/subsystems.md" class="md-nav__link">
+      <a href="../example-facility/subsystems/" class="md-nav__link">
         
   
   
@@ -2168,7 +2151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/naming-convention.md" class="md-nav__link">
+      <a href="../example-facility/naming-convention/" class="md-nav__link">
         
   
   
@@ -2196,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/ioc-inventory.md" class="md-nav__link">
+      <a href="../example-facility/ioc-inventory/" class="md-nav__link">
         
   
   
@@ -2224,7 +2207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/network-design.md" class="md-nav__link">
+      <a href="../example-facility/network-design/" class="md-nav__link">
         
   
   
@@ -2252,7 +2235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/services-deployment.md" class="md-nav__link">
+      <a href="../example-facility/services-deployment/" class="md-nav__link">
         
   
   
@@ -2280,7 +2263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/operator-interfaces.md" class="md-nav__link">
+      <a href="../example-facility/operator-interfaces/" class="md-nav__link">
         
   
   
@@ -2308,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/archiving-plan.md" class="md-nav__link">
+      <a href="../example-facility/archiving-plan/" class="md-nav__link">
         
   
   
@@ -2336,7 +2319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/alarm-plan.md" class="md-nav__link">
+      <a href="../example-facility/alarm-plan/" class="md-nav__link">
         
   
   
@@ -2364,7 +2347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example-facility/machine-protection.md" class="md-nav__link">
+      <a href="../example-facility/machine-protection/" class="md-nav__link">
         
   
   
@@ -2991,7 +2974,7 @@
     SIOC --- DEV</code></pre>
 <h3 id="tier-1-iocs-and-devices">Tier 1 — IOCs and devices<a class="headerlink" href="#tier-1-iocs-and-devices" title="Permanent link">&para;</a></h3>
 <p>Where physics meets software. Every PV has exactly one owner here, and that owner is authoritative. IOCs are independent processes with no knowledge of each other beyond the PVs they read from one another.</p>
-<p>Design pressure at this tier: <strong>failure domains</strong>. One IOC per device means a crashed IOC costs you one device. One IOC per subsystem means it costs you the subsystem. Nothing enforces a choice, so it becomes convention — and conventions that aren't written down decay. See <a href="../example-facility/ioc-inventory.md">IOC inventory</a>.</p>
+<p>Design pressure at this tier: <strong>failure domains</strong>. One IOC per device means a crashed IOC costs you one device. One IOC per subsystem means it costs you the subsystem. Nothing enforces a choice, so it becomes convention — and conventions that aren't written down decay. See <a href="../example-facility/ioc-inventory/">IOC inventory</a>.</p>
 <h3 id="tier-2-network-and-mediation">Tier 2 — Network and mediation<a class="headerlink" href="#tier-2-network-and-mediation" title="Permanent link">&para;</a></h3>
 <p>Channel Access and PV Access. No broker, no registry, no master: PV name resolution is by broadcast search, answered by whichever IOC owns the name.</p>
 <p>This is the tier that surprises people. There is nothing in the middle of an EPICS system. That is why it survives partial failure so gracefully, and also why "which IOC serves this PV?" is a genuinely hard question requiring a <a href="../toolbox/directory-services/">directory service</a> to answer well.</p>
@@ -3009,7 +2992,7 @@
 <p><strong>5. Every layer is optional except Tier 1 and 2.</strong> You can run a facility with IOCs and <code>caget</code> and nothing else. Each service earns its place by solving a problem you actually have — which is why <a href="../toolbox/">The Toolbox</a> is a catalogue rather than a stack.</p>
 <h2 id="where-the-boundaries-are-drawn">Where the boundaries are drawn<a class="headerlink" href="#where-the-boundaries-are-drawn" title="Permanent link">&para;</a></h2>
 <p>Two lines matter more than the tiers:</p>
-<p><strong>The safety line.</strong> <a href="../example-facility/machine-protection.md">Machine and personnel protection</a> sit <em>outside</em> this diagram, in certified PLCs and hard-wired logic. They appear inside EPICS only as read-only status. This boundary is not negotiable, and blurring it is the most serious mistake in this problem domain.</p>
+<p><strong>The safety line.</strong> <a href="../example-facility/machine-protection/">Machine and personnel protection</a> sit <em>outside</em> this diagram, in certified PLCs and hard-wired logic. They appear inside EPICS only as read-only status. This boundary is not negotiable, and blurring it is the most serious mistake in this problem domain.</p>
 <p><strong>The determinism line.</strong> Fast feedback — orbit feedback at kHz rates, LLRF loops, beam-based interlocks — lives in FPGAs and dedicated hardware. EPICS sets its parameters and reads its diagnostics, and stays out of the loop. Anything requiring guaranteed latency below roughly 10 ms should not depend on Channel Access.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>→ <a href="process-database/">Process Database</a>, the layer you'll spend most of your time in.</p>
